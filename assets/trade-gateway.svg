@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Payment gateway connected to a contractor website</title>
+  <desc id="desc">A stylised illustration of a laptop checkout screen linked to customer records and a project site.</desc>
+  <rect width="960" height="600" rx="28" fill="#F4F5F1"/>
+  <circle cx="748" cy="124" r="68" fill="#DCFB00" opacity="0.65"/>
+  <rect x="176" y="152" width="420" height="256" rx="24" fill="#111111"/>
+  <rect x="202" y="178" width="368" height="204" rx="16" fill="#FFFFFF"/>
+  <rect x="230" y="210" width="122" height="16" rx="8" fill="#111111"/>
+  <rect x="230" y="248" width="210" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="230" y="276" width="184" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="230" y="320" width="132" height="40" rx="14" fill="#DCFB00"/>
+  <rect x="300" y="408" width="174" height="22" rx="11" fill="#111111"/>
+  <rect x="656" y="188" width="158" height="98" rx="22" fill="#FFFFFF"/>
+  <rect x="682" y="224" width="92" height="14" rx="7" fill="#111111"/>
+  <rect x="640" y="338" width="214" height="164" rx="24" fill="#DCE1D7"/>
+  <polygon points="690,432 746,388 800,432" fill="#BFC5B9"/>
+  <rect x="710" y="432" width="82" height="50" rx="14" fill="#EEF0EA"/>
+</svg>

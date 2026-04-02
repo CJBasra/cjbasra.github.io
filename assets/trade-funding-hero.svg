@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Business funding for contractor projects</title>
+  <desc id="desc">A stylised illustration with materials, a work van, coins, and an upward cash-flow arrow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F7F7"/>
+      <stop offset="100%" stop-color="#ECEEE8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="1010" cy="158" r="86" fill="#DCFB00" opacity="0.65"/>
+  <rect x="158" y="454" width="964" height="162" rx="34" fill="#FFFFFF"/>
+  <rect x="198" y="388" width="188" height="66" rx="18" fill="#DCE1D7"/>
+  <rect x="224" y="340" width="188" height="48" rx="16" fill="#EFF1EB"/>
+  <rect x="528" y="424" width="360" height="134" rx="28" fill="#DCE1D7"/>
+  <rect x="790" y="458" width="92" height="46" rx="13" fill="#111111"/>
+  <circle cx="616" cy="584" r="28" fill="#111111"/>
+  <circle cx="820" cy="584" r="28" fill="#111111"/>
+  <path d="M910 458c70-24 126-72 170-150l42 16-18-122-102 68 40 16c-28 56-72 96-140 122l8 50Z" fill="#111111"/>
+  <circle cx="1036" cy="478" r="40" fill="#DCFB00"/>
+  <circle cx="1100" cy="536" r="28" fill="#111111"/>
+  <rect x="1018" y="458" width="36" height="8" rx="4" fill="#111111"/>
+  <rect x="1032" y="444" width="8" height="36" rx="4" fill="#111111"/>
+</svg>

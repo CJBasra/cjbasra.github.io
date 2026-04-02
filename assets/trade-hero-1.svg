@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1020" role="img" aria-labelledby="title desc">
+  <title id="title">Contractor taking payment on a residential job</title>
+  <desc id="desc">A stylised contractor scene with a card terminal, house, ladder, and work van.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F7F7"/>
+      <stop offset="100%" stop-color="#EDEEE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1020" rx="40" fill="url(#bg)"/>
+  <circle cx="575" cy="165" r="86" fill="#DCFB00" opacity="0.7"/>
+  <rect x="58" y="610" width="604" height="260" rx="34" fill="#FFFFFF"/>
+  <polygon points="110,610 262,490 415,610" fill="#D9DDD5"/>
+  <rect x="155" y="610" width="215" height="180" rx="24" fill="#EEF0EA"/>
+  <rect x="235" y="685" width="58" height="105" rx="14" fill="#FFFFFF"/>
+  <rect x="431" y="585" width="150" height="250" rx="26" fill="#111111"/>
+  <rect x="453" y="617" width="105" height="66" rx="14" fill="#DCFB00"/>
+  <rect x="453" y="708" width="105" height="16" rx="8" fill="#D5D8D0"/>
+  <rect x="453" y="739" width="76" height="16" rx="8" fill="#D5D8D0"/>
+  <circle cx="190" cy="418" r="52" fill="#111111"/>
+  <rect x="137" y="474" width="108" height="170" rx="34" fill="#3A3A3A"/>
+  <rect x="250" y="518" width="124" height="34" rx="17" fill="#DCFB00"/>
+  <rect x="328" y="550" width="34" height="138" rx="17" fill="#C7CCC1"/>
+  <rect x="60" y="510" width="54" height="210" rx="16" fill="#C8CDC2"/>
+  <rect x="96" y="510" width="16" height="210" rx="8" fill="#A9AEA5"/>
+  <rect x="58" y="545" width="60" height="14" rx="7" fill="#A9AEA5"/>
+  <rect x="58" y="610" width="60" height="14" rx="7" fill="#A9AEA5"/>
+  <rect x="76" y="818" width="206" height="44" rx="22" fill="#111111"/>
+  <circle cx="494" cy="854" r="22" fill="#111111"/>
+  <circle cx="562" cy="854" r="22" fill="#111111"/>
+</svg>

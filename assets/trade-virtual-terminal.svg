@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual terminal for contractor office staff</title>
+  <desc id="desc">A stylised illustration of a browser-based card payment screen with headset and admin paperwork.</desc>
+  <rect width="960" height="600" rx="28" fill="#F4F5F1"/>
+  <circle cx="768" cy="126" r="68" fill="#DCFB00" opacity="0.65"/>
+  <rect x="138" y="132" width="520" height="312" rx="28" fill="#111111"/>
+  <rect x="168" y="168" width="460" height="240" rx="18" fill="#FFFFFF"/>
+  <rect x="198" y="206" width="118" height="16" rx="8" fill="#111111"/>
+  <rect x="198" y="250" width="236" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="198" y="280" width="204" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="198" y="328" width="128" height="42" rx="14" fill="#DCFB00"/>
+  <rect x="698" y="220" width="98" height="132" rx="26" fill="#111111"/>
+  <path d="M734 198c-34 0-62 28-62 62v30h24v-30c0-21 17-38 38-38s38 17 38 38v30h24v-30c0-34-28-62-62-62Z" fill="#D8DDD4"/>
+  <rect x="176" y="470" width="220" height="70" rx="20" fill="#FFFFFF"/>
+  <rect x="206" y="498" width="136" height="14" rx="7" fill="#111111"/>
+</svg>

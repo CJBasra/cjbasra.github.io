@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Contractor taking card payment on the driveway</title>
+  <desc id="desc">A stylised illustration of a contractor taking a card payment from a customer outside a house.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F7F7"/>
+      <stop offset="100%" stop-color="#ECEDE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="36" fill="url(#bg)"/>
+  <rect x="118" y="472" width="1040" height="154" rx="34" fill="#FFFFFF"/>
+  <polygon points="176,476 414,300 648,476" fill="#D8DDD4"/>
+  <rect x="256" y="476" width="328" height="150" rx="26" fill="#EEF0EA"/>
+  <rect x="394" y="540" width="70" height="86" rx="14" fill="#FFFFFF"/>
+  <circle cx="458" cy="250" r="44" fill="#111111"/>
+  <rect x="412" y="298" width="94" height="168" rx="30" fill="#414141"/>
+  <rect x="484" y="350" width="130" height="34" rx="17" fill="#DCFB00"/>
+  <rect x="574" y="392" width="30" height="126" rx="15" fill="#C7CCC2"/>
+  <circle cx="720" cy="274" r="44" fill="#111111"/>
+  <rect x="676" y="322" width="92" height="164" rx="30" fill="#E6E9E2"/>
+  <rect x="612" y="372" width="104" height="44" rx="16" fill="#111111"/>
+  <rect x="628" y="384" width="58" height="18" rx="9" fill="#DCFB00"/>
+  <rect x="810" y="548" width="170" height="28" rx="14" fill="#111111"/>
+  <circle cx="988" cy="570" r="20" fill="#DCFB00"/>
+</svg>

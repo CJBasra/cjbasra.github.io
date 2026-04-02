@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Contractor team briefing on site</title>
+  <desc id="desc">A stylised illustration of two contractors reviewing plans beside a work van and residential project.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F7F7"/>
+      <stop offset="100%" stop-color="#ECEEE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="1020" cy="146" r="88" fill="#DCFB00" opacity="0.62"/>
+  <rect x="138" y="450" width="1000" height="162" rx="34" fill="#FFFFFF"/>
+  <polygon points="168,452 378,288 592,452" fill="#D7DCD4"/>
+  <rect x="228" y="452" width="302" height="160" rx="24" fill="#EFF1EB"/>
+  <rect x="346" y="516" width="66" height="96" rx="14" fill="#FFFFFF"/>
+  <rect x="706" y="420" width="340" height="132" rx="30" fill="#DCE1D8"/>
+  <rect x="958" y="456" width="92" height="44" rx="12" fill="#111111"/>
+  <circle cx="786" cy="576" r="28" fill="#111111"/>
+  <circle cx="962" cy="576" r="28" fill="#111111"/>
+  <circle cx="510" cy="254" r="42" fill="#111111"/>
+  <rect x="462" y="300" width="96" height="168" rx="30" fill="#3C3C3C"/>
+  <rect x="546" y="332" width="140" height="100" rx="18" fill="#FFFFFF"/>
+  <rect x="568" y="356" width="94" height="14" rx="7" fill="#111111"/>
+  <rect x="568" y="385" width="72" height="12" rx="6" fill="#C6CBC1"/>
+  <rect x="568" y="410" width="86" height="12" rx="6" fill="#C6CBC1"/>
+  <rect x="568" y="440" width="60" height="12" rx="6" fill="#DCFB00"/>
+  <circle cx="728" cy="272" r="42" fill="#111111"/>
+  <rect x="684" y="318" width="90" height="150" rx="28" fill="#E6E9E2"/>
+  <rect x="730" y="356" width="150" height="24" rx="12" transform="rotate(-18 805 368)" fill="#DCFB00"/>
+</svg>

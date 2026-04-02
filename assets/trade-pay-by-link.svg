@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pay by link for contractors</title>
+  <desc id="desc">A stylised illustration of a phone showing a payment link, with chat messages and a house project.</desc>
+  <rect width="960" height="600" rx="28" fill="#F4F5F1"/>
+  <circle cx="744" cy="118" r="72" fill="#DCFB00" opacity="0.65"/>
+  <rect x="118" y="84" width="250" height="432" rx="36" fill="#111111"/>
+  <rect x="144" y="122" width="198" height="312" rx="24" fill="#FFFFFF"/>
+  <rect x="170" y="156" width="142" height="38" rx="12" fill="#DCFB00"/>
+  <rect x="170" y="228" width="138" height="14" rx="7" fill="#111111"/>
+  <rect x="170" y="258" width="116" height="12" rx="6" fill="#CCD1C7"/>
+  <rect x="170" y="292" width="160" height="12" rx="6" fill="#CCD1C7"/>
+  <rect x="170" y="338" width="126" height="38" rx="12" fill="#111111"/>
+  <rect x="452" y="164" width="208" height="72" rx="22" fill="#FFFFFF"/>
+  <rect x="474" y="194" width="116" height="14" rx="7" fill="#111111"/>
+  <rect x="540" y="282" width="232" height="78" rx="24" fill="#FFFFFF"/>
+  <rect x="562" y="316" width="154" height="14" rx="7" fill="#111111"/>
+  <polygon points="560,510 688,410 816,510" fill="#D8DDD4"/>
+  <rect x="592" y="510" width="192" height="56" rx="16" fill="#EEF0EA"/>
+</svg>

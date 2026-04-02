@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Remote payments for contractors</title>
+  <desc id="desc">A stylised illustration showing a mobile phone payment link, invoice sheet, and contractor work items.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F7F7"/>
+      <stop offset="100%" stop-color="#ECEEE8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="968" cy="166" r="84" fill="#DCFB00" opacity="0.66"/>
+  <rect x="204" y="132" width="270" height="496" rx="42" fill="#111111"/>
+  <rect x="232" y="176" width="214" height="372" rx="28" fill="#FFFFFF"/>
+  <rect x="260" y="214" width="160" height="44" rx="14" fill="#DCFB00"/>
+  <rect x="260" y="294" width="160" height="16" rx="8" fill="#111111"/>
+  <rect x="260" y="328" width="130" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="260" y="360" width="148" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="260" y="412" width="118" height="42" rx="14" fill="#111111"/>
+  <rect x="628" y="208" width="336" height="232" rx="28" fill="#FFFFFF"/>
+  <rect x="662" y="246" width="138" height="18" rx="9" fill="#111111"/>
+  <rect x="662" y="286" width="236" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="662" y="314" width="196" height="14" rx="7" fill="#CCD1C7"/>
+  <rect x="662" y="360" width="144" height="44" rx="15" fill="#DCFB00"/>
+  <rect x="736" y="486" width="308" height="124" rx="28" fill="#DCE1D7"/>
+  <circle cx="826" cy="548" r="44" fill="#111111"/>
+  <rect x="884" y="528" width="108" height="30" rx="15" fill="#111111"/>
+  <rect x="930" y="568" width="88" height="14" rx="7" fill="#DCFB00"/>
+</svg>

@@ -1,0 +1,1203 @@
+N1 Payments Site Crawl
+Total pages: 29
+Source sitemap: https://www.n1payments.com/sitemap.xml
+
+
+====================================================================================================
+PAGE 1
+URL: https://www.n1payments.com/privacy-policy/
+TITLE: Privacy Policy – N1Payments
+TEXT:
+Who we are
+Suggested text: Our website address is: https://www.n1payments.com.
+Comments
+Suggested text: When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.
+An anonymised string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service Privacy Policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.
+Media
+Suggested text: If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.
+Cookies
+Suggested text: If you leave a comment on our site you may opt in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.
+If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.
+When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select "Remember Me", your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
+If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.
+Embedded content from other websites
+Suggested text: Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.
+These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.
+Who we share your data with
+Suggested text: If you request a password reset, your IP address will be included in the reset email.
+How long we retain your data
+Suggested text: If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognise and approve any follow-up comments automatically instead of holding them in a moderation queue.
+For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.
+What rights you have over your data
+Suggested text: If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.
+Where your data is sent
+Suggested text: Visitor comments may be checked through an automated spam detection service.
+
+
+====================================================================================================
+PAGE 2
+URL: https://www.n1payments.com/card-payments/
+TITLE: Card Payments – N1Payments
+TEXT:
+Taking cards payments with
+N1 Payments make simple
+Streamline the process of accepting card payments with N1 Payments. Our user-friendly solutions make it easy for businesses to handle transactions seamlessly, providing a hassle-free experience for both merchants and customers. Discover the simplicity of card payments with N1 Payments today.
+Learn more
+Card payment solutions
+N1 Assure
+N1 Engage
+EPOS compatible
+4G & Wi-Fi
+Bluetooth
+Long battery
+PAX A920pro
+A Powerful android 8.1 terminal with modern connectivity full communication capabilities and can easily get online.
+5.5’’ IPS screen
+Roaming 4G sim card – for total connectivity in rural areas
+Wi-Fi and Bluetooth
+2’’ built in thermal printer
+EPOS compatible
+Power your day with 10 hours of battery life
+Secure transactions with end-to-end encryption
+Faster processing & larger display
+Powered by Android 8.1 or 10
+Contactless + chip & pin + magstripe
+Front + rear camera and scanner
+Get a quote
+Credit Card
+All major credit cards
+Take all major credit card types, contactless and digital wallets including Google and Apple Pay and many more...
+Instant business insights: streamlined and efficient
+Business Information at your fingertips online reports, streamlined reconciliation and chargeback management.
+Chargeback
+Reconciliation
+Credit Card
+Next day payments
+Benefit from next day payments into your accounts.
+Unique business, personal touch
+Every business is unique, we understand a personal touch is needed.
+Do you want to know more?
+If you would like to know more about N1 Payment E-Pos services and how we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 3
+URL: https://www.n1payments.com/online-payments/
+TITLE: Online Payments – N1Payments
+TEXT:
+N1 Unite
+Begin your online sales journey and see your profits soar
+Effortlessly incorporate an online payment system into your existing website and maintain a steady stream of income. The process of selling from any location has never been this straightforward.
+Get a quote
+Experience online payments
+Pay By Link
+Virtual Terminal
+Payment Gateway
+Easy Setup
+Payment links sent directly to customers by email
+You don’t need a website to take payments online. Give customers a quick and easy way to pay by including unique payment links with your emails, quotes, order confirmations, or invoices.
+No joining fees
+Quick and easy setup
+No website is needed to take payments online
+Learn More
+Easy Setup
+Virtual Terminal
+Our Virtual Terminal is a quick and easy solution for you to take payments over the phone. Your staff can take phone payments from the office, or even at home.
+No joining fees
+Easy Setup
+No need for additional hardware
+Maximize productivity and multiple users
+Be flexible in taking payments from a store, office or home
+Learn More
+Payment Gateway
+Accept payments conveniently and securely with an online payment gateway. Simply link your online shopping basket to our hosted payment page or integrate our payment gateway directly into your website for even greater flexibility and control
+Safe
+Flexible
+Convenient
+Learn More
+Our Partners
+Everything you need, with no hidden fees. Control your checkout experience payments made simple.
+Get a quote
+Key benefits
+All major payment types including digital wallets
+Competitive transaction rates
+Single integration
+Higher transaction approval rates
+Faster check out
+Reduce shopping cart abandonment
+Online management tools
+PCI DSS compliance
+5 start trustpilot rated customer service 24/7 support
+3 Easy steps
+Choose your Integrations Type
+Our award-winning off the shelf payment page which can be customised to reflect your brand
+Begin to take payments
+
+
+====================================================================================================
+PAGE 4
+URL: https://www.n1payments.com/business-funding/
+TITLE: Business Funding – N1Payments
+TEXT:
+N1 Boost
+We offer business loans to help you grow.
+Learn more
+Minimum & Qualifying Criteria
+Many businesses find it difficult to access the funds that they need when they need them. Revenue finance gives you quick, easy access to funding, putting you in control. Whether you’re looking to restock, invest in marketing, or taken advantage of new opportunities, give your business a boost with tailor-made funding that flexes with your cash flow.
+Accepting credit/debit card payments
+4+ months of accepting credit/debit card payments
+Minimum of £2,500+ average card takings per month
+Taking a minimum of 10+ card transactions a month
+We can accept Sole Traders, Partnerships, LLP’s and LTD companies
+Minimum Advance = £2,000
+Maximum Advance = £500,000
+Apply now
+How it works
+Apply for funding in minutes+
+With an easy application process and a bespoke quote agreed upfront, our cash advance offers businesses a better, quicker way for funding.
+Bespoke deals tailored to your business
+We’ll provide a selection of personalised quotes that enable you to choose the terms that are right for your business.
+Payments made in line with your revenue
+Payments are flexible and automated based on the flow of your business** – giving your business the space to focus on what really matters.
+Funding that flexes with your business
+We know there’s good days and slower ones in business, which is why our flexible payment structure works in line with your card takings, so you only pay us as customers pay you**.
+Our Solution + Repayment Mechanism
+Sale-customer pays by card i.e. £100
+Card payment is processed
+N1 Payments receives agreed split percentage i.e. 10% = £10
+Merchant receives the sale minus the split amount i.e. 90% = £90
+83%
+of successful applications received funding within 2 working days
+*As of October 2022
+Do you want to know more?
+If you would like to know more about N1 Payment E-Pos services and how we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 5
+URL: https://www.n1payments.com/partners/
+TITLE: Partners – N1Payments
+TEXT:
+Become an authorised N1 Payments partner and earn commission on your referrals.
+Bespoke commission plans
+Whether you are an independent salesperson or a re-selling group this is a great opportunity to work with a leading merchant services provider.
+Get paid on approvals
+If you are a website or app developer, we would be delighted to discuss payment gateways and acquiring services.
+Become a senior business development manager
+Utility industry and service brokers partnerships are also welcome.
+Become a partner
+Existing partner referral
+Agent portal login
+
+
+====================================================================================================
+PAGE 6
+URL: https://www.n1payments.com/about-us/
+TITLE: About us – N1Payments
+TEXT:
+Enabling companies to flourish in the digital age.
+What we do best
+Our goal is to help any new and existing businesses grow, by providing the latest and most cost effective card payment facilities. We will provide the very latest technology in order to future proof your company in the merchant services industry. If you just want a low cost card reader, we can help and also advise the best terminal type and merchant account for your business sector. Whether you need a new cheap business card terminal, website payment gateway, Epos system, energy savings, or a cash advance. N1 Payments Merchant Services will provide a full transparent service for you and help your company move into the future of taking card payments, with the very latest financial payment technology. We are always looking for new ways to help business owners improve their efficiency, and drive an increase in their profits.
+N1 Payments merchant services
+As we enter into a cashless society with an ever increasing demand on contactless payments and e-commerce in the UK, we have seen a significant expansion in our portfolio.
+N1 Payments merchant services
+N1 Payments merchant services view their employees and partners as experts in their fields, and this is largely due to the level of advice they give out to clients from their experience gained in the industry. N1 Payments merchant services have a flat management structure and encourage an open forum to attract ideas and develop the services they offer through expertise and technology.
+Flexibility
+N1 Payments merchant services help their customers to manage their businesses and are always looking for new ways to help business owners to improve their efficiency and drive an increase in their profits. Collaboration with key partners help to develop and offer the next level of technological solutions and with a fluid approach these can be tailored for the business. This reflects the ethos within N1 Payments merchant services and ensures as a business we stay focused in providing the best and most innovative products and services to our customers.
+Communication is key
+Making a start
+If you are looking to take card payments, pay cheaper utility bills, get a flexible loan for your business, N1 Payment merchant services is here to help. We offer a service with many different options on taking card payments. Choose if your company would like to take card payments face to face, over the phone or even on your website. If flexibility is what your business needs, then N1 payments merchant services can offer services with no contracts and the option to cancel at anytime
+We also specialise in offering high risk merchant accounts, so if you have been declined elsewhere please give us a call or email
+Contact Us
+"If you just want A low cost card reader, we can help and also advise the best terminal type and merchant account for your business sector. "
+N1 Payments merchant services
+Do you want to know more?
+If you would like to know more about N1 Payments merchant services and how we can help your business.
+Contact Us
+
+
+====================================================================================================
+PAGE 7
+URL: https://www.n1payments.com/contact-us/
+TITLE: Contact Us – N1Payments
+TEXT:
+Contact Us
+Contact us with any questions, concerns, or feedback. Our customer service team is available via email, phone, or our contact form. We aim to respond within 48 hours but call us for urgent matters. Thank you for visiting our website.
+Your Name
+Phone Number
+Subject
+Message
+SUBMIT
+
+
+====================================================================================================
+PAGE 8
+URL: https://www.n1payments.com/operating-guide/
+TITLE: Operating Guide – N1Payments
+TEXT:
+(No visible body text extracted.)
+
+
+====================================================================================================
+PAGE 9
+URL: https://www.n1payments.com/terms-and-conditions/
+TITLE: Terms and Conditions – N1Payments
+TEXT:
+Please read these terms and conditions carefully before using our service.
+Interpretation and Definitions
+Interpretation
+The words of which the initial letter is capitalised have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+Definitions
+Affiliate means an entity that controls, is controlled by or is under common control with a party, where “control” means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+‍
+Country refers to: United Kingdom
+‍Company (referred to as either “the Company”, “We”, “Us” or “Our” in this Agreement) refers to N1 Payments LTD registered @ PO Box 3653, Abacus Consultancy, Mulberry Grove, Wokingham, United Kingdom, RG40 9NN Company Reg: 10091004.
+Device means any device that can access the Service such as a computer, a Mobile Phone or a digital tablet.
+Service refers to the Website.
+Terms and Conditions (also referred as “Terms”) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. The Terms and Conditions agreement has been created with the help of the Terms and Conditions Template.
+Third-party Social Media Service means any services or content (including data, information, products, or services) provided by a third-party that may be displayed, included, or made available by the Service.
+‍
+Website refers to N1 Payments accessible from https/www.n1payments.com.
+You mean the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+Acknowledgment
+These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions, then You may not access the Service.
+You represent that you are over the age of 18. The Company does not permit those under 18 to use the Service.
+Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
+Links to Other Websites
+Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly, or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
+We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
+Termination
+We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.
+Upon termination, your right to use the Service will cease immediately. The Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
+some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
+Governing Law
+The laws of the Country, excluding its conflicts of law rules, shall govern this Terms and Your use of the Service. Your use of the Application may also be subject to other local, state, national, or international laws.
+Disputes Resolution
+If You have any concern or dispute about the Service, you agree to first try to resolve the dispute informally by contacting the Company.
+For European Union (EU) Users
+‍If You are a European Union consumer, you will benefit from any mandatory provisions of the law of the country in which you are resident in.
+United States Legal Compliance
+You represent and warrant that (i) You are not located in a country that is subject to the United States government embargo, or that has been designated by the United States government as a “terrorist supporting” country, and (ii) You are not listed on any United States government list of prohibited or restricted parties.
+Limitation of Liability
+To the maximum extent permitted by law, we accept no liability for any direct or indirect loss or damage, foreseeable or otherwise, including any indirect, consequential, special or exemplary damages arising from the use of the Website or any information contained therein. You should be aware that you use the Website and its Content at your own risk.
+Nothing in these Terms and Conditions excludes or restricts N1 Payments liability for death or personal injury resulting from any negligence or fraud on the part of N1 Payments
+Nothing in these Terms and Conditions excludes or restricts N1 Payments liability for any direct or indirect loss or damage arising out of the incorrect delivery of Goods or out of reliance on incorrect information included on the Website.
+If any of these terms are found to be unlawful, invalid or otherwise unenforceable, that term is to be deemed severed from these Terms and Conditions and shall not affect the validity and enforceability of the remaining Terms and Conditions. This term shall apply only within jurisdictions where a particular term is illegal.
+Severability and Waiver
+Severability
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+Waiver
+If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
+T ranslation Interpretation
+These Terms and Conditions may have been translated if We have made them available to You on our Service. You agree that the original English text shall prevail in the case of a dispute.
+Changes to These Terms and Conditions
+We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will make reasonable efforts to provide at least 30 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
+By continuing to access or use Our Service after those revisions become effective, you agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+
+
+====================================================================================================
+PAGE 10
+URL: https://www.n1payments.com/
+TITLE: N1Payments – Take Card Payments Faster & Smarter
+TEXT:
+Payments made simple
+Take card payments faster smarter with N1 Payments
+No PCI
+Transaction reporting portal
+Customer support
+Next day payments
+Business funding
+Business bank accounts
+Get a quote
+About us
+Independent, local, reachable. N1 Payments are your dedicated ally in the world of card payments, providing seamless, secure, and cost-effective payment services tailored specifically for your business. From start-ups to large wholesalers, we offer competitive rates that suit you. With 24/7 ongoing support, N1 Payments are here for you throughout your entire payment journey.
+Super Fast
+Simple
+How may we assist you?
+Our team aims to provide friendly and personalised support for all your needs. Let us know how we can assist you and we’ll do our best to exceed your expectations.
+I am starting a new business
+I would like to change my provider
+Card Payment Solutions
+N1 Assure
+N1 Engage
+EPOS compatible
+4G & Wi-Fi
+Bluetooth
+Long battery
+PAX A920pro
+A Powerful android 8.1 terminal with modern connectivity full communication capabilities and can easily get online.
+5.5’’ IPS screen
+Roaming 4G sim card – for total connectivity in rural areas
+Wi-Fi and Bluetooth
+2’’ built in thermal printer
+EPOS compatible
+Power your day with 10 hours of battery life
+Secure transactions with end-to-end encryption
+Faster processing & larger display
+Powered by Android 8.1 or 10
+Contactless + chip & pin + magstripe
+Front + rear camera and scanner
+Get a quote
+Security
+Super Fast
+Simple
+Why take card payments?
+Shoppers like to be able to make purchases quickly without having to dash to the nearest cash machine. If you don’t accept credit card payments, then many prospective customers will go elsewhere.
+Customers also tend to spend more when paying on credit card, especially on impulse purchases.
+Increase turnover
+Great customer service
+Optimise sales channels
+Next day payments
+Payment’s security, less cash handling
+Get a quote
+EPOS
+( Electronic point of sale )
+Connect all business operations and back office in one place using the free software.
+Learn more
+Voices of our clients
+Thrilled to partner with N1 Payments! They've provided us with cutting-edge payment tech, instant gateways for WhatsApp/text/email, durable PDQs for our counter, exceptional local support, and significant fee savings from our last provider.
+Callum Worley
+The world of card machine payments and processing charges can get very complicated with a lot of companies hiding charges and trying to dazzle you with very low headline rates which are often too good to be true.
+Pie Restaurant
+The best business decision I have made this year. I have saved thousands of pounds in credit card charges'. it's easy and painless to make the change. In fact seamless.
+Camber Wines
+Thank you N1 Payment for setting up our new card machines and Epos system. you were so helpful in all of the process.
+Marmion House Bar & Kitchen
+Thank you to all at N1 Payment for for saving us money and being so transparent in the set up of our new card machines and Epos.
+Spar Convenience Store
+N1 Payment have saved us thousands in transaction fee's and the customer support is exceptional.
+Shooting Star
+N1 Payments the best service I have had for any of my contracts/suppliers Highly recommended full Epos and card payments set up and continued support .
+Adam Johnson
+FAQs
+How quickly do I receive my money ?
+Next day or same day.
+Can I take payments over the phone ?
+Yes if required, you can get set up to take phone payments at the time of application
+Can I use my card machine without WiFi?
+Yes all our machines come with a SIM card in and this is included in the pricing
+Do you want to know more?
+If you would like to know more about N1 Payments merchant services and how we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 11
+URL: https://www.n1payments.com/n1-engage/
+TITLE: N1 Engage – N1Payments
+TEXT:
+Accept all payment
+Long battery
+4G & Wi-Fi
+DX8000 - Mobile card reader
+The DX8000 combines the full features of an Android tablet with a powerful payment terminal, delivering a simple user experience through an HD touch screen.
+Accepts all forms of electronic payments
+Easy navigation with Android 10 operating system
+4G and Wi-Fi enabled, roaming sim card – for total connectivity in rural areas
+Charging base and integrated printer
+Compliant with the latest PCI PTS v6.0 standards
+High-level performance with a long-lasting battery, up to a 6’’ screen, and front and rear cameras
+Boosted power with best-in-class processor and memory capacity
+Get a quote
+
+
+====================================================================================================
+PAGE 12
+URL: https://www.n1payments.com/n1-assure/
+TITLE: N1 Assure – N1Payments
+TEXT:
+Make card payments a doddle with N1 Assure!
+Professional scanner
+Bluetooth
+Long battery
+N1 Assure - PAX A920 Pro
+A Powerful android 8.1 terminal with modern connectivity full communication capabilities and can easily get online.
+Approval within 24 hours
+No minimum monthly service charge
+No PCI charge and low rates
+5" touch screen
+Connection - Wifi - Sim
+5250mAh capacity battery
+Front & rear cameras
+Powered by Android 8.1 or 10
+High efficiency processor
+Powerful, long-lasting battery
+4G + WiFi + Bluetooth 4.2
+2MP fixed focus rear camera (optional 8MP)
+Inbuilt GPS
+Get a quote
+
+
+====================================================================================================
+PAGE 13
+URL: https://www.n1payments.com/soft-pos/
+TITLE: Soft Pos – N1Payments
+TEXT:
+N1 Buzz
+Payments on your android mobile or tablet devices
+The software point of sale or SoftPos is a revolutionary new technology which allows merchants to accept card payments directly on their phones or devices without the need for any additional software.
+Compatible with android devices
+Transform any certified mobile device into a payment terminal with SoftPos
+The phone becomes the business hub of the merchant
+Sign up now
+Turn your android phone into a card machine now!
+Complete the application, download the App and you’re ready to go.
+1.4%
+Debit and credit card
+£5
+Per month
+Sign up now
+It’s not just an app. It’s your primary connection
+Transact fast, easy and secure payments with our softPos solution. Phos leverages any smart Android device by allowing card acceptance and digital wallet payments without any additional hardware.
+Accept all contactless card payment methods
+Open an account fast and easy: one account for all payment needs and endless opportunities
+Manage your users and transactions: track activity and statistics, add or edit unlimited users, and export the exact data you need
+Learn more
+FAQ
+What are the requirements for the device I can use with SoftPos?
+Soft Pos is not limited to specific smartphone or device brands. You can use any android phone or tablet which runs OS Android 8.1 or above and has an NFC module.
+Do I need an internet connection?
+Yes, in order to process transactions with Phos, you’ll need an internet connection via WiFi or data coverage (minimum 3G speed).
+Can I use an iPhone or iPad to accept payments via SoftPos?
+Unfortunately, currently, SoftPos app is only available for Android devices
+What is “NFC”?
+NFC stands for “near field communication”. You can think of near field communication like your Bluetooth speaker or home wi-fi network. When two NFC-enabled devices are in close proximity—usually four inches or less apart—radio wave tags can be used to transmit data.
+
+
+====================================================================================================
+PAGE 14
+URL: https://www.n1payments.com/business-account/
+TITLE: Business Account – N1Payments
+TEXT:
+Get your business account swiftly. Register from anywhere and begin utilising your account immediately
+We’ve teamed up with the leading business bank account for startups, Small businesses and sole traders – Anna. Say goodbye to branch visits and paper forms.
+10 minutes to sign up and get your account details
+Instant payment link – start accepting payments today
+Connect your bank accounts and issue professional-looking invoices
+Open my account
+A mobile business account
+Open your ANNA business current account in less than 10 minutes. Get your own payment link straight away so clients can pay directly into your account.
+You only need the app and ANNA debit card to make full use of all ANNA’s features, so say goodbye to branch visits and paper forms.
+Instant
+PDF
+Instant invoice generator
+Create professional invoice PDFs in an instant. Just chat us the details and we do the rest. We’ll politely chase your invoices when they’re overdue, and if you have regular work, recurring invoices will be perfect for you.
+Multiple bank accounts in one app
+Connect your personal and business current accounts from other banks to N1 payments to view balance and payment history in the app.
+Make tax time a breeze
+Automatically reconciles your accounts as you go, matching receipts and invoices to all your transactions, from any bank account. That means clean, tidy, up-to-date accounts and no awkward questions from HMRC.
+Stress-free sign up
+Traditional banks use a manual credit checking system to vet future customers. ANNA doesn’t offer credit, which means our process is different by design – it’s fast, and applying won’t affect your credit score.
+What you pay depends on your business
+Our plans start at £0 per month – you only pay for the services you use. Regardless of the chosen plan, if you don’t use your account one month, you don’t pay the monthly fee for this month.
+Features
+COMPARE PACKAGE FEATURES
+Local transfers in and out
+ATM withdrawals
+International payments
+Currency conversion fee for transfers
+Personal payment link for accepting payments
+Additional debit cards
+Pay cash in
+Pots
+Cashback on purchases
+Your text
+Pay as you go
+20p per bank transfer
+£1 per ATM withdrawal
+£5 per SWIFT payment
+1%
+Payment link with 1% commission
+1 debit card included, £3 per extra card
+Pay cash in with 1% commission
+£1 per pot monthly
+1% on select categories
+Prices are shown before VAT
+Learn More
+business
+£14.90
++ VAT per month Or £149 per year + VAT if billed annually
+50 free bank transfers per month 20p per transfer after that
+3 free ATM withdrawals per month £1 per withdrawal after that
+1 free SWIFT payment £5 per payment after that
+1%
+Free payment link usage up to £200 per month, 1% commission after that
+Up to 5 debit cards included £3 per card, per month after that
+Pay in up to £300 cash per month for free, 1% commission after that
+2 free pots, £1 per pot, per month after that
+1% on select categories
+The free allowances and discounts included in this plan are worth £40
+Learn More
+big business
+£49.90
++ VAT per month Or £499 a year +VAT if billed annually
+Unlimited free bank transfers
+Unlimited free ATM withdrawals
+4 free SWIFT payments per month £5 per payment after that
+0.5%
+Unlimited, commission-free payment link usage
+Unlimited free debit cards
+Pay cash into your account commission free
+Unlimited pots
+1% on select categories
+Some restrictions still apply – ask us in chat if you need a bespoke plan for your business
+Learn More
+
+
+====================================================================================================
+PAGE 15
+URL: https://www.n1payments.com/pay-by-link/
+TITLE: Pay By Link – N1Payments
+TEXT:
+The convenient way to accept payments remotely through your card machine
+Pay by Link is a great solution for accepting payments from your customers without them being present in your shop or venue. Send a secure link via email straight to your customer.
+Learn more
+Easy Setup
+Payment links sent directly to customers by email
+You don’t need a website to take payments online. Give customers a quick and easy way to pay by including unique payment links with your emails, quotes, order confirmations, or invoices.
+No joining fees
+Quick and easy setup
+No website is needed to take payments online
+Get a quote
+Who can use Pay by Link?
+Pay by Link is useful for all kinds of businesses. A wholesaler taking a telephone order, a venue or hotel confirming a booking, a tradesman or builder providing a service to households.
+Get a quote
+Step by step Process
+Log into Pay By Link administration portal
+Create a new Pay By Link by entering the payment amount and your reference number
+Add the Pay By Link onto your invoice or within an email and send to your customer
+The customer follows the link, and is presented with a hosted pay page, where they enter their Credit or Debit Card details and submit the payment
+We process the transaction and funds are deposited into your account typically within 3 working days
+Step by step Process
+Log into Pay By Link administration portal
+Create a new Pay By Link by entering the payment amount and your reference number
+Add the Pay By Link onto your invoice or within an email and send to your customer
+The customer follows the link, and is presented with a Worldpay Hosted Pay Page, where they enter their Credit or Debit Card details and submit the payment
+We process the transaction and funds are deposited into your account typically within 3 working days
+With Pay By Link , the customer can pay simply by following a URL, giving them more convenience and you a cost-effective payment solution
+Accept payments via Pay by Link
+Accepting payment via Pay by Link is quite similar to accepting payment by card on your card device.
+Get a quote
+Benefits
+An easy to use portal
+Set up payment links and create emails in your online account
+Unique payment links
+Copy links into emailed documents for easy settlement by your customers
+Hassle-free PCI DSS compliance
+Letting your customers enter their payment details via the secure link reduces your compliance requirements
+Take international payments
+Send payment links internationally for potential new business opportunities
+All major credit cards and debit cards available
+Let customers pay whichever way they choose
+Customizable payment pages and emails
+Use your own logo and branding
+
+
+====================================================================================================
+PAGE 16
+URL: https://www.n1payments.com/payment-gateways/
+TITLE: Payment Gateways – N1Payments
+TEXT:
+Accept payments easily with a payment gateway
+Accept payments conveniently and securely with an online payment gateway. Simply link your online shopping basket to our hosted payment page or integrate our payment gateway directly into your website for even greater flexibility and control.
+Learn more
+Flexible integration options
+Craft the right experience for your business.
+Hosted pay page
+Accept all major debit cards, credit cards, and PayPal through your website ideal for new businesses seeking a quick and simple solution. Link your online shopping basket to a payment page by inserting piece of code onto your website. Your website will be PCI DSS compliant with the hosted pay page . No high-level technical knowledge required flexible pricing plans.
+Integration payment page
+Customers complete payment directly from your website. You control the customer experience and page design. You are responsible for your website's PCI DSS compliance flexible pricing plans.
+Payment gateways for flexible businesses
+Our payment gateway is ideal for new merchants seeking a simple and secure payment solution that accommodates the needs of your growing business.
+Safe
+Securely accept all major debit cards, credit cards, PayPal and more.
+Flexible
+Accept payments in over 116 currencies, including by email or phone.
+Convenient
+Your customers enjoy exceptional payment experiences that are easy and convenient.
+How do payments work with a payment gateway?
+Customer adds items to their online shopping basket.
+Customer enters card details on your secure integrated payments page, or is automatically redirected to your hosted payments page to enter card details.
+We process the payment through the payment gateway and send authorisation back to your website.
+Safer payments for a safer business
+Accepting card payments means staying compliant with the payment card industry data security standard (PCI-DSS). Our safer payments programme will guide you step-by-step to achieving compliance.
+Learn More
+FAQs
+Do I need a merchant account to take payments online?
+Yes, you will need a merchant account to process online payments. The funds are deposited into the merchant account when the payments are settled. Worldpay will provide the merchant account to enable online payments. However, you are able to use your existing merchant account.
+Will my website be PCI DSS compliant?
+If you decide to use Worldpay’s hosted pay page, your website will be compliant. However, if you choose to take card details from your own website [via an integrated payments page], it will be your responsibility to ensure that you are PCI compliant.
+Do you want to know more?
+If you would like to know more about N1 Payments merchant services and how we can help your business.
+Contact Us
+
+
+====================================================================================================
+PAGE 17
+URL: https://www.n1payments.com/virtual-terminal/
+TITLE: Virtual Terminal – N1Payments
+TEXT:
+Easy Setup
+Virtual Terminal
+Our Virtual Terminal is a quick and easy solution for you to take payments over the phone. Your staff can take phone payments from the office, or even at home.
+Easy setup
+No need for additional hardware
+Maximise productivity and multiple users
+Be flexible in taking payments from a store, office or home
+Get a quote
+All you need is a secure internet connection with a web browser and you’re all set
+Log in from your PC, laptop or tablet anywhere there is a secure connection
+Optional risk management services to help protect your business from fraud
+Have multiple users on one account with no additional costs
+Real-time reporting to keep track of payments
+User-friendly interface
+No technical setup required
+
+
+====================================================================================================
+PAGE 18
+URL: https://www.n1payments.com/e-pos/
+TITLE: E-Pos – N1Payments
+TEXT:
+N1- BizzTill
+We help businesses deliver an exceptional purchasing experience and drive profitability with centrally managed operations and reporting by providing simple and efficient Electronic Point of Sale (EPOS) systems.
+Learn more
+Why choose N1 Payments E-Pos
+Grow & Innovate
+Unlimited users, securely backed up with a hybrid architecture (Cloud and local)
+Maximise Profit
+Speedily modify 1 or 100K+ products at once, centrally update all Registers
+Simplicity
+Centrally manage, monitor and report on the total estate in real time
+Peace of Mind
+Multiple hardware and payment options available, Register Core or Register Plus Efficient
+Save Time
+CRM, appointments, text reminders, inventory, tabs, commissions, measured products etc.
+Stay Current
+Multiple configurations per store, retail, cafe, fixed and mobile, user interface can be branded
+EPOS Bundle
+N1 Payments Bizztill Bundle includes a N1 Payments Pax A920 Pro card terminal, touchscreen till with in-built receipt printer and a cash drawer
+Card Terminal
+N1 Payments - Pax A920 Pro
+Countertop Single screen Till
+Easy to use touch screen terminal with in-built printer
+Cash Drawer
+All-metal EPOS cash drawer to safely store cash
+Price on application
+Simple, effective software
+Epos software puts simplicity at the heart of its point of sale systems. You’ll never need more than 15 minutes to train your team on all the tools they need to provide first-class service:
+Table planning
+Host in seamless style with sophisticated table management software, including customisable floor plans, cover and table-time tracking, and quick tab splitting and mergings so your customers can enjoy their stay and checkout smoothly without causing your staff headaches!
+Stock control
+Build efficiency into your system from the ground up by tracking a complex inventory whether wet or dry. Monitor your ingredient levels on a system that correctly adjusts base levels such as wine stock if you sell a small glass, a large, or even a bottle.
+Product management
+Swiftly update pricing and menu structure for your new and existing products. Add advanced details, like product data and allergen information, to ensure your staff trades safely and smartly.
+Excel in employee management
+Choose a system that can save you up to ten hours every month on business management and staff admin.
+Track shifts easily
+Create individual passcodes or use staff swipe cards, allowing staff to clock in and out in a few short seconds.
+Work in sync
+Use the Epos Kitchen Display System to get your front and back of house working in tandem with reduced wait times and wastage.
+Measure performance
+Get real-time data on sales records, refunds, and void history that let you know who’s flourishing in their work and who needs a guiding hand.
+Control staff access
+Bring the best out of your team by setting staff roles on your POS system. Reduce errors and enhance security by removing or adding features to suit each role.
+Apps to help grow your business
+Expand your system with sales-boosting apps! See 40% more bookings with OpenTable, integrate with popular delivery platforms like Uber Eats, and use Epos Order & Pay and offer easy-to-use, QR-based ordering at table.
+Uber Eats
+OpenTable
+Do you want to know more?
+If you would like to know more about N1 Payment E-Pos services and how we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 19
+URL: https://www.n1payments.com/merchant-resources/
+TITLE: Merchant Resources – N1Payments
+TEXT:
+Merchant Resources
+Setup Guides
+1. DX8000
+2. PAX
+How to complete my PCI?
+
+
+====================================================================================================
+PAGE 20
+URL: https://www.n1payments.com/design-development/
+TITLE: Design & Development – N1Payments
+TEXT:
+Comprehensive Digital
+Solutions For Your Business Success
+Comprehensive Digital Solutions For Your Business Success
+Empowering Your Brand with Expert Website Design, App Development, and SEO Services
+Get in touch
+Empowering Your Digital Presence: Websites,
+Apps, And SEO Solutions Tailored For Growth And Success.
+Empowering Your Digital Presence: Websites, Apps, and SEO Solutions Tailored for Growth and Success
+Driving Digital Excellence with Integrated Solutions for Websites, Apps, and SEO Strategies.
+Website Design & Development
+Application Design & Development
+Digital Marketing
+the process we follow
+This process ensures a collaborative approach that results in a tailored website aligned with your business objectives and user needs.
+Discovery And Planning
+SEO: Conduct keyword research and competitive analysis to define SEO strategy.
+Website/App: Understand client goals, target audience, and technical requirements to create a detailed project roadmap.
+Design And Prototyping
+SEO: Optimize website structure and on-page elements for better search engine rankings.
+Website/App: Develop wireframes and prototypes to visualize the design and user experience.
+Testing And Launch
+SEO: Monitor performance, adjust strategies based on analytics, and conduct ongoing optimization.
+Website/App: Conduct thorough testing for functionality and compatibility, followed by a seamless launch and continuous support.
+Development And Integration
+SEO: Implement on-page SEO improvements and start content creation.
+Website/App: Convert designs into fully functional digital products, integrating necessary features and ensuring responsiveness.
+Get in touch
+Why Choose Us
+Elevating Your Digital Presence with Excellence
+Industry Expertise
+Our team of seasoned professionals brings years of experience in SEO, website design, and app development. We stay abreast of the latest trends and technologies to ensure top-notch results.
+Customized Solutions
+We offer tailored solutions to fit your unique business needs. Whether you require a stunning website, a user-friendly app, or a robust SEO strategy, our services are designed to meet your specific objectives.
+Client-Focused Approach
+Our commitment to client satisfaction is unwavering. We maintain open communication, involve you in every step of the process, and adapt based on your feedback to ensure your vision is realized.
+Proven Success
+Our portfolio showcases a history of successful projects and satisfied clients. We have a track record of delivering measurable results, enhancing digital presence, and driving business growth.
+Industry Expertise
+Our team of seasoned professionals brings years of experience in SEO, website design, and app development. We stay abreast of the latest trends and technologies to ensure top-notch results.
+Customized Solutions
+We offer tailored solutions to fit your unique business needs. Whether you require a stunning website, a user-friendly app, or a robust SEO strategy, our services are designed to meet your specific objectives.
+Client-Focused Approach
+Our commitment to client satisfaction is unwavering. We maintain open communication, involve you in every step of the process, and adapt based on your feedback to ensure your vision is realized.
+Proven Success
+Our portfolio showcases a history of successful projects and satisfied clients. We have a track record of delivering measurable results, enhancing digital presence, and driving business growth.
+Do you want to know more about our IT services?
+If you would like to know more about our IT services and how
+we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 21
+URL: https://www.n1payments.com/website-design/
+TITLE: Website design – N1Payments
+TEXT:
+Transform Your Vision
+Into Stunning Web Experiences
+Transform Your Vision Into Stunning Web Experiences
+Create Inspiring Websites: Innovative Designs Tailored to Enhance Your Online Brand and Engage Your Audience. Discover Your Potential Today!
+Custom Web Design
+Responsive Design
+E-commerce Solutions
+UI/UX Optimization
+Maintenance & Support
+Custom Web Design
+Responsive Design
+E-commerce Solutions
+UI/UX Optimization
+Maintenance & Support
+Get in touch
+What we offer
+Customized Design Solutions
+Responsive Web Design
+E-commerce Expertise
+User-Centric Design (UI/UX)
+Performance Optimization
+Tailoring websites to match your unique brand identity and business objectives. Our designs are not just visually appealing but also strategically crafted to enhance user engagement and conversion rates.
+the process we follow
+This process ensures a collaborative approach that results in a tailored website aligned with your business objectives and user needs.
+Discovery
+Understand your goals, audience,
+and brand identity.
+Design
+Create a visually appealing and
+user- friendly website.
+Feedback
+Review drafts, gather input, and
+refine the design.
+Launch
+Test, optimize, and deploy your
+website for success.
+Get in touch
+Ship smarter, Ship faster
+We keep a startup mindset, identifying the tools and services that you need for your project–and just as importantly, the ones you don’t.
+10+
+Startups Turned Unicorns
+20+
+Industries Served
+20+
+Industries Served
+10+
+Startups Turned Unicorns
+20+
+Industries Served
+Ship smarter, Ship faster
+We keep a startup mindset, identifying the tools and services that you need for your project–and just as importantly, the ones you don’t.
+10+
+Startups Turned Unicorns
+Do you want to know more about our Website Design services?
+If you would like to know more about our Website Design services and how
+we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 22
+URL: https://www.n1payments.com/app-design/
+TITLE: App Design – N1Payments
+TEXT:
+Elevate Your Experience
+with Innovative Application Design
+Elevate Your Experience with Innovative Application Design
+Crafting Intuitive Interfaces to Transform User Engagement and Streamline Your Digital Journey – Experience Seamless Design Excellence Today.
+Custom App Design
+iOS & Android Development
+Cross-Platform App Development
+App Prototyping
+App Optimization
+Custom App Design
+iOS & Android Development
+Cross-Platform App Development
+App Prototyping
+App Optimization
+Get in touch
+What we offer
+Custom App Design
+iOS & Android Development
+Cross-Platform Development
+App Prototyping
+App Store Optimization
+Custom app design is at the heart of our services, where we blend creativity with functionality to craft unique digital experiences. We specialize in creating bespoke applications that resonate with your brand identity while prioritizing user-centric design principles. From conceptualization to execution, our team collaborates closely with you to understand your vision and translate it into intuitive user interfaces and seamless interactions.
+the process we follow
+This process ensures a collaborative approach that results in a tailored website aligned with your business objectives and user needs.
+Discovery And Research
+We begin by understanding your business goals, target audience, and app requirements through in-depth discussions and research.
+Conceptualization & Prototyping
+Our team translates your ideas into wireframes and interactive prototypes, allowing you to visualize the app's flow and functionality early in the process.
+Testing And Deployment
+Rigorous testing ensures the app performs seamlessly across devices and meets quality standards.
+Design And Development
+Once the prototype is approved, we move into full-scale design and development, focusing on creating a visually appealing interface and robust backend architecture.
+Get in touch
+Ship smarter, Ship faster
+We keep a startup mindset, identifying the tools and services that you need for your project–and just as importantly, the ones you don’t.
+10+
+Startups Turned Unicorns
+20+
+Industries Served
+20+
+Industries Served
+10+
+Startups Turned Unicorns
+20+
+Industries Served
+Ship smarter, Ship faster
+We keep a startup mindset, identifying the tools and services that you need for your project–and just as importantly, the ones you don’t.
+10+
+Startups Turned Unicorns
+Do you want to know more about our App Design services?
+If you would like to know more about our App Design services and how we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 23
+URL: https://www.n1payments.com/digital-marketing/
+TITLE: Digital Marketing – N1Payments
+TEXT:
+Unlock Your Website's Potential With SEO
+Learn how SEO can elevate your website’s visibility, drive organic traffic, and enhance your digital presence with proven strategies and expert insights tailored to your needs
+On-Page SEO Optimization
+Keyword Research
+Technical SEO
+Link Building
+Content Creation
+On-Page SEO Optimization
+Keyword Research
+Technical SEO
+Link Building
+Content Creation
+Get in touch
+What we offer
+SEO Strategy Development
+In-Depth Keyword Research
+SEO Enhancements
+Creation And Optimization
+Tracking And Reporting
+Our approach to SEO starts with a deep understanding of your business goals and target audience. We develop a holistic SEO strategy tailored to your unique needs, ensuring every aspect of your online presence is optimized for maximum impact. Our comprehensive SEO strategy development.
+the process we follow
+This four-step process ensures a comprehensive and effective approach to SEO, tailored to your specific business needs.
+Discovery And Research
+We start by understanding your industry, target audience, and competitors.
+On-Page Optimization
+Optimize existing content and create new, high-quality content that resonates with your audience.
+Monitoring And Reporting
+Continuously monitor your website’s performance using advanced analytics tools.
+Off-Page Optimization
+Develop a robust backlink profile through ethical strategies, increasing your site’s authority and trustworthiness.
+Get in touch
+Ship smarter, Ship faster
+We keep a startup mindset, identifying the tools and services that you need for your project–and just as importantly, the ones you don’t.
+10+
+Startups Turned Unicorns
+20+
+Industries Served
+20+
+Industries Served
+10+
+Startups Turned Unicorns
+20+
+Industries Served
+Ship smarter, Ship faster
+We keep a startup mindset, identifying the tools and services that you need for your project–and just as importantly, the ones you don’t.
+10+
+Startups Turned Unicorns
+Do you want to know more about our SEO services?
+If you would like to know more about our SEO services and how we can help your business.
+Contact us
+
+
+====================================================================================================
+PAGE 24
+URL: https://www.n1payments.com/e-pos-backup/
+TITLE: E-Pos Backup – N1Payments
+TEXT:
+N1 Payments E-Pos
+Register by N1 Payments is an innovative, cost-effective and modern EPOS solution combined with enterprise class support. Designed for simplicity and suitable to a wide range of business types including retail, hospitality, salons and service establishments.
+Learn More
+Maximise Profit
+Simplicity
+Peace of Mind
+Save Time
+Grow & Innovate
+Stay Current
+Maximise Profit
+Simplicity
+Peace of Mind
+Save Time
+Grow & Innovate
+Stay Current
+Why choose N1 E-Pos
+Scale safely
+Unlimited users, securely backed up with a hybrid architecture (Cloud and local)
+Operations
+Speedily modify 1 or 100K+ products at once, centrally update all Registers
+Multi-store
+Centrally manage, monitor and report on the total estate in real time
+Web portal
+Business reporting, product management and register configuration from anywhere
+Choice
+Multiple hardware and payment options available, Register Core or Register Plus Efficient
+Feature rich
+CRM, appointments, text reminders, inventory, tabs, commissions, measured products etc.
+Flexible
+Multiple configurations per store, retail, cafe, fixed and mobile, user interface can be branded
+Control
+Centrally manage what staff can action and view, clock in/out, stock, margin, products
+Enterprise class support
+Dedicated multi-tier support team to 24/7 at your service
+Modern innovative functionality
+Simple to use, operates offline and continually updated
+Revolutionary updates in E-Pos
+Modern electronic point of sale (EPOS) is not just about executing payment, managing inventory and keeping records. It’s about business management and providing a point of customer service
+Import & export products
+View & download business report
+Unlimited users
+Multi-store
+Work offline
+Real time
+Revolutionary updates in E-Pos
+Modern Electronic Point of Sale (EPOS) is not just about executing payment, managing inventory and keeping records. It’s about business management and providing a point of customer service
+Import & Export Products
+View & Download Business Reports
+Unlimited Users
+Real Time
+Work Offline
+Multi-Store
+Main Features
+REGISTER SOFTWARE
+Cost effective feature rich point of sale designed for simplicity
+MULTIPLE MARKETS
+From retail & hospitality to service verticals such as salons
+INTEGRATED CARD PAYMENT
+Faster transactions, remove errors and simplify end of day settlement
+MULTIPLE SITES
+Scale and grow. If you have one site or many
+HARDWARE
+Modern EPOS hardware. Flexibility to be both static & mobile in one solution
+N1 Payment Core
+Simple to use, fast and efficient EPOS functions. Register is feature rich with over 160 configurable elements including all the standard EPOS functionality you would expect and more.
+N1 Payment Plus
+Register Plus includes all the retailing functionality of Register Core (above) in addition to all the functionality below. Register Plus adds on functionality to Register Core for verticals such as hospitality, salon and service industries.
+This is Tooltip!
+Unlimited users
+Weighed and measured items
+Product discounts
+Operates off line
+Multiple stores
+This is Tooltip!
+Reporting
+This is Tooltip!
+Cloud backups
+Additional tender
+Supervisor approval
+Enterprise class support
+Web portal
+This is Tooltip!
+Barcode scanning
+Supplier management
+Integrated card payments
+Free updates
+Inventory management
+This is Tooltip!
+Unlimited users
+Weighed and measured items
+Product discounts
+Operates off line
+Multiple stores
+Tabs & suspend
+Text reminders
+Commissions
+This is Tooltip!
+Cloud backups
+Additional tender
+Supervisor approval
+Enterprise class support
+Web portal
+This is Tooltip!
+Reporting
+Customer management
+Time keeping & clocking in
+This is Tooltip!
+Barcode scanning
+Supplier management
+Integrated card payments
+Free updates
+Inventory management
+Hospitality
+Appointments and bookings
+Kitchen or secondary printer
+Do you want to know more?
+If you would like to know more about N1 Payment E-Pos services and how we can help your business.
+Contact Us
+
+
+====================================================================================================
+PAGE 25
+URL: https://www.n1payments.com/business-funding-old/
+TITLE: Business Funding Old – N1Payments
+TEXT:
+We offer business loans to help you grow
+Learn More
+Revenue finance
+Many businesses find it difficult to access the funds that they need when they need them. Revenue finance gives you quick, easy access to funding, putting you in control. Whether you’re looking to restock, invest in marketing, or taken advantage of new opportunities, give your business a boost with tailor-made funding that flexes with your cash flow.
+Funds received in as little as 48 hours*
+Transparent pricing with 1 fixed fee
+Apply Now
+How it works
+Apply for funding in minutes​
+With an easy application process and a bespoke quote agreed upfront, our cash advance offers businesses a better, quicker way for funding.
+Bespoke deals tailored to your business
+We’ll provide a selection of personalised quotes that enable you to choose the terms that are right for your business.
+Payments made in line with your revenue
+Payments are flexible and automated based on the flow of your business** – giving your business the space to focus on what really matters.
+Funding that flexes with your business
+We know there’s good days and slower ones in business, which is why our flexible payment structure works in line with your card takings, so you only pay us as customers pay you**.
+The benefits
+Quick application process. Apply in minutes and get a fuss-free quote and funds in as little as 48 hours*
+We work with you to agree a quote upfront that will flex with your cash flow and your business
+Our flexible payments mean that you can pay more when you’re flush and less when you’re having a quieter month**
+Our fixed, flat fee means that you won’t ever pay more than agreed upfront – no matter how long it takes you to pay**
+Apply Now
+*As of October 2022, 83% of successful applications received funding within 2 working days
+**You will be expected to operate your business in a way that ensures a monthly minimum amount of 3% of the total amount owed is received
+
+
+====================================================================================================
+PAGE 26
+URL: https://www.n1payments.com/pax-old/
+TITLE: PAX Old – N1Payments
+TEXT:
+Professional scanner
+Bluetooth
+Long battery
+PAX A920pro
+A Powerful android 8.1 terminal with modern connectivity full communication capabilities and can easily get online.
+5.5’’ IPS screen
+Roaming 4G sim card – for total connectivity in rural areas
+Wi-Fi and Bluetooth
+2’’ built in thermal printer
+EPOS compatible
+Power your day with 10 hours of battery life
+Secure transactions with end-to-end encryption
+Faster processing & larger display
+Powered by Android 8.1 or 10
+Contactless + chip & PIN + magstripe
+Front + rear camera and scanner
+Get A Quote
+
+
+====================================================================================================
+PAGE 27
+URL: https://www.n1payments.com/pax-a50-old/
+TITLE: Pax A50 old – N1Payments
+TEXT:
+Large capacity. Small footprint
+Powerful processor, all-day battery and a 5MP camera, to instantly process any type of payment, anytime, anywhere.
+Key Features:
+Powered by Android 8.1 or 10
+High efficiency processor
+Powerful, long-lasting battery
+4.5-inch IPS colour display
+4G + WiFi + Bluetooth 4.2
+2MP fixed focus rear camera (optional 8MP)
+Optional front 2MP camera
+Inbuilt GPS
+Get A Quote
+Powered by Android 10 or 8.1
+PCI 5 PCI 6
+SHRED
+4.5" HD
+display
+Up to 8MP rear 2MP front
+Advanced
+connectivity
+Suitable industries
+Food & beverage
+Fashion & retail
+Transportation
+
+
+====================================================================================================
+PAGE 28
+URL: https://www.n1payments.com/dx8000-old/
+TITLE: DX8000 old – N1Payments
+TEXT:
+Accept all payment
+4G & Wi-Fi
+Long battery
+DX8000 - Mobile card reader
+The DX8000 combines the full features of an Android tablet with a powerful payment terminal, delivering a simple user experience through an HD touch screen.
+Accepts all forms of electronic payments
+Easy navigation with Android 10 operating system
+4G and Wi-Fi enabled, roaming sim card – for total connectivity in rural areas
+Charging base and integrated printer
+Compliant with the latest PCI PTS v6.0 standards
+High-level performance with a long-lasting battery, up to a 6’’ screen, and front and rear cameras
+Boosted power with best-in-class processor and memory capacity
+Learn More
+
+
+====================================================================================================
+PAGE 29
+URL: https://www.n1payments.com/jupiterx-codes/facebook-pixel/
+TITLE: Facebook Pixel – N1Payments
+TEXT:
+(No visible body text extracted.)
