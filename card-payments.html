@@ -272,16 +272,6 @@
         font-size: 10px;
       }
 
-      .product-tab {
-        flex: 1 1 132px;
-        padding: 10px 12px;
-        font-size: 14px;
-        text-align: center;
-      }
-
-      [data-tab-panel] > div:first-child {
-        min-height: 320px;
-      }
     }
   </style>
 </head>
@@ -294,9 +284,6 @@
       <nav class="hidden items-center gap-5 xl:gap-6 lg:flex">
         <a href="/" class="nav-link">Home</a>
         <a href="/card-payments/" class="nav-link active" aria-current="page">Card Payments</a>
-        <a href="/online-payments/" class="nav-link">Online Payments</a>
-        <a href="/business-account/" class="nav-link">Business Account</a>
-        <a href="/e-pos/" class="nav-link">E-Pos</a>
         <a href="/business-funding/" class="nav-link">Business Funding</a>
         <a href="/about/" class="nav-link">About</a>
         <a href="/contact/" class="nav-link">Contact</a>
@@ -314,9 +301,6 @@
       <div class="site-shell flex flex-col py-4">
         <a href="/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Home</a>
         <a href="/card-payments/" class="rounded-lg bg-brand-light px-4 py-3 text-sm font-semibold text-black">Card Payments</a>
-        <a href="/online-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Online Payments</a>
-        <a href="/business-account/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Account</a>
-        <a href="/e-pos/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">E-Pos</a>
         <a href="/business-funding/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Funding</a>
         <a href="/about/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">About</a>
         <a href="/contact/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Contact</a>
@@ -346,13 +330,7 @@
       <div class="site-shell">
         <h2 class="display text-center text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Card payment solutions</h2>
         <div class="panel mt-10 p-6 shadow-soft sm:p-8 lg:p-10">
-          <div class="flex flex-wrap justify-center gap-3">
-            <button type="button" class="product-tab" data-tab-button="assure" data-active="true">N1 Assure</button>
-            <button type="button" class="product-tab" data-tab-button="engage" data-active="false">N1 Engage</button>
-          </div>
-
-          <div class="mt-10">
-            <div class="tab-panel grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]" data-tab-panel="assure">
+          <div class="grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]">
               <div class="relative flex min-h-[420px] items-center justify-center">
                 <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/n1-assure.png?fit=575%2C700&amp;ssl=1" alt="" class="w-full max-w-[360px]">
                 <span class="badge-dark absolute left-[7%] top-[12%]">4G &amp; Wi-Fi</span>
@@ -374,29 +352,6 @@
                   <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
                 </div>
               </div>
-            </div>
-
-            <div class="tab-panel grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]" data-tab-panel="engage" hidden>
-              <div class="relative flex min-h-[420px] items-center justify-center">
-                <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/DX800.png?fit=820%2C907&amp;ssl=1" alt="" class="w-full max-w-[300px]">
-                <span class="badge-dark absolute left-[6%] bottom-[10%]">Accept all payment</span>
-                <span class="badge-dark absolute right-[14%] top-[27%]">Long battery</span>
-                <span class="badge-dark absolute right-[12%] bottom-[24%]">4G &amp; Wi-Fi</span>
-              </div>
-              <div>
-                <h3 class="display text-[38px] font-extrabold tracking-[-0.04em] text-black">N1 Engage</h3>
-                <p class="mt-4 text-[20px] font-bold leading-8 text-black">Full Functionality for Larger Teams</p>
-                <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Multi-device setup for construction businesses with field operatives</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Centralised account management and transaction reporting</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Scalable add devices as your team grows</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Ideal for businesses managing multiple concurrent jobs and sites</span></li>
-                </ul>
-                <div class="mt-8">
-                  <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -459,17 +414,6 @@
       </div>
     </section>
 
-    <section class="band-light band-angle-both section-pad">
-      <div class="site-shell grid items-center gap-10 lg:grid-cols-[1fr_auto]">
-        <div class="max-w-[640px]">
-          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Online payments for contractors</p>
-          <h2 class="display mt-4 text-[40px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Get Paid Before the Job Starts. And When It's Done.</h2>
-          <p class="mt-5 text-[17px] leading-8 text-[#565656]">N1 Payments gives contractors the tools to collect deposits before work begins, take staged payments through a project, and get paid on completion all without the customer needing to be present.</p>
-        </div>
-        <a href="/online-payments/" class="btn-lime">Find out more</a>
-      </div>
-    </section>
-
     <section class="pb-16 pt-6 sm:pb-20">
       <div class="site-shell">
         <div class="panel px-6 py-14 text-center shadow-soft sm:px-10">
@@ -507,9 +451,6 @@
           <h3 class="text-[17px] font-bold text-white">Get Started</h3>
           <ul class="mt-5 space-y-4 text-[15px]">
             <li><a class="footer-link" href="/business-funding/">Business Funding</a></li>
-            <li><a class="footer-link" href="/business-account/">Business Account</a></li>
-            <li><a class="footer-link" href="/online-payments/">Online Payments</a></li>
-            <li><a class="footer-link" href="/e-pos/">E-Pos</a></li>
             <li><a class="footer-link" href="/card-payments/">Card Payments</a></li>
           </ul>
         </div>
@@ -550,19 +491,6 @@
       });
     }
 
-    const tabButtons = document.querySelectorAll("[data-tab-button]");
-    const tabPanels = document.querySelectorAll("[data-tab-panel]");
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        const target = button.getAttribute("data-tab-button");
-        tabButtons.forEach((item) => {
-          item.setAttribute("data-active", String(item === button));
-        });
-        tabPanels.forEach((panel) => {
-          panel.hidden = panel.getAttribute("data-tab-panel") !== target;
-        });
-      });
-    });
   </script>
 </body>
 </html>

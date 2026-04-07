@@ -131,6 +131,37 @@
       text-decoration: none;
     }
 
+    .audience-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      background: #ffffff;
+      padding: 5px;
+      box-shadow: 0 14px 30px rgba(17, 17, 17, 0.06);
+    }
+
+    .audience-tab {
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444444;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .audience-tab[data-active="true"] {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .audience-tab:hover {
+      transform: translateY(-1px);
+    }
+
     .panel {
       border-radius: 28px;
       background: var(--brand-light);
@@ -216,6 +247,7 @@
       width: max-content;
       align-items: center;
       animation: logo-scroll 28s linear infinite;
+      will-change: transform;
     }
 
     .logo-group {
@@ -228,11 +260,11 @@
 
     @keyframes logo-scroll {
       from {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
       }
 
       to {
-        transform: translateX(-50%);
+        transform: translate3d(-50%, 0, 0);
       }
     }
 
@@ -466,10 +498,6 @@
         animation-duration: 24s;
       }
 
-      [data-tab-panel] > div:first-child {
-        min-height: 320px;
-      }
-
       .testimonial-track {
         gap: 16px;
       }
@@ -491,9 +519,6 @@
       <nav class="hidden items-center gap-5 xl:gap-6 lg:flex">
         <a href="/" class="nav-link active" aria-current="page">Home</a>
         <a href="/card-payments/" class="nav-link">Card Payments</a>
-        <a href="/online-payments/" class="nav-link">Online Payments</a>
-        <a href="/business-account/" class="nav-link">Business Account</a>
-        <a href="/e-pos/" class="nav-link">E-Pos</a>
         <a href="/business-funding/" class="nav-link">Business Funding</a>
         <a href="/about/" class="nav-link">About</a>
         <a href="/contact/" class="nav-link">Contact</a>
@@ -514,9 +539,6 @@
       <div class="site-shell flex flex-col py-4">
         <a href="/" class="rounded-lg bg-brand-light px-4 py-3 text-sm font-semibold text-black">Home</a>
         <a href="/card-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Card Payments</a>
-        <a href="/online-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Online Payments</a>
-        <a href="/business-account/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Account</a>
-        <a href="/e-pos/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">E-Pos</a>
         <a href="/business-funding/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Funding</a>
         <a href="/about/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">About</a>
         <a href="/contact/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Contact</a>
@@ -528,35 +550,35 @@
   <main>
     <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16 lg:pt-20">
       <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-        <div class="max-w-[500px]">
-          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Payments made simple for contractors</p>
-          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]">Built for the Trade. Designed for the Job Site.</h1>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">N1 Payments gives contractors and construction businesses a faster, smarter way to take card payments wherever the work takes you. No complicated applications, no banks turning you away, no waiting days for your money.</p>
-          <p class="mt-4 text-[17px] leading-8 text-[#555555]">Mobile terminals with built-in SIM. Same-day or next-day settlement. Support that actually picks up the phone.</p>
+        <div class="max-w-[520px]">
+          <div class="audience-toggle" role="tablist" aria-label="Choose your industry">
+            <button type="button" class="audience-tab" data-audience-tab-button="trade" data-active="true" role="tab" aria-selected="true">I'm in Trade</button>
+            <button type="button" class="audience-tab" data-audience-tab-button="hospitality" data-active="false" role="tab" aria-selected="false">I'm in Hospitality</button>
+          </div>
+          <p class="mt-4 text-[13px] font-semibold uppercase tracking-[0.24em] text-[#707070] sm:whitespace-nowrap" data-home-eyebrow>Payments made simple for trade businesses</p>
+          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]" data-home-heading>Built for the Trade. Designed for the Job Site.</h1>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-home-body-a>N1 Payments gives trade businesses a faster, smarter way to take card payments wherever the work takes you. No complicated applications, no banks turning you away, no waiting days for your money.</p>
+          <p class="mt-4 text-[17px] leading-8 text-[#555555]" data-home-body-b>Mobile terminals with built-in SIM. Same-day or next-day settlement. Support that actually picks up the phone.</p>
           <ul class="mt-8 space-y-4 text-[16px] font-bold text-[#232323]">
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span>No PCI</span>
+              <span data-home-tick="0">Live transactions</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span>Transaction reporting portal</span>
+              <span data-home-tick="1">Reporting via app and portal</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span>Customer support</span>
+              <span data-home-tick="2">Customer support</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span>Next day payments</span>
+              <span data-home-tick="3">Next-day payments</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span>Business funding</span>
-            </li>
-            <li class="flex items-center gap-3">
-              <span class="check-box">&#10003;</span>
-              <span>Business bank accounts</span>
+              <span data-home-tick="4">Business funding</span>
             </li>
           </ul>
           <div class="mt-9 flex flex-wrap gap-3">
@@ -568,13 +590,13 @@
         <div class="relative">
           <div class="mx-auto grid max-w-[720px] grid-cols-[0.94fr_1.08fr_0.88fr] items-start gap-4 sm:gap-5 lg:gap-6">
             <div class="mt-8 overflow-hidden rounded-[18px] shadow-soft sm:mt-20">
-              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/01.jpg?fit=526%2C499&amp;ssl=1" alt="Contactless payment being taken on a handheld card terminal" class="h-[210px] w-full object-cover object-center sm:h-[320px]">
+              <img data-home-hero-image="left" src="/assets/photos/home-hero-left.jpg" alt="Trade customer making a contactless payment" class="h-[210px] w-full object-cover object-center sm:h-[320px]">
             </div>
             <div class="overflow-hidden rounded-[18px] shadow-soft">
-              <img src="/assets/photos/tablet-on-site.jpg" alt="Trade operator using a tablet during a residential site visit" class="h-[280px] w-full object-cover object-center sm:h-[475px]">
+              <img data-home-hero-image="center" src="/assets/photos/tablet-on-site.jpg" alt="Trade operator using a tablet during a residential site visit" class="h-[280px] w-full object-cover object-center sm:h-[475px]">
             </div>
             <div class="mt-5 overflow-hidden rounded-[18px] shadow-soft sm:mt-14">
-              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/003.jpg?fit=200%2C371&amp;ssl=1" alt="Handheld card machine being used to take payment" class="h-[230px] w-full object-cover object-center sm:h-[371px]">
+              <img data-home-hero-image="right" src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/003.jpg?fit=200%2C371&amp;ssl=1" alt="Handheld card machine being used to take payment" class="h-[230px] w-full object-cover object-center sm:h-[371px]">
             </div>
           </div>
         </div>
@@ -583,9 +605,9 @@
 
     <section class="border-y border-black/5 bg-white py-8">
       <div class="logo-marquee-full">
-        <div class="logo-marquee">
-          <div class="logo-track">
-            <div class="logo-group">
+        <div class="logo-marquee" data-logo-marquee>
+          <div class="logo-track" data-logo-track>
+            <div class="logo-group" data-logo-group>
               <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a0928cb9ff57a358a5_g-pay-logo.png?resize=400%2C250&amp;ssl=1" alt="Google Pay" class="h-8 w-auto object-contain">
               <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a459a4656557e04f52_visa-logo.png?resize=400%2C250&amp;ssl=1" alt="Visa" class="h-8 w-auto object-contain">
               <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a365aa7056e2941f18_master-card-logo.png?resize=400%2C250&amp;ssl=1" alt="Mastercard" class="h-10 w-auto object-contain">
@@ -618,10 +640,10 @@
               <div class="inline-flex h-12 w-12 items-center justify-center rounded-[14px] bg-brand-light text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4"></path><path stroke-linecap="round" stroke-linejoin="round" d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z"></path></svg>
               </div>
-              <span class="rounded-full bg-[#f4f4f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">Approval</span>
+              <span class="rounded-full bg-[#f4f4f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]" data-proof-label="0">Approval</span>
             </div>
-            <h2 class="display mt-6 max-w-[13ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black">Approved Where Others Refuse</h2>
-            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]">Construction and trade businesses are often flagged as high-risk by mainstream banks. We specialise in getting contractors approved and up and running fast.</p>
+            <h2 class="display mt-6 max-w-[14ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black" data-proof-title="0">Approved Where Others Refuse</h2>
+            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]" data-proof-body="0">Trade businesses are often flagged as high-risk by mainstream banks and acquirers. We specialise in getting customers approved and up and running fast.</p>
           </article>
 
           <article class="group relative overflow-hidden rounded-[24px] border-2 border-black bg-[#f9ffd6] px-7 py-7 shadow-[0_12px_30px_rgba(17,17,17,0.05)] md:px-8 md:py-8">
@@ -629,10 +651,10 @@
               <div class="inline-flex h-12 w-12 items-center justify-center rounded-[14px] bg-white text-black shadow-[inset_0_0_0_1px_rgba(17,17,17,0.06)]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"></rect><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01"></path></svg>
               </div>
-              <span class="rounded-full bg-white/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">Connectivity</span>
+              <span class="rounded-full bg-white/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]" data-proof-label="1">Reporting</span>
             </div>
-            <h2 class="display mt-6 max-w-[13ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black">Mobile Terminals With Built-In SIM</h2>
-            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]">Take payments from any site, any location. Our 4G-connected terminals work where Wi-Fi does not, no hotspot, no hassle.</p>
+            <h2 class="display mt-6 max-w-[14ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black" data-proof-title="1">Live Transactions and Clear Reporting</h2>
+            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]" data-proof-body="1">Track payments as they happen and keep on top of activity through the app and portal without relying on guesswork.</p>
           </article>
 
           <article class="group relative overflow-hidden rounded-[24px] border-2 border-black bg-white px-7 py-7 shadow-[0_12px_30px_rgba(17,17,17,0.05)] md:px-8 md:py-8">
@@ -640,10 +662,10 @@
               <div class="inline-flex h-12 w-12 items-center justify-center rounded-[14px] bg-brand-light text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l2.5 2.5"></path><circle cx="12" cy="12" r="9"></circle></svg>
               </div>
-              <span class="rounded-full bg-[#f4f4f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">Cash Flow</span>
+              <span class="rounded-full bg-[#f4f4f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]" data-proof-label="2">Cash Flow</span>
             </div>
-            <h2 class="display mt-6 max-w-[13ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black">Next-Day Settlement as Standard</h2>
-            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]">Your money lands in your account the next business day. No holding periods, no waiting. Cash flow keeps your jobs moving.</p>
+            <h2 class="display mt-6 max-w-[14ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black" data-proof-title="2">Next-Day Settlement as Standard</h2>
+            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]" data-proof-body="2">Your money lands in your account the next business day. No holding periods, no waiting, just steadier cash flow.</p>
           </article>
         </div>
       </div>
@@ -651,15 +673,15 @@
 
     <section class="section-pad">
       <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-        <div class="max-w-[430px]">
-          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">About N1 Payments</p>
-          <h2 class="display mt-4 text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Independent. Local. On Your Side.</h2>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Independent. Local. On Your Side. N1 Payments is a specialist payment services provider built around the needs of contractors and construction businesses. We understand that your work does not happen at a fixed till point; it happens on driveways, in lofts, on building sites, and at customers' front doors.</p>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Unlike the major banks and generic payment providers, we do not apply a one-size-fits-all approach. We work directly with contractors to find the right setup, get you approved, and make sure you are supported from day one and every day after.</p>
+        <div class="max-w-[460px]">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]" data-about-eyebrow>About N1 Payments</p>
+          <h2 class="display mt-4 text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]" data-about-heading>Independent. Local. On Your Side.</h2>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-about-body-a>N1 Payments is a specialist provider built around the needs of trade businesses, while still supporting hospitality and other growing independents that need straight answers and reliable payments.</p>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-about-body-b>We work directly with customers to find the right setup, get you approved, and make sure you are supported from day one and every day after.</p>
         </div>
         <div class="relative">
           <div class="overflow-hidden rounded-[24px] shadow-soft">
-            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/07/team-training-.jpg?fit=1600%2C1067&ssl=1" alt="Contractors reviewing plans inside a property under renovation" class="h-full w-full object-cover" loading="lazy">
+            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/07/team-training-.jpg?fit=1600%2C1067&ssl=1" alt="N1 Payments team training session" class="h-full w-full object-cover" loading="lazy">
           </div>
           <span class="badge-dark absolute left-4 bottom-20">Super Fast</span>
           <span class="badge-dark absolute right-5 top-4">Simple</span>
@@ -670,31 +692,31 @@
     <section class="band-light band-angle-both section-pad">
       <div class="site-shell text-center">
         <h2 class="display text-[40px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">How may we assist you?</h2>
-        <p class="mx-auto mt-4 max-w-[660px] text-[18px] leading-8 text-[#5b5b5b]">Tell us where you are in the process and we will point you to the right setup fast.</p>
+        <p class="mx-auto mt-4 max-w-[660px] text-[18px] leading-8 text-[#5b5b5b]" data-assist-intro>Tell us where you are in the process and we will point you to the right setup fast.</p>
         <div class="mx-auto mt-10 grid max-w-[760px] gap-5 md:grid-cols-2">
-          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[10px] border-2 border-black bg-white px-8 py-6 text-left text-black transition hover:-translate-y-0.5">
+          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[10px] border-2 border-black bg-white px-8 py-6 text-left text-black transition hover:-translate-y-0.5" data-assist-link="0">
             <div class="flex items-center justify-between gap-6">
-              <span class="text-[20px] font-bold">I'm a Contractor Starting Out</span>
+              <span class="text-[20px] font-bold" data-assist-title="0">I'm a Trade Business Starting Out</span>
               <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-[#dcfb00]" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"></path>
                 </svg>
               </span>
             </div>
-            <p class="mt-4 max-w-[290px] text-[15px] leading-7 text-[#5e5e5e]">New to taking card payments? We'll get you set up with everything you need: terminal, account, support in days, not weeks.</p>
-            <span class="mt-4 inline-flex text-[15px] font-bold text-black">Get Started</span>
+            <p class="mt-4 max-w-[290px] text-[15px] leading-7 text-[#5e5e5e]" data-assist-body="0">New to taking card payments? We'll get you set up with the right terminal, rates and support without the usual runaround.</p>
+            <span class="mt-4 inline-flex text-[15px] font-bold text-black" data-assist-cta="0">Get Started</span>
           </a>
-          <a href="/card-payments/" class="rounded-[10px] border-2 border-black bg-white px-8 py-6 text-left text-black transition hover:-translate-y-0.5">
+          <a href="/contact/" class="rounded-[10px] border-2 border-black bg-white px-8 py-6 text-left text-black transition hover:-translate-y-0.5" data-assist-link="1">
             <div class="flex items-center justify-between gap-6">
-              <span class="text-[20px] font-bold">I Want to Switch Provider</span>
+              <span class="text-[20px] font-bold" data-assist-title="1">I Want to Switch Provider</span>
               <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-[#dcfb00]" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"></path>
                 </svg>
               </span>
             </div>
-            <p class="mt-4 max-w-[290px] text-[15px] leading-7 text-[#5e5e5e]">Fed up with high fees, slow settlements, or a provider who does not understand the trade? Switching is simpler than you think.</p>
-            <span class="mt-4 inline-flex text-[15px] font-bold text-black">Compare &amp; Switch</span>
+            <p class="mt-4 max-w-[290px] text-[15px] leading-7 text-[#5e5e5e]" data-assist-body="1">Fed up with slow settlements, hidden fees, or a provider that does not understand how you work? Switching is simpler than you think.</p>
+            <span class="mt-4 inline-flex text-[15px] font-bold text-black" data-assist-cta="1">Compare &amp; Switch</span>
           </a>
         </div>
       </div>
@@ -704,55 +726,26 @@
       <div class="site-shell">
         <h2 class="display text-center text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Card Payment Solutions</h2>
         <div class="panel mt-10 p-6 shadow-soft sm:p-8 lg:p-10">
-          <div class="flex justify-center gap-3">
-            <button type="button" class="product-tab" data-tab-button="assure" data-active="true">N1 Assure</button>
-            <button type="button" class="product-tab" data-tab-button="engage" data-active="false">N1 Engage</button>
-          </div>
-
-          <div class="mt-10">
-            <div class="tab-panel grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]" data-tab-panel="assure">
-              <div class="relative flex min-h-[420px] items-center justify-center">
-                <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/n1-assure.png?fit=575%2C700&amp;ssl=1" alt="" class="w-full max-w-[360px]">
-                <span class="badge-dark absolute left-[7%] top-[12%]">4G &amp; Wi-Fi</span>
-                <span class="badge-dark absolute right-[8%] top-[36%]">Bluetooth</span>
-                <span class="badge-dark absolute left-[10%] bottom-[22%]">Long battery</span>
-                <span class="badge-dark absolute right-[10%] bottom-[7%]">EPOS compatible</span>
-              </div>
-              <div>
-                <h3 class="display text-[38px] font-extrabold tracking-[-0.04em] text-black">N1 Assure</h3>
-                <p class="mt-4 text-[20px] font-bold leading-8 text-black">The Contractor's Workhorse</p>
-                <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Handheld, portable 4G terminal with built-in SIM</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Next-day settlement as standard</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>EPOS compatible for businesses that need full point-of-sale functionality</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Long battery life powers through a full working day on site</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Accepts all major cards, contactless, Apple Pay &amp; Google Pay</span></li>
-                </ul>
-                <div class="mt-8">
-                  <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
-                </div>
-              </div>
+          <div class="grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]">
+            <div class="relative flex min-h-[420px] items-center justify-center">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/n1-assure.png?fit=575%2C700&amp;ssl=1" alt="N1 Assure card terminal" class="w-full max-w-[360px]">
+              <span class="badge-dark absolute left-[7%] top-[12%]">4G &amp; Wi-Fi</span>
+              <span class="badge-dark absolute right-[8%] top-[36%]">Bluetooth</span>
+              <span class="badge-dark absolute left-[10%] bottom-[22%]">Long battery</span>
+              <span class="badge-dark absolute right-[10%] bottom-[7%]">Portable terminal</span>
             </div>
-
-            <div class="tab-panel grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]" data-tab-panel="engage" hidden>
-              <div class="relative flex min-h-[420px] items-center justify-center">
-                <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/DX800.png?fit=820%2C907&amp;ssl=1" alt="" class="w-full max-w-[300px]">
-                <span class="badge-dark absolute left-[6%] bottom-[10%]">Accept all payment</span>
-                <span class="badge-dark absolute right-[14%] top-[27%]">Long battery</span>
-                <span class="badge-dark absolute right-[12%] bottom-[24%]">4G &amp; Wi-Fi</span>
-              </div>
-              <div>
-                <h3 class="display text-[38px] font-extrabold tracking-[-0.04em] text-black">N1 Engage</h3>
-                <p class="mt-4 text-[20px] font-bold leading-8 text-black">Full Functionality for Larger Teams</p>
-                <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Multi-device setup for construction businesses with field operatives</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Centralised account management and transaction reporting</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Scalable add devices as your team grows</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Ideal for businesses managing multiple concurrent jobs and sites</span></li>
-                </ul>
-                <div class="mt-8">
-                  <a href="/card-payments/" class="btn-lime">Learn more</a>
-                </div>
+            <div>
+              <h3 class="display text-[38px] font-extrabold tracking-[-0.04em] text-black" data-product-title>N1 Assure</h3>
+              <p class="mt-4 text-[20px] font-bold leading-8 text-black" data-product-subtitle>The Contractor's Workhorse</p>
+              <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="0">Handheld, portable 4G terminal with built-in SIM</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="1">Next-day settlement as standard</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="2">Accepts all major cards, contactless, Apple Pay and Google Pay</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="3">Long battery life for full working days</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="4">Reporting via app and portal</span></li>
+              </ul>
+              <div class="mt-8">
+                <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime" data-product-cta>Get a quote</a>
               </div>
             </div>
           </div>
@@ -762,37 +755,22 @@
 
     <section class="section-pad pt-2 lg:pt-6">
       <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-        <div class="overflow-hidden rounded-[24px] bg-[#f6f6f6] shadow-soft">
-          <img src="/assets/photos/why-card-payments.jpg" alt="Handheld card terminal being used to take payment" class="h-full w-full object-cover object-center" loading="lazy">
+        <div class="aspect-[57/40] overflow-hidden rounded-[24px] bg-[#f6f6f6] shadow-soft">
+          <img src="/assets/photos/Pax-Technology-A920.png" alt="Pax A920 Pro card machine being used to take a card payment" class="h-full w-full object-cover object-center" loading="lazy">
         </div>
         <div class="max-w-[470px]">
           <h2 class="display text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Why take card payments?</h2>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Shoppers like to be able to make purchases quickly without having to dash to the nearest cash machine. If you do not accept credit card payments, then many prospective customers will go elsewhere.</p>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Customers also tend to spend more when paying on credit card, especially on impulse purchases.</p>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-why-body-a>When you can take payment there and then, you reduce delays, make it easier for customers to say yes, and get paid faster for completed work.</p>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-why-body-b>Whether it is a deposit before the job starts or the final balance at the door, card payments give customers flexibility without slowing your cash flow.</p>
           <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
-            <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Increase turnover</span></li>
-            <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Great customer service</span></li>
-            <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Optimise sales channels</span></li>
-            <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Next day payments</span></li>
-            <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Payment's security, less cash handling</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="0">Take deposits before work starts</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="1">Get paid as soon as the job is done</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="2">Give customers more ways to pay</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="3">Improve cash flow with next-day settlement</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="4">Spend less time chasing balances</span></li>
           </ul>
           <div class="mt-8">
             <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad">
-      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.92fr_1.08fr]">
-        <div class="flex justify-center">
-          <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/10/epos.png?fit=958%2C905&amp;ssl=1" alt="" class="w-full max-w-[430px]">
-        </div>
-        <div class="max-w-[430px]">
-          <h2 class="display text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">EPOS<br>( Electronic point of sale )</h2>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Connect all business operations and back office in one place using the free software.</p>
-          <div class="mt-8">
-            <a href="/e-pos/" class="btn-lime">Learn more</a>
           </div>
         </div>
       </div>
@@ -946,9 +924,6 @@
           <h3 class="text-[17px] font-bold text-white">Get Started</h3>
           <ul class="mt-5 space-y-4 text-[15px]">
             <li><a class="footer-link" href="/business-funding/">Business Funding</a></li>
-            <li><a class="footer-link" href="/business-account/">Business Account</a></li>
-            <li><a class="footer-link" href="/online-payments/">Online Payments</a></li>
-            <li><a class="footer-link" href="/e-pos/">E-Pos</a></li>
             <li><a class="footer-link" href="/card-payments/">Card Payments</a></li>
           </ul>
         </div>
@@ -999,20 +974,288 @@
       });
     }
 
-    const tabButtons = document.querySelectorAll("[data-tab-button]");
-    const tabPanels = document.querySelectorAll("[data-tab-panel]");
+    const homeAudienceButtons = Array.from(document.querySelectorAll("[data-audience-tab-button]"));
+    const homeEyebrow = document.querySelector("[data-home-eyebrow]");
+    const homeHeading = document.querySelector("[data-home-heading]");
+    const homeBodyA = document.querySelector("[data-home-body-a]");
+    const homeBodyB = document.querySelector("[data-home-body-b]");
+    const homeTickItems = Array.from(document.querySelectorAll("[data-home-tick]"));
+    const homeHeroImages = {
+      left: document.querySelector('[data-home-hero-image="left"]'),
+      center: document.querySelector('[data-home-hero-image="center"]'),
+      right: document.querySelector('[data-home-hero-image="right"]')
+    };
+    const proofLabels = Array.from(document.querySelectorAll("[data-proof-label]"));
+    const proofTitles = Array.from(document.querySelectorAll("[data-proof-title]"));
+    const proofBodies = Array.from(document.querySelectorAll("[data-proof-body]"));
+    const aboutBodyA = document.querySelector("[data-about-body-a]");
+    const aboutBodyB = document.querySelector("[data-about-body-b]");
+    const assistIntro = document.querySelector("[data-assist-intro]");
+    const assistLinks = Array.from(document.querySelectorAll("[data-assist-link]"));
+    const assistTitles = Array.from(document.querySelectorAll("[data-assist-title]"));
+    const assistBodies = Array.from(document.querySelectorAll("[data-assist-body]"));
+    const assistCtas = Array.from(document.querySelectorAll("[data-assist-cta]"));
+    const productTitle = document.querySelector("[data-product-title]");
+    const productSubtitle = document.querySelector("[data-product-subtitle]");
+    const productBullets = Array.from(document.querySelectorAll("[data-product-bullet]"));
+    const whyBodyA = document.querySelector("[data-why-body-a]");
+    const whyBodyB = document.querySelector("[data-why-body-b]");
+    const whyBullets = Array.from(document.querySelectorAll("[data-why-bullet]"));
 
-    tabButtons.forEach((button) => {
+    const homeAudienceData = {
+      trade: {
+        eyebrow: "Payments made simple for trade businesses",
+        heading: "Built for the Trade. Designed for the Job Site.",
+        bodyA: "N1 Payments gives trade businesses a faster, smarter way to take card payments wherever the work takes you. No complicated applications, no banks turning you away, no waiting days for your money.",
+        bodyB: "Mobile terminals with built-in SIM. Same-day or next-day settlement. Support that actually picks up the phone.",
+        ticks: [
+          "Live transactions",
+          "Reporting via app and portal",
+          "Customer support",
+          "Next-day payments",
+          "Business funding"
+        ],
+        heroImages: {
+          left: {
+            src: "/assets/photos/home-hero-left.jpg",
+            alt: "Trade customer making a contactless payment"
+          },
+          center: {
+            src: "/assets/photos/tablet-on-site.jpg",
+            alt: "Trade operator using a tablet during a residential site visit"
+          },
+          right: {
+            src: "https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/003.jpg?fit=200%2C371&amp;ssl=1",
+            alt: "Handheld card machine being used to take payment"
+          }
+        },
+        proof: [
+          {
+            label: "Approval",
+            title: "Approved Where Others Refuse",
+            body: "Trade businesses are often flagged as high-risk by mainstream banks and acquirers. We specialise in getting customers approved and up and running fast."
+          },
+          {
+            label: "Reporting",
+            title: "Live Transactions and Clear Reporting",
+            body: "Track payments as they happen and keep on top of activity through the app and portal without relying on guesswork."
+          },
+          {
+            label: "Cash Flow",
+            title: "Next-Day Settlement as Standard",
+            body: "Your money lands in your account the next business day. No holding periods, no waiting, just steadier cash flow."
+          }
+        ],
+        about: {
+          bodyA: "N1 Payments is a specialist provider built around the needs of trade businesses, while still supporting hospitality and other growing independents that need straight answers and reliable payments.",
+          bodyB: "We work directly with customers to find the right setup, get you approved, and make sure you are supported from day one and every day after."
+        },
+        assist: {
+          intro: "Tell us where you are in the process and we will point you to the right setup fast.",
+          cards: [
+            {
+              title: "I'm a Trade Business Starting Out",
+              body: "New to taking card payments? We'll get you set up with the right terminal, reporting and support without the usual runaround.",
+              cta: "Get Started",
+              href: "https://v7o72cx1jvv.typeform.com/to/AbGgZz6x",
+              external: true
+            },
+            {
+              title: "I Want to Switch Provider",
+              body: "Fed up with slow settlements, hidden fees, or a provider that does not understand how you work? Switching is simpler than you think.",
+              cta: "Compare & Switch",
+              href: "/contact/",
+              external: false
+            }
+          ]
+        },
+        product: {
+          title: "N1 Assure",
+          subtitle: "The Contractor's Workhorse",
+          bullets: [
+            "Handheld, portable 4G terminal with built-in SIM",
+            "Next-day settlement as standard",
+            "Accepts all major cards, contactless, Apple Pay and Google Pay",
+            "Long battery life for full working days",
+            "Reporting via app and portal"
+          ]
+        },
+        why: {
+          bodyA: "When you can take payment there and then, you reduce delays, make it easier for customers to say yes, and get paid faster for completed work.",
+          bodyB: "Whether it is a deposit before the job starts or the final balance at the door, card payments give customers flexibility without slowing your cash flow.",
+          bullets: [
+            "Take deposits before work starts",
+            "Get paid as soon as the job is done",
+            "Give customers more ways to pay",
+            "Improve cash flow with next-day settlement",
+            "Spend less time chasing balances"
+          ]
+        }
+      },
+      hospitality: {
+        eyebrow: "Payments made simple for hospitality businesses",
+        heading: "Built for Busy Service. Ready When the Rush Hits.",
+        bodyA: "N1 Payments also supports hospitality businesses that need fast, reliable card payments during busy service, clear reporting after close, and support that actually answers the phone.",
+        bodyB: "From restaurants and bars to cafes, shops and venues, we help customer-facing businesses take payments smoothly and get settled fast.",
+        ticks: [
+          "Live transactions",
+          "Reporting via app and portal",
+          "Contactless and digital wallets",
+          "Next-day payments",
+          "Customer support"
+        ],
+        heroImages: {
+          left: {
+            src: "https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/001.jpg?fit=218%2C320&amp;ssl=1",
+            alt: "Restaurant customer paying by card at the counter"
+          },
+          center: {
+            src: "https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/002.jpg?fit=261%2C475&amp;ssl=1",
+            alt: "Hospitality staff member taking payment at the till"
+          },
+          right: {
+            src: "https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/003.jpg?fit=200%2C371&amp;ssl=1",
+            alt: "Handheld terminal being used to take in-person payment"
+          }
+        },
+        proof: [
+          {
+            label: "Service",
+            title: "Payments That Keep Service Moving",
+            body: "Busy venues cannot afford clunky terminals or payment delays. We help hospitality businesses take payments smoothly without slowing the customer down."
+          },
+          {
+            label: "Reporting",
+            title: "Live Transactions and Clear Reporting",
+            body: "Track activity as it happens and review performance through the app and portal when the shift is done."
+          },
+          {
+            label: "Cash Flow",
+            title: "Next-Day Settlement as Standard",
+            body: "Your takings land fast, helping you manage stock, wages and day-to-day cash flow without unnecessary delays."
+          }
+        ],
+        about: {
+          bodyA: "N1 Payments is trade-first, but not trade-only. We also support hospitality and other customer-facing businesses that need straightforward rates, reliable terminals, and people they can actually reach.",
+          bodyB: "We work directly with customers to find the right setup, get you approved, and keep support practical from day one, whether you are on site, at the counter, or in the middle of service."
+        },
+        assist: {
+          intro: "Tell us about your venue or business and we will point you to the right setup fast.",
+          cards: [
+            {
+              title: "I'm a Hospitality Business Starting Out",
+              body: "Opening, expanding, or replacing tired terminals? We'll help you find the right setup for faster service, reporting and settlement.",
+              cta: "Get Started",
+              href: "https://v7o72cx1jvv.typeform.com/to/AbGgZz6x",
+              external: true
+            },
+            {
+              title: "I Want to Switch Provider",
+              body: "Fed up with hidden fees, clunky terminals, or slow settlements during service? We can help you switch cleanly and keep things moving.",
+              cta: "Compare & Switch",
+              href: "/contact/",
+              external: false
+            }
+          ]
+        },
+        product: {
+          title: "N1 Assure",
+          subtitle: "Portable Payments That Keep Service Moving",
+          bullets: [
+            "Portable 4G terminal for tableside and queue-busting payments",
+            "Next-day settlement as standard",
+            "Accepts all major cards, contactless, Apple Pay and Google Pay",
+            "Long battery life for busy service periods",
+            "Reporting via app and portal after close"
+          ]
+        },
+        why: {
+          bodyA: "In hospitality, speed at the till matters. Card payments help you keep service moving, reduce queues, and make it easier for customers to pay the way they want.",
+          bodyB: "From contactless taps at the bar to digital wallets at the table, the right setup helps you serve faster, report clearly, and get settled without unnecessary delays.",
+          bullets: [
+            "Keep queues moving at busy times",
+            "Accept contactless, Apple Pay and Google Pay",
+            "Improve guest experience with faster checkout",
+            "Reduce cash handling behind the till",
+            "Keep cash flow steady with next-day settlement"
+          ]
+        }
+      }
+    };
+
+    const setAudienceLink = (linkElement, linkData) => {
+      if (!linkElement || !linkData) return;
+      linkElement.setAttribute("href", linkData.href);
+      if (linkData.external) {
+        linkElement.setAttribute("target", "_blank");
+        linkElement.setAttribute("rel", "noopener noreferrer");
+      } else {
+        linkElement.removeAttribute("target");
+        linkElement.removeAttribute("rel");
+      }
+    };
+
+    const setHomeAudience = (audienceKey) => {
+      const content = homeAudienceData[audienceKey] || homeAudienceData.trade;
+      if (homeEyebrow) homeEyebrow.textContent = content.eyebrow;
+      if (homeHeading) homeHeading.textContent = content.heading;
+      if (homeBodyA) homeBodyA.textContent = content.bodyA;
+      if (homeBodyB) homeBodyB.textContent = content.bodyB;
+
+      homeTickItems.forEach((item, index) => {
+        if (content.ticks[index]) item.textContent = content.ticks[index];
+      });
+
+      Object.entries(content.heroImages).forEach(([slot, imageData]) => {
+        const imageElement = homeHeroImages[slot];
+        if (!imageElement || !imageData) return;
+        imageElement.setAttribute("src", imageData.src);
+        imageElement.setAttribute("alt", imageData.alt);
+      });
+
+      content.proof.forEach((proofItem, index) => {
+        if (proofLabels[index]) proofLabels[index].textContent = proofItem.label;
+        if (proofTitles[index]) proofTitles[index].textContent = proofItem.title;
+        if (proofBodies[index]) proofBodies[index].textContent = proofItem.body;
+      });
+
+      if (aboutBodyA) aboutBodyA.textContent = content.about.bodyA;
+      if (aboutBodyB) aboutBodyB.textContent = content.about.bodyB;
+      if (assistIntro) assistIntro.textContent = content.assist.intro;
+
+      content.assist.cards.forEach((card, index) => {
+        if (assistTitles[index]) assistTitles[index].textContent = card.title;
+        if (assistBodies[index]) assistBodies[index].textContent = card.body;
+        if (assistCtas[index]) assistCtas[index].textContent = card.cta;
+        setAudienceLink(assistLinks[index], card);
+      });
+
+      if (productTitle) productTitle.textContent = content.product.title;
+      if (productSubtitle) productSubtitle.textContent = content.product.subtitle;
+      productBullets.forEach((bullet, index) => {
+        if (content.product.bullets[index]) bullet.textContent = content.product.bullets[index];
+      });
+
+      if (whyBodyA) whyBodyA.textContent = content.why.bodyA;
+      if (whyBodyB) whyBodyB.textContent = content.why.bodyB;
+      whyBullets.forEach((bullet, index) => {
+        if (content.why.bullets[index]) bullet.textContent = content.why.bullets[index];
+      });
+
+      homeAudienceButtons.forEach((button) => {
+        const isActive = button.getAttribute("data-audience-tab-button") === audienceKey;
+        button.setAttribute("data-active", String(isActive));
+        button.setAttribute("aria-selected", String(isActive));
+      });
+    };
+
+    homeAudienceButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        const target = button.getAttribute("data-tab-button");
-        tabButtons.forEach((item) => {
-          item.setAttribute("data-active", String(item === button));
-        });
-        tabPanels.forEach((panel) => {
-          panel.hidden = panel.getAttribute("data-tab-panel") !== target;
-        });
+        setHomeAudience(button.getAttribute("data-audience-tab-button") || "trade");
       });
     });
+
+    setHomeAudience("trade");
 
     const faqTriggers = document.querySelectorAll("[data-faq-trigger]");
     faqTriggers.forEach((trigger) => {
