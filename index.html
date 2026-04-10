@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N1 Payments | Built for the Trade</title>
+  <title>N1 Payments | Payments Made Simple for All Businesses</title>
   <link rel="icon" type="image/png" sizes="32x32" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=19%2C32&amp;ssl=1">
   <link rel="apple-touch-icon" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=55%2C91&amp;ssl=1">
   <script>
@@ -28,6 +28,7 @@
     };
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/header-shared.css">
   <style>
     @font-face {
       font-family: "Neutral Grotesk";
@@ -64,7 +65,7 @@
     }
 
     .section-pad {
-      padding: 86px 0;
+      padding: 3.5rem 0 86px;
     }
 
     .nav-link {
@@ -167,6 +168,90 @@
       background: var(--brand-light);
     }
 
+    .rate-control {
+      border-radius: 18px;
+      background: #ffffff;
+      padding: 18px 18px 16px;
+      box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.08);
+    }
+
+    .rate-value {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      min-width: 88px;
+      border-radius: 999px;
+      background: #111111;
+      padding: 6px 14px;
+      font-size: 15px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .rate-range {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 12px;
+      border-radius: 999px;
+      outline: none;
+      background: linear-gradient(90deg, var(--brand-lime) 0%, var(--brand-lime) var(--range-progress, 0%), rgba(17, 17, 17, 0.12) var(--range-progress, 0%), rgba(17, 17, 17, 0.12) 100%);
+    }
+
+    .rate-range::-webkit-slider-runnable-track {
+      height: 12px;
+      border-radius: 999px;
+      background: transparent;
+    }
+
+    .rate-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      margin-top: -6px;
+      border: 3px solid #111111;
+      border-radius: 999px;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(17, 17, 17, 0.16);
+      cursor: pointer;
+    }
+
+    .rate-range::-moz-range-track {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(17, 17, 17, 0.12);
+    }
+
+    .rate-range::-moz-range-progress {
+      height: 12px;
+      border-radius: 999px;
+      background: var(--brand-lime);
+    }
+
+    .rate-range::-moz-range-thumb {
+      width: 24px;
+      height: 24px;
+      border: 3px solid #111111;
+      border-radius: 999px;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(17, 17, 17, 0.16);
+      cursor: pointer;
+    }
+
+    .rate-scale {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7a7a7a;
+    }
+
     .band-light {
       background: var(--brand-light);
     }
@@ -248,6 +333,7 @@
       align-items: center;
       animation: logo-scroll 28s linear infinite;
       will-change: transform;
+      --logo-loop-distance: 50%;
     }
 
     .logo-group {
@@ -264,7 +350,7 @@
       }
 
       to {
-        transform: translate3d(-50%, 0, 0);
+        transform: translate3d(calc(-1 * var(--logo-loop-distance)), 0, 0);
       }
     }
 
@@ -421,7 +507,7 @@
       }
 
       .section-pad {
-        padding: 52px 0;
+        padding: 3.5rem 0 52px;
       }
 
       .panel {
@@ -510,10 +596,10 @@
   </style>
 </head>
 <body class="bg-white text-brand-text antialiased">
-  <header class="sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+  <header class="site-header sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
     <div class="site-shell flex items-center justify-between gap-6 py-2">
       <a href="/" class="shrink-0" aria-label="N1 Payments home">
-        <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="h-14 w-auto sm:h-[58px]">
+        <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="site-logo-mark h-14 w-auto sm:h-[58px]">
       </a>
 
       <nav class="hidden items-center gap-5 xl:gap-6 lg:flex">
@@ -548,37 +634,37 @@
   </header>
 
   <main>
-    <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16 lg:pt-20">
+    <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16">
       <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
         <div class="max-w-[520px]">
           <div class="audience-toggle" role="tablist" aria-label="Choose your industry">
             <button type="button" class="audience-tab" data-audience-tab-button="trade" data-active="true" role="tab" aria-selected="true">I'm in Trade</button>
             <button type="button" class="audience-tab" data-audience-tab-button="hospitality" data-active="false" role="tab" aria-selected="false">I'm in Hospitality</button>
           </div>
-          <p class="mt-4 text-[13px] font-semibold uppercase tracking-[0.24em] text-[#707070] sm:whitespace-nowrap" data-home-eyebrow>Payments made simple for trade businesses</p>
+          <p class="mt-4 text-[13px] font-semibold uppercase tracking-[0.24em] text-[#707070] sm:whitespace-nowrap" data-home-eyebrow>Payments made simple for all businesses</p>
           <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]" data-home-heading>Built for the Trade. Designed for the Job Site.</h1>
           <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-home-body-a>N1 Payments gives trade businesses a faster, smarter way to take card payments wherever the work takes you. No complicated applications, no banks turning you away, no waiting days for your money.</p>
-          <p class="mt-4 text-[17px] leading-8 text-[#555555]" data-home-body-b>Mobile terminals with built-in SIM. Same-day or next-day settlement. Support that actually picks up the phone.</p>
+          <p class="mt-4 text-[17px] leading-8 text-[#555555]" data-home-body-b>Mobile terminals with built-in SIM. Next-day settlement as standard. Support that actually picks up the phone.</p>
           <ul class="mt-8 space-y-4 text-[16px] font-bold text-[#232323]">
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span data-home-tick="0">Live transactions</span>
+              <span data-home-tick="0">No PCI charges</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span data-home-tick="1">Reporting via app and portal</span>
+              <span data-home-tick="1">Live transactions</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span data-home-tick="2">Customer support</span>
+              <span data-home-tick="2">Reporting via app and portal</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span data-home-tick="3">Next-day payments</span>
+              <span data-home-tick="3">Customer support</span>
             </li>
             <li class="flex items-center gap-3">
               <span class="check-box">&#10003;</span>
-              <span data-home-tick="4">Business funding</span>
+              <span data-home-tick="4">Next-day payments</span>
             </li>
           </ul>
           <div class="mt-9 flex flex-wrap gap-3">
@@ -590,10 +676,10 @@
         <div class="relative">
           <div class="mx-auto grid max-w-[720px] grid-cols-[0.94fr_1.08fr_0.88fr] items-start gap-4 sm:gap-5 lg:gap-6">
             <div class="mt-8 overflow-hidden rounded-[18px] shadow-soft sm:mt-20">
-              <img data-home-hero-image="left" src="/assets/photos/home-hero-left.jpg" alt="Trade customer making a contactless payment" class="h-[210px] w-full object-cover object-center sm:h-[320px]">
+              <img data-home-hero-image="left" src="/assets/photos/solar_install.jpeg" alt="Residential solar panel installation on a customer's roof" class="h-[210px] w-full object-cover object-center sm:h-[320px]">
             </div>
             <div class="overflow-hidden rounded-[18px] shadow-soft">
-              <img data-home-hero-image="center" src="/assets/photos/tablet-on-site.jpg" alt="Trade operator using a tablet during a residential site visit" class="h-[280px] w-full object-cover object-center sm:h-[475px]">
+              <img data-home-hero-image="center" src="/assets/photos/tablet-on-site-optimized.jpg" alt="Trade operator using a tablet during a residential site visit" class="h-[280px] w-full object-cover object-center sm:h-[475px]" decoding="async" fetchpriority="high">
             </div>
             <div class="mt-5 overflow-hidden rounded-[18px] shadow-soft sm:mt-14">
               <img data-home-hero-image="right" src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/003.jpg?fit=200%2C371&amp;ssl=1" alt="Handheld card machine being used to take payment" class="h-[230px] w-full object-cover object-center sm:h-[371px]">
@@ -681,7 +767,7 @@
         </div>
         <div class="relative">
           <div class="overflow-hidden rounded-[24px] shadow-soft">
-            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/07/team-training-.jpg?fit=1600%2C1067&ssl=1" alt="N1 Payments team training session" class="h-full w-full object-cover" loading="lazy">
+            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/07/team-training-.jpg?fit=1600%2C1067&ssl=1" alt="N1 Payments team training session" class="h-full w-full object-cover" loading="lazy" decoding="async">
           </div>
           <span class="badge-dark absolute left-4 bottom-20">Super Fast</span>
           <span class="badge-dark absolute right-5 top-4">Simple</span>
@@ -728,7 +814,7 @@
         <div class="panel mt-10 p-6 shadow-soft sm:p-8 lg:p-10">
           <div class="grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]">
             <div class="relative flex min-h-[420px] items-center justify-center">
-              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/n1-assure.png?fit=575%2C700&amp;ssl=1" alt="N1 Assure card terminal" class="w-full max-w-[360px]">
+                <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/n1-assure.png?fit=575%2C700&amp;ssl=1" alt="N1 Assure card terminal" class="w-full max-w-[360px]" loading="lazy" decoding="async">
               <span class="badge-dark absolute left-[7%] top-[12%]">4G &amp; Wi-Fi</span>
               <span class="badge-dark absolute right-[8%] top-[36%]">Bluetooth</span>
               <span class="badge-dark absolute left-[10%] bottom-[22%]">Long battery</span>
@@ -748,6 +834,71 @@
                 <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime" data-product-cta>Get a quote</a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-light section-pad py-14 lg:py-16">
+      <div class="site-shell grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
+        <div class="max-w-[430px]">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.24em] text-[#707070]">Rate comparison tool</p>
+          <h2 class="display mt-4 text-[38px] font-extrabold leading-[1.06] tracking-[-0.04em] text-black sm:text-[46px]">See how your rates compare.</h2>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Use this simple comparison to estimate what card payments could cost with N1 versus a typical high street provider or app-based reader.</p>
+          <p class="mt-4 text-[16px] leading-7 text-[#5f5f5f]">This is an illustrative tool using example rates for now, but it gives prospects a clearer side-by-side view than a standalone rate calculator.</p>
+        </div>
+
+        <div class="panel p-6 shadow-soft sm:p-8" data-rate-calculator>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="rate-control block">
+              <span class="flex items-center justify-between gap-3">
+                <span class="block text-[13px] font-semibold uppercase tracking-[0.2em] text-[#707070]">Monthly card turnover</span>
+                <span class="rate-value" data-rate-display="turnover">£12,000</span>
+              </span>
+              <input type="range" min="1000" max="500000" step="500" value="12000" data-rate-input="turnover" class="rate-range mt-5" />
+              <span class="rate-scale mt-3">
+                <span>£1k</span>
+                <span>£500k</span>
+              </span>
+            </label>
+            <label class="rate-control block">
+              <span class="flex items-center justify-between gap-3">
+                <span class="block text-[13px] font-semibold uppercase tracking-[0.2em] text-[#707070]">Average sale value</span>
+                <span class="rate-value" data-rate-display="average">£65</span>
+              </span>
+              <input type="range" min="1" max="50000" step="1" value="65" data-rate-input="average" class="rate-range mt-5" />
+              <span class="rate-scale mt-3">
+                <span>£1</span>
+                <span>£50k</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="mt-7 grid gap-4 lg:grid-cols-3">
+            <article class="rounded-[20px] border-2 border-black bg-[#f9ffd6] px-5 py-5">
+              <p class="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#6a6a6a]">N1</p>
+              <p class="mt-3 text-[14px] font-semibold leading-6 text-[#4f4f4f]">1.15% + 3p per transaction + £15 monthly</p>
+              <p class="display mt-5 text-[36px] font-extrabold tracking-[-0.04em] text-black" data-rate-result="n1">£0</p>
+              <p class="mt-1 text-[14px] font-semibold text-[#505050]">Estimated monthly cost</p>
+            </article>
+
+            <article class="rounded-[20px] border border-black/10 bg-white px-5 py-5">
+              <p class="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#6a6a6a]">Typical high street</p>
+              <p class="mt-3 text-[14px] font-semibold leading-6 text-[#4f4f4f]">1.65% + 5p per transaction + £25 monthly</p>
+              <p class="display mt-5 text-[36px] font-extrabold tracking-[-0.04em] text-black" data-rate-result="highstreet">£0</p>
+              <p class="mt-1 text-[14px] font-semibold text-[#505050]">Estimated monthly cost</p>
+            </article>
+
+            <article class="rounded-[20px] border border-black/10 bg-white px-5 py-5">
+              <p class="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#6a6a6a]">App-based reader</p>
+              <p class="mt-3 text-[14px] font-semibold leading-6 text-[#4f4f4f]">1.75% + 7p per transaction + £0 monthly</p>
+              <p class="display mt-5 text-[36px] font-extrabold tracking-[-0.04em] text-black" data-rate-result="app">£0</p>
+              <p class="mt-1 text-[14px] font-semibold text-[#505050]">Estimated monthly cost</p>
+            </article>
+          </div>
+
+          <div class="mt-6 rounded-[18px] bg-[#f8f8f8] px-5 py-4 text-[15px] leading-7 text-[#545454]" data-rate-summary>
+            Based on £12,000 monthly turnover and a £65 average sale, N1 comes out cheaper than the example alternatives.
           </div>
         </div>
       </div>
@@ -784,42 +935,42 @@
             <div class="testimonial-track" data-testimonial-track>
               <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
                 <div class="mb-8 flex h-20 items-center justify-center">
-                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/cropped-CH-Electrical-Logo-Horizontal.webp?fit=1446%2C313&amp;ssl=1" alt="CH Electrical Wholesalers" class="max-h-14 w-auto max-w-[260px] object-contain">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/cropped-CH-Electrical-Logo-Horizontal.webp?fit=1446%2C313&amp;ssl=1" alt="CH Electrical Wholesalers" class="max-h-14 w-auto max-w-[260px] object-contain" loading="lazy" decoding="async">
                 </div>
                 <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"Thrilled to partner with N1 Payments! They've provided us with cutting-edge payment tech, instant gateways for WhatsApp/text/email, durable PDQs for our counter, exceptional local support, and significant fee savings from our last provider."</p>
                 <p class="mt-7 text-center text-[16px] font-bold text-black">Callum Worley</p>
               </article>
               <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
                 <div class="mb-8 flex h-20 items-center justify-center">
-                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034c7f4dfdef35c83a9eda_landscape-transparent-bg-shadow-designify-p-500.png?fit=500%2C281&amp;ssl=1" alt="Pie Restaurant" class="max-h-[72px] w-auto max-w-[230px] object-contain">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034c7f4dfdef35c83a9eda_landscape-transparent-bg-shadow-designify-p-500.png?fit=500%2C281&amp;ssl=1" alt="Pie Restaurant" class="max-h-[72px] w-auto max-w-[230px] object-contain" loading="lazy" decoding="async">
                 </div>
                 <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"The world of card machine payments and processing charges can get very complicated with a lot of companies hiding charges and trying to dazzle you with very low headline rates which are often too good to be true."</p>
                 <p class="mt-7 text-center text-[16px] font-bold text-black">Pie Restaurant</p>
               </article>
               <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
                 <div class="mb-8 flex h-20 items-center justify-center">
-                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034cea43a912e77613219c_landscape-transparent-bg-shadow-designify1-p-800.png?fit=800%2C450&amp;ssl=1" alt="Camber Wines" class="max-h-[72px] w-auto max-w-[290px] object-contain">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034cea43a912e77613219c_landscape-transparent-bg-shadow-designify1-p-800.png?fit=800%2C450&amp;ssl=1" alt="Camber Wines" class="max-h-[72px] w-auto max-w-[290px] object-contain" loading="lazy" decoding="async">
                 </div>
                 <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"The best business decision I have made this year. I have saved thousands of pounds in credit card charges'. it's easy and painless to make the change. In fact seamless."</p>
                 <p class="mt-7 text-center text-[16px] font-bold text-black">Camber Wines</p>
               </article>
               <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
                 <div class="mb-8 flex h-20 items-center justify-center">
-                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034d66c5baf958d68f880c_landscape-transparent-bg-shadow-designify2-p-500.png?fit=500%2C281&amp;ssl=1" alt="Marmion House Bar and Kitchen" class="max-h-[72px] w-auto max-w-[250px] object-contain">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034d66c5baf958d68f880c_landscape-transparent-bg-shadow-designify2-p-500.png?fit=500%2C281&amp;ssl=1" alt="Marmion House Bar and Kitchen" class="max-h-[72px] w-auto max-w-[250px] object-contain" loading="lazy" decoding="async">
                 </div>
                 <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"Thank you N1 Payment for setting up our new card machines and Epos system. you were so helpful in all of the process."</p>
                 <p class="mt-7 text-center text-[16px] font-bold text-black">Marmion House Bar &amp; Kitchen</p>
               </article>
               <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
                 <div class="mb-8 flex h-20 items-center justify-center">
-                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034e0faa908572444706f1_landscape-transparent-bg-shadow-designify3-p-500.png?fit=500%2C281&amp;ssl=1" alt="Spar Convenience Store" class="max-h-[78px] w-auto max-w-[210px] object-contain">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034e0faa908572444706f1_landscape-transparent-bg-shadow-designify3-p-500.png?fit=500%2C281&amp;ssl=1" alt="Spar Convenience Store" class="max-h-[78px] w-auto max-w-[210px] object-contain" loading="lazy" decoding="async">
                 </div>
                 <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"Thank you to all at N1 Payment for for saving us money and being so transparent in the set up of our new card machines and Epos."</p>
                 <p class="mt-7 text-center text-[16px] font-bold text-black">Spar Convenience Store</p>
               </article>
               <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
                 <div class="mb-8 flex h-20 items-center justify-center">
-                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034f214dfdef21623abf11_landscape-transparent-bg-shadow-designify4-p-500.png?fit=500%2C281&amp;ssl=1" alt="Shooting Star" class="max-h-[72px] w-auto max-w-[250px] object-contain">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034f214dfdef21623abf11_landscape-transparent-bg-shadow-designify4-p-500.png?fit=500%2C281&amp;ssl=1" alt="Shooting Star" class="max-h-[72px] w-auto max-w-[250px] object-contain" loading="lazy" decoding="async">
                 </div>
                 <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"N1 Payment have saved us thousands in transaction fee's and the customer support is exceptional."</p>
                 <p class="mt-7 text-center text-[16px] font-bold text-black">Shooting Star</p>
@@ -1004,24 +1155,24 @@
 
     const homeAudienceData = {
       trade: {
-        eyebrow: "Payments made simple for trade businesses",
+        eyebrow: "Payments made simple for all businesses",
         heading: "Built for the Trade. Designed for the Job Site.",
         bodyA: "N1 Payments gives trade businesses a faster, smarter way to take card payments wherever the work takes you. No complicated applications, no banks turning you away, no waiting days for your money.",
-        bodyB: "Mobile terminals with built-in SIM. Same-day or next-day settlement. Support that actually picks up the phone.",
+        bodyB: "Mobile terminals with built-in SIM. Next-day settlement as standard. Support that actually picks up the phone.",
         ticks: [
+          "No PCI charges",
           "Live transactions",
           "Reporting via app and portal",
           "Customer support",
-          "Next-day payments",
-          "Business funding"
+          "Next-day payments"
         ],
         heroImages: {
           left: {
-            src: "/assets/photos/home-hero-left.jpg",
-            alt: "Trade customer making a contactless payment"
+            src: "/assets/photos/solar_install.jpeg",
+            alt: "Residential solar panel installation on a customer's roof"
           },
           center: {
-            src: "/assets/photos/tablet-on-site.jpg",
+            src: "/assets/photos/tablet-on-site-optimized.jpg",
             alt: "Trade operator using a tablet during a residential site visit"
           },
           right: {
@@ -1093,16 +1244,16 @@
         }
       },
       hospitality: {
-        eyebrow: "Payments made simple for hospitality businesses",
+        eyebrow: "Payments made simple for all businesses",
         heading: "Built for Busy Service. Ready When the Rush Hits.",
         bodyA: "N1 Payments also supports hospitality businesses that need fast, reliable card payments during busy service, clear reporting after close, and support that actually answers the phone.",
         bodyB: "From restaurants and bars to cafes, shops and venues, we help customer-facing businesses take payments smoothly and get settled fast.",
         ticks: [
+          "No PCI charges",
           "Live transactions",
           "Reporting via app and portal",
           "Contactless and digital wallets",
-          "Next-day payments",
-          "Customer support"
+          "Next-day payments"
         ],
         heroImages: {
           left: {
@@ -1256,6 +1407,85 @@
     });
 
     setHomeAudience("trade");
+
+    const rateCalculator = document.querySelector("[data-rate-calculator]");
+    const rateTurnoverInput = rateCalculator?.querySelector('[data-rate-input="turnover"]');
+    const rateAverageInput = rateCalculator?.querySelector('[data-rate-input="average"]');
+    const rateSummary = rateCalculator?.querySelector("[data-rate-summary]");
+    const rateDisplays = {
+      turnover: rateCalculator?.querySelector('[data-rate-display="turnover"]'),
+      average: rateCalculator?.querySelector('[data-rate-display="average"]')
+    };
+    const rateOutputs = {
+      n1: rateCalculator?.querySelector('[data-rate-result="n1"]'),
+      highstreet: rateCalculator?.querySelector('[data-rate-result="highstreet"]'),
+      app: rateCalculator?.querySelector('[data-rate-result="app"]')
+    };
+
+    const rateModels = {
+      n1: { percent: 1.15, perTx: 0.03, monthly: 15 },
+      highstreet: { percent: 1.65, perTx: 0.05, monthly: 25 },
+      app: { percent: 1.75, perTx: 0.07, monthly: 0 }
+    };
+
+    const formatCurrency = (value) => `£${value.toLocaleString("en-GB", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+
+    const syncRateSlider = (input, displayElement) => {
+      if (!input) return;
+      const min = Number(input.min) || 0;
+      const max = Number(input.max) || 100;
+      const value = Number(input.value) || 0;
+      const progress = max > min ? ((value - min) / (max - min)) * 100 : 0;
+      input.style.setProperty("--range-progress", `${Math.min(100, Math.max(0, progress))}%`);
+      if (displayElement) displayElement.textContent = formatCurrency(Math.round(value));
+    };
+
+    const calculateRateComparison = () => {
+      if (!rateCalculator || !rateTurnoverInput || !rateAverageInput) return;
+
+      const turnover = Math.max(1000, Number(rateTurnoverInput.value) || 0);
+      const averageSale = Math.max(1, Number(rateAverageInput.value) || 0);
+      const transactionCount = turnover / averageSale;
+
+      syncRateSlider(rateTurnoverInput, rateDisplays.turnover);
+      syncRateSlider(rateAverageInput, rateDisplays.average);
+
+      const results = Object.fromEntries(
+        Object.entries(rateModels).map(([key, model]) => {
+          const total = model.monthly + (turnover * model.percent) / 100 + transactionCount * model.perTx;
+          return [key, total];
+        })
+      );
+
+      Object.entries(rateOutputs).forEach(([key, element]) => {
+        if (element) element.textContent = formatCurrency(Math.round(results[key]));
+      });
+
+      const highStreetSaving = Math.max(0, Math.round(results.highstreet - results.n1));
+      const appSaving = Math.max(0, Math.round(results.app - results.n1));
+
+      if (rateSummary) {
+        rateSummary.textContent = `Based on ${formatCurrency(turnover)} monthly turnover at an average sale of ${formatCurrency(averageSale)}, N1 could save around ${formatCurrency(highStreetSaving)} versus a typical high street provider and ${formatCurrency(appSaving)} versus an app-based reader.`;
+      }
+    };
+
+    [rateTurnoverInput, rateAverageInput].forEach((input) => {
+      input?.addEventListener("input", calculateRateComparison);
+    });
+
+    calculateRateComparison();
+
+    const logoTrack = document.querySelector("[data-logo-track]");
+    const logoSourceGroup = document.querySelector("[data-logo-group]");
+
+    const syncLogoLoop = () => {
+      if (!logoTrack || !logoSourceGroup) return;
+      logoTrack.style.setProperty("--logo-loop-distance", `${logoSourceGroup.getBoundingClientRect().width}px`);
+    };
+
+    syncLogoLoop();
+    window.addEventListener("load", syncLogoLoop);
+    window.addEventListener("resize", syncLogoLoop);
 
     const faqTriggers = document.querySelectorAll("[data-faq-trigger]");
     faqTriggers.forEach((trigger) => {

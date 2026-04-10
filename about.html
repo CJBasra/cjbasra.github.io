@@ -28,6 +28,7 @@
     };
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/header-shared.css">
   <style>
     @font-face {
       font-family: "Neutral Grotesk";
@@ -63,7 +64,7 @@
     }
 
     .section-pad {
-      padding: 86px 0;
+      padding: 3.5rem 0 86px;
     }
 
     .nav-link {
@@ -181,7 +182,7 @@
       }
 
       .section-pad {
-        padding: 52px 0;
+        padding: 3.5rem 0 52px;
       }
 
       .panel {
@@ -215,10 +216,10 @@
   </style>
 </head>
 <body class="bg-white text-brand-text antialiased">
-  <header class="sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+  <header class="site-header sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
     <div class="site-shell flex items-center justify-between gap-6 py-2">
       <a href="/" class="shrink-0" aria-label="N1 Payments home">
-        <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="h-14 w-auto sm:h-[58px]">
+        <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="site-logo-mark h-14 w-auto sm:h-[58px]">
       </a>
       <nav class="hidden items-center gap-5 xl:gap-6 lg:flex">
         <a href="/" class="nav-link">Home</a>
@@ -249,7 +250,7 @@
   </header>
 
   <main>
-    <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16 lg:pt-20">
+    <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16">
       <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
         <div class="max-w-[520px]">
           <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">About N1 Payments</p>
@@ -264,77 +265,27 @@
 
     <section class="section-pad pt-8 sm:pt-10">
       <div class="site-shell grid gap-6 lg:grid-cols-2">
-        <article class="relative overflow-hidden rounded-[30px] border border-black/6 bg-white px-8 py-8 shadow-soft sm:px-10 sm:py-10">
-          <div class="absolute left-0 top-0 h-full w-[7px] bg-brand-lime"></div>
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-[18px] bg-brand-lime text-black shadow-soft">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="7" y="2.5" width="10" height="19" rx="2.5"></rect>
-              <path d="M10 6h4"></path>
-              <path d="M9 10.5h6"></path>
-              <path d="M9 14.5h6"></path>
-            </svg>
-          </div>
-          <h2 class="display max-w-[420px] text-[34px] font-extrabold tracking-[-0.04em] text-black sm:text-[38px]">Contractors are mobile.</h2>
+        <article class="overflow-hidden rounded-[30px] border border-black/6 bg-[#fbfbfb] px-8 py-8 shadow-soft sm:px-10 sm:py-10">
+          <div class="h-[4px] w-16 rounded-full bg-brand-lime"></div>
+          <p class="mt-5 text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070]">Built for mobile teams</p>
+          <h2 class="display mt-4 max-w-[420px] text-[34px] font-extrabold tracking-[-0.04em] text-black sm:text-[38px]">Contractors are mobile.</h2>
           <p class="mt-5 max-w-[470px] text-[17px] leading-8 text-[#565656]">We know this industry does not fit neatly into the boxes that mainstream banks use. Contractors are mobile. They work at customers' homes, on building sites, and out of their vans. They need terminals that go where the job is, not a fixed till that sits on a counter.</p>
         </article>
-        <article class="relative overflow-hidden rounded-[30px] border border-black/6 bg-white px-8 py-8 shadow-soft sm:px-10 sm:py-10">
-          <div class="absolute left-0 top-0 h-full w-[7px] bg-brand-lime"></div>
-          <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-[18px] bg-brand-lime text-black shadow-soft">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="6"></circle>
-              <path d="m20 20-3.5-3.5"></path>
-              <path d="m8.5 11 1.7 1.7 3.3-3.4"></path>
-            </svg>
-          </div>
-          <h2 class="display max-w-[460px] text-[34px] font-extrabold tracking-[-0.04em] text-black sm:text-[38px]">We explore every option.</h2>
+        <article class="overflow-hidden rounded-[30px] border border-black/6 bg-white px-8 py-8 shadow-soft sm:px-10 sm:py-10">
+          <div class="h-[4px] w-16 rounded-full bg-brand-lime"></div>
+          <p class="mt-5 text-[12px] font-bold uppercase tracking-[0.22em] text-[#707070]">Application support</p>
+          <h2 class="display mt-4 max-w-[460px] text-[34px] font-extrabold tracking-[-0.04em] text-black sm:text-[38px]">We explore every option.</h2>
           <p class="mt-5 max-w-[500px] text-[17px] leading-8 text-[#565656]">We also know that too many contractors have been turned away by payment providers who do not understand the trade. We have made it our business to change that. We work with acquirers and funders who understand construction and we will not give up on your application without exploring every option.</p>
         </article>
       </div>
     </section>
 
-    <section class="band-light band-angle-both section-pad pt-10 sm:pt-12">
+    <section class="band-light band-angle-both section-pad py-14 sm:py-16">
       <div class="site-shell">
-        <div class="mx-auto max-w-[780px] text-center">
-          <h2 class="display text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">What makes us different</h2>
+        <div class="text-center">
+          <div class="mx-auto h-[4px] w-20 rounded-full bg-brand-lime"></div>
+          <p class="display mx-auto mt-6 max-w-[940px] text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[58px]">Independent. Local. Reachable. That's N1 Payments.</p>
         </div>
-        <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <article class="rounded-[26px] border border-black/6 bg-white px-7 py-8 shadow-soft">
-            <div class="flex h-12 w-12 items-center justify-center rounded-[16px] bg-brand-lime text-black shadow-soft">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14"></path>
-                <path d="M8 8h8"></path>
-                <path d="M8 16h8"></path>
-              </svg>
-            </div>
-            <h3 class="display mt-6 text-[30px] font-extrabold tracking-[-0.03em] text-black">Straightforward</h3>
-            <p class="mt-4 text-[16px] leading-8 text-[#565656]">Payment services should be straightforward, transparent, and built around the people who use them.</p>
-          </article>
-          <article class="rounded-[26px] border border-black/6 bg-white px-7 py-8 shadow-soft">
-            <div class="flex h-12 w-12 items-center justify-center rounded-[16px] bg-brand-lime text-black shadow-soft">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 21s6-4.35 6-10a6 6 0 1 0-12 0c0 5.65 6 10 6 10Z"></path>
-                <circle cx="12" cy="11" r="2.3"></circle>
-              </svg>
-            </div>
-            <h3 class="display mt-6 text-[30px] font-extrabold tracking-[-0.03em] text-black">Local</h3>
-            <p class="mt-4 text-[16px] leading-8 text-[#565656]">We work directly with contractors to find the right setup, get you approved, and support you from day one.</p>
-          </article>
-          <article class="rounded-[26px] border border-black/6 bg-white px-7 py-8 shadow-soft">
-            <div class="flex h-12 w-12 items-center justify-center rounded-[16px] bg-brand-lime text-black shadow-soft">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 3.18 2 2 0 0 1 4.11 1h2a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L7.46 8.3a16 16 0 0 0 8.24 8.24l.86-.86a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92Z"></path>
-              </svg>
-            </div>
-            <h3 class="display mt-6 text-[30px] font-extrabold tracking-[-0.03em] text-black">Reachable</h3>
-            <p class="mt-4 text-[16px] leading-8 text-[#565656]">When you need us, you speak to people who understand the trade and understand your account.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="band-light band-angle-both section-pad">
-      <div class="site-shell text-center">
-        <p class="display text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[58px]">Independent. Local. Reachable. That's N1 Payments.</p>
       </div>
     </section>
 
