@@ -1,0 +1,366 @@
+<!-- partners.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N1 Payments Alt | Partners</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=19%2C32&amp;ssl=1">
+  <link rel="apple-touch-icon" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=55%2C91&amp;ssl=1">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              lime: "#DCFB00",
+              limeSoft: "#DFF24B",
+              text: "#4D4D4D",
+              light: "#F6F6F6",
+              black: "#111111"
+            }
+          },
+          boxShadow: {
+            soft: "0 18px 45px rgba(17, 17, 17, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/header-shared.css">
+  <link rel="stylesheet" href="/assets/alternate-shared.css">
+  <style>
+    @font-face {
+      font-family: "Neutral Grotesk";
+      src: url("https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2024/10/NeutralGrotesk-Regular.woff2?media=1755517040") format("woff2"),
+           url("https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2024/10/NeutralGrotesk-Regular.woff?media=1755517040") format("woff");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    :root {
+      --brand-lime: #dcfb00;
+      --brand-lime-soft: #dff24b;
+      --brand-text: #4d4d4d;
+      --brand-light: #f6f6f6;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--brand-text);
+      background: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .display {
+      font-family: "Neutral Grotesk", Arial, Helvetica, sans-serif;
+    }
+
+    .site-shell {
+      width: min(1240px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-pad {
+      padding: 3.5rem 0 86px;
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      min-height: 58px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #565656;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #111111;
+    }
+
+    .btn-lime {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: var(--brand-lime);
+      padding: 13px 30px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #111111;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-lime:hover {
+      background: var(--brand-lime-soft);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      border: 2px solid #111111;
+      background: transparent;
+      padding: 11px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #111111;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-outline:hover {
+      background: #111111;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .panel {
+      border-radius: 28px;
+      background: var(--brand-light);
+    }
+
+    .band-light {
+      background: var(--brand-light);
+    }
+
+    .band-angle-bottom {
+      position: relative;
+    }
+
+    .band-angle-bottom > .site-shell {
+      position: relative;
+      z-index: 1;
+    }
+
+    .band-angle-bottom::after {
+      content: "";
+      position: absolute;
+      left: -2%;
+      bottom: -28px;
+      width: 104%;
+      height: 52px;
+      background: #ffffff;
+      pointer-events: none;
+      z-index: 0;
+      transform: rotate(-1.6deg);
+    }
+
+    [data-mobile-menu].hidden {
+      display: none;
+    }
+
+    .footer-link {
+      color: rgba(255, 255, 255, 0.78);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 767px) {
+      .site-shell {
+        width: min(1240px, calc(100% - 24px));
+      }
+
+      .section-pad {
+        padding: 3.5rem 0 52px;
+      }
+
+      .panel {
+        border-radius: 22px;
+      }
+
+      .band-angle-bottom::after {
+        height: 34px;
+        bottom: -18px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-brand-text antialiased">
+  <header class="site-header sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+    <div class="site-shell flex items-center justify-between gap-4 py-2 xl:gap-6">
+      <a href="/alternate/" class="shrink-0" aria-label="N1 Payments home">
+        <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="site-logo-mark h-14 w-auto sm:h-[58px]">
+      </a>
+
+      <nav class="hidden items-center gap-4 xl:gap-5 lg:flex">
+        <a href="/alternate/" class="nav-link">Home</a>
+        <div class="nav-group">
+          <button type="button" class="nav-link dropdown-trigger border-0 bg-transparent p-0">
+            <span>Industries</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="dropdown-panel">
+            <a href="/alternate/industries/trade/" class="dropdown-link">Trade</a><a href="/alternate/industries/hospitality/" class="dropdown-link">Hospitality</a><a href="/alternate/industries/retail/" class="dropdown-link">Retail</a><a href="/alternate/industries/beauty/" class="dropdown-link">Beauty</a>
+          </div>
+        </div>
+        <a href="/alternate/card-payments/" class="nav-link">Card Payments</a>
+        <a href="/alternate/online-payments/" class="nav-link">Online Payments</a>
+        <a href="/alternate/business-funding/" class="nav-link">Business Funding</a>
+        <a href="/alternate/about/" class="nav-link">About</a>
+        <a href="/alternate/contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:block">
+        <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
+      </div>
+
+      <button type="button" data-menu-toggle class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-black/10 text-black lg:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div data-mobile-menu class="hidden border-t border-black/10 bg-white lg:hidden">
+      <div class="site-shell flex flex-col py-4">
+        <a href="/alternate/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Home</a>
+        <p class="mobile-menu-label">Industries</p>
+        <a href="/alternate/industries/trade/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Trade</a><a href="/alternate/industries/hospitality/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Hospitality</a><a href="/alternate/industries/retail/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Retail</a><a href="/alternate/industries/beauty/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Beauty</a>
+        <div class="my-2 h-px bg-black/8"></div>
+        <a href="/alternate/card-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Card Payments</a>
+        <a href="/alternate/online-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Online Payments</a>
+        <a href="/alternate/business-funding/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Funding</a>
+        <a href="/alternate/about/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">About</a>
+        <a href="/alternate/contact/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Contact</a>
+        <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime mt-3">Get a quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16">
+      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.92fr_1.08fr]">
+        <div class="max-w-[560px]">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Partners</p>
+          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]">Become an authorised N1 Payments partner and earn commission on your referrals.</h1>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Whether you are an independent salesperson or a re-selling group this is a great opportunity to work with a leading merchant services provider.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Become a partner</a>
+            <a href="https://portal.n1payments.com/" target="_blank" rel="noopener noreferrer" class="btn-outline">Agent portal login</a>
+          </div>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="panel p-7 shadow-soft">
+            <h2 class="display text-[28px] font-extrabold tracking-[-0.03em] text-black">Bespoke commission plans</h2>
+            <p class="mt-4 text-[16px] leading-8 text-[#565656]">Whether you are an independent salesperson or a re-selling group this is a great opportunity to work with a leading merchant services provider.</p>
+          </article>
+          <article class="rounded-[28px] bg-white p-7 shadow-soft">
+            <h2 class="display text-[28px] font-extrabold tracking-[-0.03em] text-black">Get paid on approvals</h2>
+            <p class="mt-4 text-[16px] leading-8 text-[#565656]">If you are a website or app developer, we would be delighted to discuss payment gateways and acquiring services.</p>
+          </article>
+          <article class="panel p-7 shadow-soft">
+            <h2 class="display text-[28px] font-extrabold tracking-[-0.03em] text-black">Become a senior business development manager</h2>
+            <p class="mt-4 text-[16px] leading-8 text-[#565656]">Utility industry and service brokers partnerships are also welcome.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad pt-6 sm:pt-10">
+      <div class="site-shell">
+        <div class="grid gap-6 md:grid-cols-3">
+          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[22px] border-2 border-black bg-white px-7 py-8 shadow-soft transition hover:-translate-y-0.5">
+            <span class="display block text-[30px] font-extrabold tracking-[-0.03em] text-black">Become a partner</span>
+          </a>
+          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[22px] border-2 border-black bg-white px-7 py-8 shadow-soft transition hover:-translate-y-0.5">
+            <span class="display block text-[30px] font-extrabold tracking-[-0.03em] text-black">Existing partner referral</span>
+          </a>
+          <a href="https://portal.n1payments.com/" target="_blank" rel="noopener noreferrer" class="rounded-[22px] border-2 border-black bg-white px-7 py-8 shadow-soft transition hover:-translate-y-0.5">
+            <span class="display block text-[30px] font-extrabold tracking-[-0.03em] text-black">Agent portal login</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-16 pt-6 sm:pb-20">
+      <div class="site-shell">
+        <div class="panel px-6 py-14 shadow-soft sm:px-10">
+          <p class="mx-auto max-w-[820px] text-center text-[18px] leading-8 text-[#5b5b5b]">N1 Payments merchant services will provide a full transparent service for you and help your company move into the future of taking card payments, with the very latest financial payment technology.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black pt-14 text-white">
+    <div class="site-shell">
+      <div class="grid gap-12 pb-12 lg:grid-cols-[1.05fr_0.86fr_0.86fr_0.86fr_1fr]">
+        <div>
+          <a href="/alternate/" class="inline-flex" aria-label="N1 Payments home">
+            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/N1-Payments-Logo-coloured-white.png?fit=212%2C153&amp;ssl=1" alt="N1 Payments" class="h-16 w-auto">
+          </a>
+          <p class="mt-5 max-w-[320px] text-[15px] leading-7 text-white/72">Payments made simple for independent businesses across trade, hospitality, retail, and beauty.</p>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Company</h3>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li><a class="footer-link" href="/alternate/about/">About us</a></li>
+            <li><a class="footer-link" href="/alternate/contact/">Contact us</a></li>
+            <li><a class="footer-link" href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer">Get a quote</a></li>
+            <li><a class="footer-link" href="/alternate/partners/">Partners</a></li>
+            <li><a class="footer-link" href="/alternate/privacy-policy/">Privacy Policy</a></li>
+            <li><a class="footer-link" href="/alternate/terms-and-conditions/">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Industries</h3>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li><a class="footer-link" href="/alternate/industries/trade/">Trade</a></li>
+            <li><a class="footer-link" href="/alternate/industries/hospitality/">Hospitality</a></li>
+            <li><a class="footer-link" href="/alternate/industries/retail/">Retail</a></li>
+            <li><a class="footer-link" href="/alternate/industries/beauty/">Beauty</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Solutions</h3>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li><a class="footer-link" href="/alternate/card-payments/">Card Payments</a></li>
+            <li><a class="footer-link" href="/alternate/online-payments/">Online Payments</a></li>
+            <li><a class="footer-link" href="/alternate/business-funding/">Business Funding</a></li>
+            <li><a class="footer-link" href="/alternate/e-pos/">EPOS Systems</a></li>
+            <li><a class="footer-link" href="/alternate/business-account/">Business Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Information</h3>
+          <p class="mt-5 text-[18px] font-extrabold text-brand-lime">0330 377 2415</p>
+          <div class="mt-5 flex items-center gap-4">
+            <a href="https://www.facebook.com/number1payment/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-white/90 transition hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.3l.4-2.8h-2.7V9.4c0-.8.2-1.4 1.4-1.4h1.5V5.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4v1.8H8v2.8h2.3v7h3.2Z"></path></svg></a>
+            <a href="https://www.instagram.com/n1payments/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white/90 transition hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.25 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2Z"></path></svg></a>
+            <a href="https://www.linkedin.com/company/n1-payments/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white/90 transition hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H4V20h2.94V8.5ZM5.47 7.2A1.7 1.7 0 1 0 5.44 3.8a1.7 1.7 0 0 0 .03 3.4ZM20 20h-2.93v-5.58c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94V20H10.2V8.5h2.81v1.57h.04c.39-.74 1.35-1.52 2.78-1.52 2.98 0 3.53 1.96 3.53 4.52V20Z"></path></svg></a>
+          </div>
+          <p class="mt-5 text-[15px] font-bold text-white">FRN: 973294</p>
+          <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/fca.jpg?fit=500%2C164&amp;ssl=1" alt="FCA regulated" class="mt-4 h-10 w-auto">
+          <p class="mt-4 text-[15px] font-bold text-white">COMPANY REG: 10091004</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 py-6 text-center text-[14px] text-white/72">
+        <p>COPYRIGHT (C) 2023 N1 PAYMENTS, ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector("[data-menu-toggle]");
+    const mobileMenu = document.querySelector("[data-mobile-menu]");
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.toggle("hidden");
+        menuToggle.setAttribute("aria-expanded", String(!isHidden));
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1356 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N1 Payments Alt | Home</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=19%2C32&amp;ssl=1">
+  <link rel="apple-touch-icon" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=55%2C91&amp;ssl=1">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              lime: "#DCFB00",
+              limeSoft: "#DFF24B",
+              text: "#4D4D4D",
+              light: "#F6F6F6",
+              black: "#111111"
+            }
+          },
+          boxShadow: {
+            soft: "0 18px 45px rgba(17, 17, 17, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/header-shared.css">
+  <link rel="stylesheet" href="/assets/alternate-shared.css">
+  <style>
+    @font-face {
+      font-family: "Neutral Grotesk";
+      src: url("https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2024/10/NeutralGrotesk-Regular.woff2?media=1755517040") format("woff2"),
+           url("https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2024/10/NeutralGrotesk-Regular.woff?media=1755517040") format("woff");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    :root {
+      --brand-lime: #dcfb00;
+      --brand-lime-soft: #dff24b;
+      --brand-text: #4d4d4d;
+      --brand-light: #f6f6f6;
+      --brand-black: #111111;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--brand-text);
+      background: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .display {
+      font-family: "Neutral Grotesk", Arial, Helvetica, sans-serif;
+    }
+
+    .site-shell {
+      width: min(1240px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-pad {
+      padding: 3.5rem 0 86px;
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      min-height: 58px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #565656;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #111111;
+    }
+
+    .nav-link.active {
+      color: #111111;
+    }
+
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 6px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--brand-lime-soft);
+    }
+
+    .btn-lime {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 8px;
+      background: var(--brand-lime);
+      padding: 13px 30px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #111111;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-lime:hover {
+      background: var(--brand-lime-soft);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #111111;
+      border-radius: 8px;
+      background: transparent;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #111111;
+      text-decoration: none;
+    }
+
+    .audience-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border-radius: 999px;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      background: #ffffff;
+      padding: 5px;
+      box-shadow: 0 14px 30px rgba(17, 17, 17, 0.06);
+    }
+
+    .audience-tab {
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #444444;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .audience-tab[data-active="true"] {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .audience-tab:hover {
+      transform: translateY(-1px);
+    }
+
+    .panel {
+      border-radius: 28px;
+      background: var(--brand-light);
+    }
+
+    .rate-control {
+      border-radius: 18px;
+      background: #ffffff;
+      padding: 18px 18px 16px;
+      box-shadow: inset 0 0 0 1px rgba(17, 17, 17, 0.08);
+    }
+
+    .rate-value {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      min-width: 88px;
+      border-radius: 999px;
+      background: #111111;
+      padding: 6px 14px;
+      font-size: 15px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .rate-range {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 12px;
+      border-radius: 999px;
+      outline: none;
+      background: linear-gradient(90deg, var(--brand-lime) 0%, var(--brand-lime) var(--range-progress, 0%), rgba(17, 17, 17, 0.12) var(--range-progress, 0%), rgba(17, 17, 17, 0.12) 100%);
+    }
+
+    .rate-range::-webkit-slider-runnable-track {
+      height: 12px;
+      border-radius: 999px;
+      background: transparent;
+    }
+
+    .rate-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      margin-top: -6px;
+      border: 3px solid #111111;
+      border-radius: 999px;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(17, 17, 17, 0.16);
+      cursor: pointer;
+    }
+
+    .rate-range::-moz-range-track {
+      height: 12px;
+      border-radius: 999px;
+      background: rgba(17, 17, 17, 0.12);
+    }
+
+    .rate-range::-moz-range-progress {
+      height: 12px;
+      border-radius: 999px;
+      background: var(--brand-lime);
+    }
+
+    .rate-range::-moz-range-thumb {
+      width: 24px;
+      height: 24px;
+      border: 3px solid #111111;
+      border-radius: 999px;
+      background: #ffffff;
+      box-shadow: 0 6px 18px rgba(17, 17, 17, 0.16);
+      cursor: pointer;
+    }
+
+    .rate-scale {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7a7a7a;
+    }
+
+    .band-light {
+      background: var(--brand-light);
+    }
+
+    .band-angle-top,
+    .band-angle-bottom,
+    .band-angle-both {
+      position: relative;
+    }
+
+    .band-angle-top > .site-shell,
+    .band-angle-bottom > .site-shell,
+    .band-angle-both > .site-shell {
+      position: relative;
+      z-index: 1;
+    }
+
+    .band-angle-top::before,
+    .band-angle-bottom::after,
+    .band-angle-both::before,
+    .band-angle-both::after {
+      content: "";
+      position: absolute;
+      left: -2%;
+      width: 104%;
+      height: 52px;
+      background: #ffffff;
+      pointer-events: none;
+      z-index: 0;
+      transform-origin: center;
+    }
+
+    .band-angle-top::before,
+    .band-angle-both::before {
+      top: -28px;
+      transform: rotate(-1.8deg);
+    }
+
+    .band-angle-bottom::after,
+    .band-angle-both::after {
+      bottom: -28px;
+      transform: rotate(-1.6deg);
+    }
+
+    .logo-marquee {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-marquee-full {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+    }
+
+    .logo-marquee::before,
+    .logo-marquee::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 56px;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .logo-marquee::before {
+      left: 0;
+      background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .logo-marquee::after {
+      right: 0;
+      background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .logo-track {
+      display: flex;
+      width: max-content;
+      align-items: center;
+      animation: logo-scroll 28s linear infinite;
+      will-change: transform;
+      --logo-loop-distance: 50%;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 72px;
+      padding-right: 72px;
+      flex: none;
+    }
+
+    @keyframes logo-scroll {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(calc(-1 * var(--logo-loop-distance)), 0, 0);
+      }
+    }
+
+    .badge-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 8px;
+      background: #111111;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      box-shadow: 0 10px 24px rgba(17, 17, 17, 0.18);
+    }
+
+    .check-box {
+      display: inline-flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border: 3px solid #111111;
+      border-radius: 7px;
+      background: var(--brand-lime);
+      color: #111111;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 2px 0 rgba(17, 17, 17, 0.12);
+    }
+
+    .product-tab {
+      border: 1px solid rgba(17, 17, 17, 0.12);
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 10px 16px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .product-tab[data-active="true"] {
+      border-color: var(--brand-lime);
+      background: var(--brand-lime);
+    }
+
+    .faq-panel[hidden],
+    .tab-panel[hidden],
+    [data-mobile-menu].hidden {
+      display: none;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.12);
+    }
+
+    .faq-trigger {
+      width: 100%;
+      padding: 18px 0;
+      text-align: left;
+      background: transparent;
+      border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .faq-icon {
+      flex: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      border: 1px solid rgba(17, 17, 17, 0.14);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #111111;
+    }
+
+    .footer-link {
+      color: rgba(255, 255, 255, 0.78);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+    }
+
+    .testimonial-viewport {
+      overflow: hidden;
+      cursor: grab;
+      touch-action: pan-y;
+      overscroll-behavior-x: contain;
+      user-select: none;
+    }
+
+    .testimonial-viewport.is-dragging {
+      cursor: grabbing;
+    }
+
+    .testimonial-track {
+      display: flex;
+      gap: 28px;
+      will-change: transform;
+      transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .testimonial-viewport.is-dragging .testimonial-track {
+      transition: none;
+    }
+
+    .testimonial-slide {
+      flex: 0 0 calc((100% - 28px) / 2);
+    }
+
+    .testimonial-slide img {
+      pointer-events: none;
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+
+    .testimonial-dot {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .testimonial-dot span {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(17, 17, 17, 0.25);
+      transition: width 0.2s ease, background 0.2s ease;
+    }
+
+    .testimonial-dot[data-active="true"] span {
+      width: 32px;
+      background: #111111;
+    }
+
+    @media (max-width: 767px) {
+      .site-shell {
+        width: min(1240px, calc(100% - 24px));
+      }
+
+      .section-pad {
+        padding: 3.5rem 0 52px;
+      }
+
+      .panel {
+        border-radius: 22px;
+      }
+
+      .band-angle-top::before,
+      .band-angle-bottom::after,
+      .band-angle-both::before,
+      .band-angle-both::after {
+        height: 34px;
+      }
+
+      .band-angle-top::before,
+      .band-angle-both::before {
+        top: -18px;
+      }
+
+      .band-angle-bottom::after,
+      .band-angle-both::after {
+        bottom: -18px;
+      }
+
+      .btn-lime,
+      .btn-outline {
+        min-height: 48px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .badge-dark {
+        padding: 4px 8px;
+        font-size: 10px;
+      }
+
+      .check-box {
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
+        border-radius: 6px;
+        font-size: 10px;
+      }
+
+      .product-tab {
+        flex: 1 1 132px;
+        padding: 10px 12px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .faq-trigger {
+        align-items: flex-start;
+        font-size: 15px;
+        line-height: 1.45;
+      }
+
+      .faq-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+      }
+
+      .logo-marquee::before,
+      .logo-marquee::after {
+        width: 24px;
+      }
+
+      .logo-group {
+        gap: 28px;
+        padding-right: 28px;
+      }
+
+      .logo-track {
+        animation-duration: 24s;
+      }
+
+      .testimonial-track {
+        gap: 16px;
+      }
+
+      .testimonial-slide {
+        flex-basis: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body class="bg-white text-brand-text antialiased">
+  <header class="site-header sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+    <div class="site-shell flex items-center justify-between gap-4 py-2 xl:gap-6">
+      <a href="/alternate/" class="shrink-0" aria-label="N1 Payments home">
+        <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="site-logo-mark h-14 w-auto sm:h-[58px]">
+      </a>
+
+      <nav class="hidden items-center gap-4 xl:gap-5 lg:flex">
+        <a href="/alternate/" class="nav-link active" aria-current="page">Home</a>
+        <div class="nav-group">
+          <button type="button" class="nav-link dropdown-trigger border-0 bg-transparent p-0">
+            <span>Industries</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="dropdown-panel">
+            <a href="/alternate/industries/trade/" class="dropdown-link">Trade</a><a href="/alternate/industries/hospitality/" class="dropdown-link">Hospitality</a><a href="/alternate/industries/retail/" class="dropdown-link">Retail</a><a href="/alternate/industries/beauty/" class="dropdown-link">Beauty</a>
+          </div>
+        </div>
+        <a href="/alternate/card-payments/" class="nav-link">Card Payments</a>
+        <a href="/alternate/online-payments/" class="nav-link">Online Payments</a>
+        <a href="/alternate/business-funding/" class="nav-link">Business Funding</a>
+        <a href="/alternate/about/" class="nav-link">About</a>
+        <a href="/alternate/contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="hidden lg:block">
+        <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
+      </div>
+
+      <button type="button" data-menu-toggle class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-black/10 text-black lg:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div data-mobile-menu class="hidden border-t border-black/10 bg-white lg:hidden">
+      <div class="site-shell flex flex-col py-4">
+        <a href="/alternate/" class="rounded-lg px-4 py-3 text-sm font-semibold bg-brand-light text-black">Home</a>
+        <p class="mobile-menu-label">Industries</p>
+        <a href="/alternate/industries/trade/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Trade</a><a href="/alternate/industries/hospitality/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Hospitality</a><a href="/alternate/industries/retail/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Retail</a><a href="/alternate/industries/beauty/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Beauty</a>
+        <div class="my-2 h-px bg-black/8"></div>
+        <a href="/alternate/card-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Card Payments</a>
+        <a href="/alternate/online-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Online Payments</a>
+        <a href="/alternate/business-funding/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Funding</a>
+        <a href="/alternate/about/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">About</a>
+        <a href="/alternate/contact/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Contact</a>
+        <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime mt-3">Get a quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16">
+      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="max-w-[520px]">
+                    <p class="mt-4 text-[13px] font-semibold uppercase tracking-[0.24em] text-[#707070] sm:whitespace-nowrap" data-home-eyebrow>Payments made simple for all businesses</p>
+          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]" data-home-heading>Built for busy businesses across trade, hospitality, retail and beauty.</h1>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-home-body-a>N1 Payments helps independent businesses take card payments in person, online, and on the move with straightforward rates, reliable terminals, and support that actually picks up the phone.</p>
+          <p class="mt-4 text-[17px] leading-8 text-[#555555]" data-home-body-b>Whether you work on site, run a venue, manage a shop floor, or take bookings in a salon or clinic, we will help you find the right setup and get settled fast.</p>
+          <ul class="mt-8 space-y-4 text-[16px] font-bold text-[#232323]">
+            <li class="flex items-center gap-3">
+              <span class="check-box">&#10003;</span>
+              <span data-home-tick="0">No PCI charges</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="check-box">&#10003;</span>
+              <span data-home-tick="1">Portable and countertop terminals</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="check-box">&#10003;</span>
+              <span data-home-tick="2">Reporting via app and portal</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="check-box">&#10003;</span>
+              <span data-home-tick="3">Support that picks up the phone</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="check-box">&#10003;</span>
+              <span data-home-tick="4">Next-day payments</span>
+            </li>
+          </ul>
+          <div class="mt-8 flex flex-wrap gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#4a4a4a]">
+            <a href="/alternate/industries/trade/" class="rounded-full border border-black/10 bg-white px-4 py-2 transition hover:-translate-y-0.5 hover:border-black/20 hover:text-black">Trade</a>
+            <a href="/alternate/industries/hospitality/" class="rounded-full border border-black/10 bg-white px-4 py-2 transition hover:-translate-y-0.5 hover:border-black/20 hover:text-black">Hospitality</a>
+            <a href="/alternate/industries/retail/" class="rounded-full border border-black/10 bg-white px-4 py-2 transition hover:-translate-y-0.5 hover:border-black/20 hover:text-black">Retail</a>
+            <a href="/alternate/industries/beauty/" class="rounded-full border border-black/10 bg-white px-4 py-2 transition hover:-translate-y-0.5 hover:border-black/20 hover:text-black">Beauty</a>
+          </div>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
+            <a href="/alternate/contact/" class="btn-outline">Contact us</a>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="mx-auto grid max-w-[720px] grid-cols-[0.94fr_1.08fr_0.88fr] items-start gap-4 sm:gap-5 lg:gap-6">
+            <div class="mt-8 overflow-hidden rounded-[18px] shadow-soft sm:mt-20">
+              <img data-home-hero-image="left" src="/assets/photos/solar_install.jpeg" alt="Residential solar panel installation on a customer's roof" class="h-[210px] w-full object-cover object-center sm:h-[320px]">
+            </div>
+            <div class="overflow-hidden rounded-[18px] shadow-soft">
+              <img data-home-hero-image="center" src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/06/002.jpg?fit=261%2C475&amp;ssl=1" alt="Hospitality staff member taking payment during service" class="h-[280px] w-full object-cover object-center sm:h-[475px]" decoding="async" fetchpriority="high">
+            </div>
+            <div class="mt-5 overflow-hidden rounded-[18px] shadow-soft sm:mt-14">
+              <img data-home-hero-image="right" src="/assets/photos/online-pay-link.webp" alt="Customer completing a payment on a mobile phone" class="h-[230px] w-full object-cover object-center sm:h-[371px]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-black/5 bg-white py-8">
+      <div class="logo-marquee-full">
+        <div class="logo-marquee" data-logo-marquee>
+          <div class="logo-track" data-logo-track>
+            <div class="logo-group" data-logo-group>
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a0928cb9ff57a358a5_g-pay-logo.png?resize=400%2C250&amp;ssl=1" alt="Google Pay" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a459a4656557e04f52_visa-logo.png?resize=400%2C250&amp;ssl=1" alt="Visa" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a365aa7056e2941f18_master-card-logo.png?resize=400%2C250&amp;ssl=1" alt="Mastercard" class="h-10 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a50ea81d1df5ac29d3_american-express-logo.jpg?resize=400%2C250&amp;ssl=1" alt="American Express" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a5e06f7db9f5e52818_dinner-club-logo.png?resize=400%2C250&amp;ssl=1" alt="Diners Club" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a1d91db739e5f379cb_discover-logo.png?resize=400%2C250&amp;ssl=1" alt="Discover" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62db7ac99e2cf899af8dc32a_Samsung_Pay_icon.png?resize=400%2C250&amp;ssl=1" alt="Samsung Pay" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62db7ac80af0c62738f3e220_apple-pay-logo.png?resize=400%2C250&amp;ssl=1" alt="Apple Pay" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d9288059a4657611e056b8_unionpay-logo.png?resize=400%2C250&amp;ssl=1" alt="UnionPay" class="h-8 w-auto object-contain">
+            </div>
+            <div class="logo-group" aria-hidden="true">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a0928cb9ff57a358a5_g-pay-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a459a4656557e04f52_visa-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a365aa7056e2941f18_master-card-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-10 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a50ea81d1df5ac29d3_american-express-logo.jpg?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a5e06f7db9f5e52818_dinner-club-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d927a1d91db739e5f379cb_discover-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62db7ac99e2cf899af8dc32a_Samsung_Pay_icon.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62db7ac80af0c62738f3e220_apple-pay-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+              <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/62d9288059a4657611e056b8_unionpay-logo.png?resize=400%2C250&amp;ssl=1" alt="" class="h-8 w-auto object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-shell">
+        <div class="mt-12 grid gap-6 lg:grid-cols-[1.08fr_1.14fr_1.08fr]">
+          <article class="group relative overflow-hidden rounded-[24px] border-2 border-black bg-white px-7 py-7 shadow-[0_12px_30px_rgba(17,17,17,0.05)] md:px-8 md:py-8">
+            <div class="flex items-start justify-between gap-4">
+              <div class="inline-flex h-12 w-12 items-center justify-center rounded-[14px] bg-brand-light text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4"></path><path stroke-linecap="round" stroke-linejoin="round" d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9Z"></path></svg>
+              </div>
+              <span class="rounded-full bg-[#f4f4f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]" data-proof-label="0">Setup</span>
+            </div>
+            <h2 class="display mt-6 max-w-[14ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black" data-proof-title="0">Straightforward Approval and Setup</h2>
+            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]" data-proof-body="0">We help independent businesses choose the right payment setup quickly, with clear guidance from application through to go-live.</p>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-[24px] border-2 border-black bg-[#f9ffd6] px-7 py-7 shadow-[0_12px_30px_rgba(17,17,17,0.05)] md:px-8 md:py-8">
+            <div class="flex items-start justify-between gap-4">
+              <div class="inline-flex h-12 w-12 items-center justify-center rounded-[14px] bg-white text-black shadow-[inset_0_0_0_1px_rgba(17,17,17,0.06)]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"></rect><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01"></path></svg>
+              </div>
+              <span class="rounded-full bg-white/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]" data-proof-label="1">Reporting</span>
+            </div>
+            <h2 class="display mt-6 max-w-[14ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black" data-proof-title="1">Live Transactions and Clear Reporting</h2>
+            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]" data-proof-body="1">Track payments as they happen and keep on top of activity through the app and portal without relying on guesswork.</p>
+          </article>
+
+          <article class="group relative overflow-hidden rounded-[24px] border-2 border-black bg-white px-7 py-7 shadow-[0_12px_30px_rgba(17,17,17,0.05)] md:px-8 md:py-8">
+            <div class="flex items-start justify-between gap-4">
+              <div class="inline-flex h-12 w-12 items-center justify-center rounded-[14px] bg-brand-light text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l2.5 2.5"></path><circle cx="12" cy="12" r="9"></circle></svg>
+              </div>
+              <span class="rounded-full bg-[#f4f4f4] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[#6b6b6b]" data-proof-label="2">Cash Flow</span>
+            </div>
+            <h2 class="display mt-6 max-w-[14ch] text-[28px] font-extrabold leading-[1.12] tracking-[-0.04em] text-black" data-proof-title="2">Next-Day Settlement as Standard</h2>
+            <p class="mt-4 max-w-[38ch] text-[16px] leading-8 text-[#565656]" data-proof-body="2">Your money lands in your account the next business day, helping keep stock, wages, and day-to-day cash flow moving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div class="max-w-[460px]">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]" data-about-eyebrow>About N1 Payments</p>
+          <h2 class="display mt-4 text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]" data-about-heading>Independent. Local. On Your Side.</h2>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-about-body-a>N1 Payments supports trade businesses, hospitality venues, retailers, beauty businesses, and other growing independents that want straight answers and reliable payments.</p>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-about-body-b>We work directly with customers to find the right setup, get you approved, and make sure you are supported from day one and every day after.</p>
+        </div>
+        <div class="relative">
+          <div class="overflow-hidden rounded-[24px] shadow-soft">
+            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2024/07/team-training-.jpg?fit=1600%2C1067&ssl=1" alt="N1 Payments team training session" class="h-full w-full object-cover" loading="lazy" decoding="async">
+          </div>
+          <span class="badge-dark absolute left-4 bottom-20">Super Fast</span>
+          <span class="badge-dark absolute right-5 top-4">Simple</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-light band-angle-both section-pad">
+      <div class="site-shell text-center">
+        <h2 class="display text-[40px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">How may we assist you?</h2>
+        <p class="mx-auto mt-4 max-w-[660px] text-[18px] leading-8 text-[#5b5b5b]" data-assist-intro>Tell us where you are in the process and we will point you to the right setup fast.</p>
+        <div class="mx-auto mt-10 grid max-w-[760px] gap-5 md:grid-cols-2">
+          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[10px] border-2 border-black bg-white px-8 py-6 text-left text-black transition hover:-translate-y-0.5" data-assist-link="0">
+            <div class="flex items-center justify-between gap-6">
+              <span class="text-[20px] font-bold" data-assist-title="0">I'm Starting Out</span>
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-[#dcfb00]" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"></path>
+                </svg>
+              </span>
+            </div>
+            <p class="mt-4 max-w-[290px] text-[15px] leading-7 text-[#5e5e5e]" data-assist-body="0">New to taking card payments? We'll help you choose the right terminal, rates, and support without the usual runaround.</p>
+            <span class="mt-4 inline-flex text-[15px] font-bold text-black" data-assist-cta="0">Get Started</span>
+          </a>
+          <a href="/alternate/contact/" class="rounded-[10px] border-2 border-black bg-white px-8 py-6 text-left text-black transition hover:-translate-y-0.5" data-assist-link="1">
+            <div class="flex items-center justify-between gap-6">
+              <span class="text-[20px] font-bold" data-assist-title="1">I Want to Switch Provider</span>
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-[#dcfb00]" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"></path>
+                </svg>
+              </span>
+            </div>
+            <p class="mt-4 max-w-[290px] text-[15px] leading-7 text-[#5e5e5e]" data-assist-body="1">Fed up with slow settlements, hidden fees, or a provider that does not understand how you take payments? Switching is simpler than you think.</p>
+            <span class="mt-4 inline-flex text-[15px] font-bold text-black" data-assist-cta="1">Compare &amp; Switch</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="site-shell">
+        <h2 class="display text-center text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Card Payment Solutions</h2>
+        <div class="panel mt-10 p-6 shadow-soft sm:p-8 lg:p-10">
+          <div class="grid items-center gap-10 lg:grid-cols-[0.92fr_1fr]">
+            <div class="relative flex min-h-[420px] items-center justify-center">
+                <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/n1-assure.png?fit=575%2C700&amp;ssl=1" alt="N1 Assure card terminal" class="w-full max-w-[360px]" loading="lazy" decoding="async">
+              <span class="badge-dark absolute left-[7%] top-[12%]">4G &amp; Wi-Fi</span>
+              <span class="badge-dark absolute right-[8%] top-[36%]">Bluetooth</span>
+              <span class="badge-dark absolute left-[10%] bottom-[22%]">Long battery</span>
+              <span class="badge-dark absolute right-[10%] bottom-[7%]">Portable terminal</span>
+            </div>
+            <div>
+              <h3 class="display text-[38px] font-extrabold tracking-[-0.04em] text-black" data-product-title>N1 Assure</h3>
+              <p class="mt-4 text-[20px] font-bold leading-8 text-black" data-product-subtitle>A portable card machine for busy businesses</p>
+              <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="0">Handheld, portable 4G terminal with built-in SIM</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="1">Next-day settlement as standard</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="2">Accepts all major cards, contactless, Apple Pay and Google Pay</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="3">Long battery life for busy trading days</span></li>
+                <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-product-bullet="4">Reporting via app and portal</span></li>
+              </ul>
+              <div class="mt-8">
+                <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime" data-product-cta>Get a quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-light section-pad py-14 lg:py-16">
+      <div class="site-shell grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start">
+        <div class="max-w-[430px]">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.24em] text-[#707070]">Rate comparison tool</p>
+          <h2 class="display mt-4 text-[38px] font-extrabold leading-[1.06] tracking-[-0.04em] text-black sm:text-[46px]">See how your rates compare.</h2>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Use this simple comparison to estimate what card payments could cost with N1 versus a typical high street provider or app-based reader.</p>
+        </div>
+
+        <div class="panel p-6 shadow-soft sm:p-8" data-rate-calculator>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="rate-control block">
+              <span class="flex items-center justify-between gap-3">
+                <span class="block text-[13px] font-semibold uppercase tracking-[0.2em] text-[#707070]">Monthly card turnover</span>
+                <span class="rate-value" data-rate-display="turnover">£12,000</span>
+              </span>
+              <input type="range" min="1000" max="500000" step="500" value="12000" data-rate-input="turnover" class="rate-range mt-5" />
+              <span class="rate-scale mt-3">
+                <span>£1k</span>
+                <span>£500k</span>
+              </span>
+            </label>
+            <label class="rate-control block">
+              <span class="flex items-center justify-between gap-3">
+                <span class="block text-[13px] font-semibold uppercase tracking-[0.2em] text-[#707070]">Average sale value</span>
+                <span class="rate-value" data-rate-display="average">£65</span>
+              </span>
+              <input type="range" min="1" max="50000" step="1" value="65" data-rate-input="average" class="rate-range mt-5" />
+              <span class="rate-scale mt-3">
+                <span>£1</span>
+                <span>£50k</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="mt-7 grid gap-4 lg:grid-cols-3">
+            <article class="rounded-[20px] border-2 border-black bg-[#f9ffd6] px-5 py-5">
+              <p class="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#6a6a6a]">N1</p>
+              <p class="mt-3 text-[14px] font-semibold leading-6 text-[#4f4f4f]">1.15% + 3p per transaction + £15 monthly</p>
+              <p class="display mt-5 text-[36px] font-extrabold tracking-[-0.04em] text-black" data-rate-result="n1">£0</p>
+              <p class="mt-1 text-[14px] font-semibold text-[#505050]">Estimated monthly cost</p>
+            </article>
+
+            <article class="rounded-[20px] border border-black/10 bg-white px-5 py-5">
+              <p class="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#6a6a6a]">Typical high street</p>
+              <p class="mt-3 text-[14px] font-semibold leading-6 text-[#4f4f4f]">1.65% + 5p per transaction + £25 monthly</p>
+              <p class="display mt-5 text-[36px] font-extrabold tracking-[-0.04em] text-black" data-rate-result="highstreet">£0</p>
+              <p class="mt-1 text-[14px] font-semibold text-[#505050]">Estimated monthly cost</p>
+            </article>
+
+            <article class="rounded-[20px] border border-black/10 bg-white px-5 py-5">
+              <p class="text-[13px] font-semibold uppercase tracking-[0.22em] text-[#6a6a6a]">App-based reader</p>
+              <p class="mt-3 text-[14px] font-semibold leading-6 text-[#4f4f4f]">1.75% + 7p per transaction + £0 monthly</p>
+              <p class="display mt-5 text-[36px] font-extrabold tracking-[-0.04em] text-black" data-rate-result="app">£0</p>
+              <p class="mt-1 text-[14px] font-semibold text-[#505050]">Estimated monthly cost</p>
+            </article>
+          </div>
+
+          <div class="mt-6 rounded-[18px] bg-[#f8f8f8] px-5 py-4 text-[15px] leading-7 text-[#545454]" data-rate-summary>
+            Based on £12,000 monthly turnover and a £65 average sale, N1 comes out cheaper than the example alternatives.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad pt-2 lg:pt-6">
+      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="aspect-[57/40] overflow-hidden rounded-[24px] bg-[#f6f6f6] shadow-soft">
+          <img src="/assets/photos/Pax-Technology-A920.png" alt="Pax A920 Pro card machine being used to take a card payment" class="h-full w-full object-cover object-center" loading="lazy">
+        </div>
+        <div class="max-w-[470px]">
+          <h2 class="display text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Why take card payments?</h2>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-why-body-a>When you can take payment there and then, you reduce delays, make it easier for customers to say yes, and get paid faster for the work, service, or sale you have completed.</p>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]" data-why-body-b>Whether it is a deposit before an appointment, payment at the till, or the final balance after the job, card payments give customers flexibility without slowing your cash flow.</p>
+          <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="0">Take deposits or booking fees upfront</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="1">Get paid as soon as the sale or job is done</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="2">Give customers more ways to pay</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="3">Improve cash flow with next-day settlement</span></li>
+            <li class="flex gap-3"><span class="check-box">&#10003;</span><span data-why-bullet="4">Spend less time chasing balances</span></li>
+          </ul>
+          <div class="mt-8">
+            <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band-light band-angle-both section-pad">
+      <div class="site-shell">
+        <h2 class="display text-center text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Voices of our clients</h2>
+        <div class="mx-auto mt-10 max-w-[1200px]" data-testimonial-carousel>
+          <div class="testimonial-viewport" data-testimonial-viewport>
+            <div class="testimonial-track" data-testimonial-track>
+              <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
+                <div class="mb-8 flex h-20 items-center justify-center">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/10/cropped-CH-Electrical-Logo-Horizontal.webp?fit=1446%2C313&amp;ssl=1" alt="CH Electrical Wholesalers" class="max-h-14 w-auto max-w-[260px] object-contain" loading="lazy" decoding="async">
+                </div>
+                <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"Thrilled to partner with N1 Payments! They've provided us with cutting-edge payment tech, instant gateways for WhatsApp/text/email, durable PDQs for our counter, exceptional local support, and significant fee savings from our last provider."</p>
+                <p class="mt-7 text-center text-[16px] font-bold text-black">Callum Worley</p>
+              </article>
+              <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
+                <div class="mb-8 flex h-20 items-center justify-center">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034c7f4dfdef35c83a9eda_landscape-transparent-bg-shadow-designify-p-500.png?fit=500%2C281&amp;ssl=1" alt="Pie Restaurant" class="max-h-[72px] w-auto max-w-[230px] object-contain" loading="lazy" decoding="async">
+                </div>
+                <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"The world of card machine payments and processing charges can get very complicated with a lot of companies hiding charges and trying to dazzle you with very low headline rates which are often too good to be true."</p>
+                <p class="mt-7 text-center text-[16px] font-bold text-black">Pie Restaurant</p>
+              </article>
+              <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
+                <div class="mb-8 flex h-20 items-center justify-center">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034cea43a912e77613219c_landscape-transparent-bg-shadow-designify1-p-800.png?fit=800%2C450&amp;ssl=1" alt="Camber Wines" class="max-h-[72px] w-auto max-w-[290px] object-contain" loading="lazy" decoding="async">
+                </div>
+                <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"The best business decision I have made this year. I have saved thousands of pounds in credit card charges'. it's easy and painless to make the change. In fact seamless."</p>
+                <p class="mt-7 text-center text-[16px] font-bold text-black">Camber Wines</p>
+              </article>
+              <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
+                <div class="mb-8 flex h-20 items-center justify-center">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034d66c5baf958d68f880c_landscape-transparent-bg-shadow-designify2-p-500.png?fit=500%2C281&amp;ssl=1" alt="Marmion House Bar and Kitchen" class="max-h-[72px] w-auto max-w-[250px] object-contain" loading="lazy" decoding="async">
+                </div>
+                <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"Thank you N1 Payment for setting up our new card machines and Epos system. you were so helpful in all of the process."</p>
+                <p class="mt-7 text-center text-[16px] font-bold text-black">Marmion House Bar &amp; Kitchen</p>
+              </article>
+              <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
+                <div class="mb-8 flex h-20 items-center justify-center">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034e0faa908572444706f1_landscape-transparent-bg-shadow-designify3-p-500.png?fit=500%2C281&amp;ssl=1" alt="Spar Convenience Store" class="max-h-[78px] w-auto max-w-[210px] object-contain" loading="lazy" decoding="async">
+                </div>
+                <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"Thank you to all at N1 Payment for for saving us money and being so transparent in the set up of our new card machines and Epos."</p>
+                <p class="mt-7 text-center text-[16px] font-bold text-black">Spar Convenience Store</p>
+              </article>
+              <article class="testimonial-slide flex min-h-[330px] flex-col justify-center rounded-[22px] bg-white px-8 py-10 shadow-soft" data-testimonial-slide>
+                <div class="mb-8 flex h-20 items-center justify-center">
+                  <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/63034f214dfdef21623abf11_landscape-transparent-bg-shadow-designify4-p-500.png?fit=500%2C281&amp;ssl=1" alt="Shooting Star" class="max-h-[72px] w-auto max-w-[250px] object-contain" loading="lazy" decoding="async">
+                </div>
+                <p class="text-center text-[17px] font-bold italic leading-8 text-[#333333]">"N1 Payment have saved us thousands in transaction fee's and the customer support is exceptional."</p>
+                <p class="mt-7 text-center text-[16px] font-bold text-black">Shooting Star</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex items-center justify-center gap-2" data-testimonial-dots>
+          <button type="button" class="testimonial-dot" data-testimonial-dot data-active="true" aria-label="Show testimonial 1"><span></span></button>
+          <button type="button" class="testimonial-dot" data-testimonial-dot data-active="false" aria-label="Show testimonial 2"><span></span></button>
+          <button type="button" class="testimonial-dot" data-testimonial-dot data-active="false" aria-label="Show testimonial 3"><span></span></button>
+          <button type="button" class="testimonial-dot" data-testimonial-dot data-active="false" aria-label="Show testimonial 4"><span></span></button>
+          <button type="button" class="testimonial-dot" data-testimonial-dot data-active="false" aria-label="Show testimonial 5"><span></span></button>
+          <button type="button" class="testimonial-dot" data-testimonial-dot data-active="false" aria-label="Show testimonial 6"><span></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faqs" class="section-pad">
+      <div class="site-shell">
+        <h2 class="display text-center text-[42px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">FAQs</h2>
+        <div class="mx-auto mt-10 grid max-w-[980px] gap-x-10 md:grid-cols-2">
+          <div>
+            <article class="faq-item">
+              <button type="button" class="faq-trigger" data-faq-trigger aria-expanded="false">
+                <span>Can you help if my current provider is not a good fit?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-panel pb-5 text-[16px] leading-7 text-[#5c5c5c]" hidden>Yes. Many customers come to N1 after generic providers were too rigid, too slow, or simply did not understand how their business takes payments. We will assess the setup honestly and point you to the best-fit route.</div>
+            </article>
+            <article class="faq-item">
+              <button type="button" class="faq-trigger" data-faq-trigger aria-expanded="false">
+                <span>Do your terminals need fixed Wi-Fi?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-panel pb-5 text-[16px] leading-7 text-[#5c5c5c]" hidden>No. Many terminals include a roaming SIM and can also work with Wi-Fi where available, so you can take payments in stores, venues, treatment rooms, or out on site.</div>
+            </article>
+            <article class="faq-item">
+              <button type="button" class="faq-trigger" data-faq-trigger aria-expanded="false">
+                <span>Can I take deposits or remote payments?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-panel pb-5 text-[16px] leading-7 text-[#5c5c5c]" hidden>Yes. Pay by Link, virtual terminal access, and payment gateways give you several ways to collect deposits, staged payments, invoice balances, and website payments.</div>
+            </article>
+          </div>
+          <div>
+            <article class="faq-item">
+              <button type="button" class="faq-trigger" data-faq-trigger aria-expanded="false">
+                <span>When do I receive my money?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-panel pb-5 text-[16px] leading-7 text-[#5c5c5c]" hidden>Next business day is the standard position on many setups. In some cases, faster settlement options may be available depending on your business and payment model.</div>
+            </article>
+            <article class="faq-item">
+              <button type="button" class="faq-trigger" data-faq-trigger aria-expanded="false">
+                <span>Can you support multiple devices or locations?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-panel pb-5 text-[16px] leading-7 text-[#5c5c5c]" hidden>Absolutely. N1 can support businesses running several devices, teams, tills, or locations under one account, with central reporting and a setup that scales as the business grows.</div>
+            </article>
+            <article class="faq-item">
+              <button type="button" class="faq-trigger" data-faq-trigger aria-expanded="false">
+                <span>Do you offer EPOS as well as card machines?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-panel pb-5 text-[16px] leading-7 text-[#5c5c5c]" hidden>Yes. For businesses that need more than a terminal, N1 can help with EPOS options alongside card payments, online payments, and settlement support.</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-16 pt-6 sm:pb-20">
+      <div class="site-shell">
+        <div class="panel px-6 py-14 text-center shadow-soft sm:px-10">
+          <h2 class="display text-[40px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Do you want to know more?</h2>
+          <p class="mx-auto mt-4 max-w-[690px] text-[18px] leading-8 text-[#5b5b5b]">If you would like to compare options for your business and see which route fits best, we can help map out the next step.</p>
+          <div class="mt-8">
+            <a href="/alternate/contact/" class="btn-lime">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black pt-14 text-white">
+    <div class="site-shell">
+      <div class="grid gap-12 pb-12 lg:grid-cols-[1.05fr_0.86fr_0.86fr_0.86fr_1fr]">
+        <div>
+          <a href="/alternate/" class="inline-flex" aria-label="N1 Payments home">
+            <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/N1-Payments-Logo-coloured-white.png?fit=212%2C153&amp;ssl=1" alt="N1 Payments" class="h-16 w-auto">
+          </a>
+          <p class="mt-5 max-w-[320px] text-[15px] leading-7 text-white/72">Payments made simple for independent businesses across trade, hospitality, retail, and beauty.</p>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Company</h3>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li><a class="footer-link" href="/alternate/about/">About us</a></li>
+            <li><a class="footer-link" href="/alternate/contact/">Contact us</a></li>
+            <li><a class="footer-link" href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer">Get a quote</a></li>
+            <li><a class="footer-link" href="/alternate/partners/">Partners</a></li>
+            <li><a class="footer-link" href="/alternate/privacy-policy/">Privacy Policy</a></li>
+            <li><a class="footer-link" href="/alternate/terms-and-conditions/">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Industries</h3>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li><a class="footer-link" href="/alternate/industries/trade/">Trade</a></li>
+            <li><a class="footer-link" href="/alternate/industries/hospitality/">Hospitality</a></li>
+            <li><a class="footer-link" href="/alternate/industries/retail/">Retail</a></li>
+            <li><a class="footer-link" href="/alternate/industries/beauty/">Beauty</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Solutions</h3>
+          <ul class="mt-5 space-y-4 text-[15px]">
+            <li><a class="footer-link" href="/alternate/card-payments/">Card Payments</a></li>
+            <li><a class="footer-link" href="/alternate/online-payments/">Online Payments</a></li>
+            <li><a class="footer-link" href="/alternate/business-funding/">Business Funding</a></li>
+            <li><a class="footer-link" href="/alternate/e-pos/">EPOS Systems</a></li>
+            <li><a class="footer-link" href="/alternate/business-account/">Business Account</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[17px] font-bold text-white">Information</h3>
+          <p class="mt-5 text-[18px] font-extrabold text-brand-lime">0330 377 2415</p>
+          <div class="mt-5 flex items-center gap-4">
+            <a href="https://www.facebook.com/number1payment/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-white/90 transition hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.3l.4-2.8h-2.7V9.4c0-.8.2-1.4 1.4-1.4h1.5V5.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4v1.8H8v2.8h2.3v7h3.2Z"></path></svg></a>
+            <a href="https://www.instagram.com/n1payments/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white/90 transition hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.25 1.65a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 14.8 2.8 2.8 0 0 0 12 9.2Z"></path></svg></a>
+            <a href="https://www.linkedin.com/company/n1-payments/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white/90 transition hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H4V20h2.94V8.5ZM5.47 7.2A1.7 1.7 0 1 0 5.44 3.8a1.7 1.7 0 0 0 .03 3.4ZM20 20h-2.93v-5.58c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94V20H10.2V8.5h2.81v1.57h.04c.39-.74 1.35-1.52 2.78-1.52 2.98 0 3.53 1.96 3.53 4.52V20Z"></path></svg></a>
+          </div>
+          <p class="mt-5 text-[15px] font-bold text-white">FRN: 973294</p>
+          <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/fca.jpg?fit=500%2C164&amp;ssl=1" alt="FCA regulated" class="mt-4 h-10 w-auto">
+          <p class="mt-4 text-[15px] font-bold text-white">COMPANY REG: 10091004</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 py-6 text-center text-[14px] text-white/72">
+        <p>COPYRIGHT (C) 2023 N1 PAYMENTS, ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector("[data-menu-toggle]");
+    const mobileMenu = document.querySelector("[data-mobile-menu]");
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.toggle("hidden");
+        menuToggle.setAttribute("aria-expanded", String(!isHidden));
+      });
+    }
+
+    const rateCalculator = document.querySelector("[data-rate-calculator]");
+    const rateTurnoverInput = rateCalculator?.querySelector('[data-rate-input="turnover"]');
+    const rateAverageInput = rateCalculator?.querySelector('[data-rate-input="average"]');
+    const rateSummary = rateCalculator?.querySelector("[data-rate-summary]");
+    const rateDisplays = {
+      turnover: rateCalculator?.querySelector('[data-rate-display="turnover"]'),
+      average: rateCalculator?.querySelector('[data-rate-display="average"]')
+    };
+    const rateOutputs = {
+      n1: rateCalculator?.querySelector('[data-rate-result="n1"]'),
+      highstreet: rateCalculator?.querySelector('[data-rate-result="highstreet"]'),
+      app: rateCalculator?.querySelector('[data-rate-result="app"]')
+    };
+
+    const rateModels = {
+      n1: { percent: 1.15, perTx: 0.03, monthly: 15 },
+      highstreet: { percent: 1.65, perTx: 0.05, monthly: 25 },
+      app: { percent: 1.75, perTx: 0.07, monthly: 0 }
+    };
+
+    const formatCurrency = (value) => `£${value.toLocaleString("en-GB", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+
+    const syncRateSlider = (input, displayElement) => {
+      if (!input) return;
+      const min = Number(input.min) || 0;
+      const max = Number(input.max) || 100;
+      const value = Number(input.value) || 0;
+      const progress = max > min ? ((value - min) / (max - min)) * 100 : 0;
+      input.style.setProperty("--range-progress", `${Math.min(100, Math.max(0, progress))}%`);
+      if (displayElement) displayElement.textContent = formatCurrency(Math.round(value));
+    };
+
+    const calculateRateComparison = () => {
+      if (!rateCalculator || !rateTurnoverInput || !rateAverageInput) return;
+
+      const turnover = Math.max(1000, Number(rateTurnoverInput.value) || 0);
+      const averageSale = Math.max(1, Number(rateAverageInput.value) || 0);
+      const transactionCount = turnover / averageSale;
+
+      syncRateSlider(rateTurnoverInput, rateDisplays.turnover);
+      syncRateSlider(rateAverageInput, rateDisplays.average);
+
+      const results = Object.fromEntries(
+        Object.entries(rateModels).map(([key, model]) => {
+          const total = model.monthly + (turnover * model.percent) / 100 + transactionCount * model.perTx;
+          return [key, total];
+        })
+      );
+
+      Object.entries(rateOutputs).forEach(([key, element]) => {
+        if (element) element.textContent = formatCurrency(Math.round(results[key]));
+      });
+
+      const highStreetSaving = Math.max(0, Math.round(results.highstreet - results.n1));
+      const appSaving = Math.max(0, Math.round(results.app - results.n1));
+
+      if (rateSummary) {
+        rateSummary.textContent = `Based on ${formatCurrency(turnover)} monthly turnover at an average sale of ${formatCurrency(averageSale)}, N1 could save around ${formatCurrency(highStreetSaving)} versus a typical high street provider and ${formatCurrency(appSaving)} versus an app-based reader.`;
+      }
+    };
+
+    [rateTurnoverInput, rateAverageInput].forEach((input) => {
+      input?.addEventListener("input", calculateRateComparison);
+    });
+
+    calculateRateComparison();
+
+    const logoTrack = document.querySelector("[data-logo-track]");
+    const logoSourceGroup = document.querySelector("[data-logo-group]");
+
+    const syncLogoLoop = () => {
+      if (!logoTrack || !logoSourceGroup) return;
+      logoTrack.style.setProperty("--logo-loop-distance", `${logoSourceGroup.getBoundingClientRect().width}px`);
+    };
+
+    syncLogoLoop();
+    window.addEventListener("load", syncLogoLoop);
+    window.addEventListener("resize", syncLogoLoop);
+
+    const faqTriggers = document.querySelectorAll("[data-faq-trigger]");
+    faqTriggers.forEach((trigger) => {
+      trigger.addEventListener("click", () => {
+        const panel = trigger.nextElementSibling;
+        const icon = trigger.querySelector(".faq-icon");
+        const isOpen = trigger.getAttribute("aria-expanded") === "true";
+        trigger.setAttribute("aria-expanded", String(!isOpen));
+        panel.hidden = isOpen;
+        icon.textContent = isOpen ? "+" : "-";
+      });
+    });
+
+    const testimonialCarousel = document.querySelector("[data-testimonial-carousel]");
+    const testimonialViewport = testimonialCarousel?.querySelector("[data-testimonial-viewport]");
+    const testimonialTrack = testimonialCarousel?.querySelector("[data-testimonial-track]");
+    const testimonialSlides = Array.from(testimonialCarousel?.querySelectorAll("[data-testimonial-slide]") ?? []);
+    const testimonialDots = Array.from(document.querySelectorAll("[data-testimonial-dot]"));
+
+    if (testimonialViewport && testimonialTrack && testimonialSlides.length && testimonialDots.length) {
+      let currentTestimonialIndex = 0;
+      let testimonialStep = 0;
+      let testimonialPageCount = 1;
+      let testimonialCurrentTranslate = 0;
+      let isDraggingTestimonials = false;
+      let testimonialDragMoved = false;
+      let testimonialStartX = 0;
+      let testimonialStartTranslate = 0;
+      let activeTestimonialPointerId = null;
+
+      const clampTestimonialIndex = (index) =>
+        Math.max(0, Math.min(index, testimonialPageCount - 1));
+
+      const setActiveTestimonialDot = (index) => {
+        testimonialDots.forEach((dot, dotIndex) => {
+          const isVisible = dotIndex < testimonialPageCount;
+          dot.hidden = !isVisible;
+          if (!isVisible) return;
+          const isActive = dotIndex === index;
+          dot.setAttribute("data-active", String(isActive));
+          dot.setAttribute("aria-current", isActive ? "true" : "false");
+        });
+      };
+
+      const setTestimonialTranslate = (translate) => {
+        testimonialCurrentTranslate = translate;
+        testimonialTrack.style.transform = `translate3d(${translate}px, 0, 0)`;
+      };
+
+      const setTestimonialIndex = (index) => {
+        currentTestimonialIndex = clampTestimonialIndex(index);
+        setActiveTestimonialDot(currentTestimonialIndex);
+        setTestimonialTranslate(-(currentTestimonialIndex * testimonialStep));
+      };
+
+      const updateTestimonialMeasurements = () => {
+        const firstSlide = testimonialSlides[0];
+        if (!firstSlide) return;
+        const gapValue = parseFloat(window.getComputedStyle(testimonialTrack).gap || "0");
+        testimonialStep = firstSlide.getBoundingClientRect().width + gapValue;
+        const slidesPerView = window.innerWidth < 768 ? 1 : 2;
+        testimonialPageCount = Math.max(1, testimonialSlides.length - slidesPerView + 1);
+        setTestimonialIndex(currentTestimonialIndex);
+      };
+
+      testimonialDots.forEach((dot, dotIndex) => {
+        dot.addEventListener("click", () => {
+          setTestimonialIndex(dotIndex);
+        });
+      });
+
+      testimonialViewport.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "mouse" && event.button !== 0) return;
+        isDraggingTestimonials = true;
+        testimonialDragMoved = false;
+        activeTestimonialPointerId = event.pointerId;
+        testimonialStartX = event.clientX;
+        testimonialStartTranslate = testimonialCurrentTranslate;
+        testimonialViewport.classList.add("is-dragging");
+        testimonialViewport.setPointerCapture(event.pointerId);
+        event.preventDefault();
+      });
+
+      testimonialViewport.addEventListener("pointermove", (event) => {
+        if (!isDraggingTestimonials || event.pointerId !== activeTestimonialPointerId) return;
+        const distance = event.clientX - testimonialStartX;
+        if (Math.abs(distance) > 4) {
+          testimonialDragMoved = true;
+        }
+        const minTranslate = -((testimonialPageCount - 1) * testimonialStep);
+        const nextTranslate = Math.max(minTranslate, Math.min(0, testimonialStartTranslate + distance));
+        setTestimonialTranslate(nextTranslate);
+        setActiveTestimonialDot(clampTestimonialIndex(Math.round(Math.abs(nextTranslate) / testimonialStep)));
+        event.preventDefault();
+      });
+
+      const finishTestimonialDrag = (event) => {
+        if (!isDraggingTestimonials) return;
+        if (event && activeTestimonialPointerId !== null && event.pointerId !== activeTestimonialPointerId) {
+          return;
+        }
+        isDraggingTestimonials = false;
+        activeTestimonialPointerId = null;
+        testimonialViewport.classList.remove("is-dragging");
+        if (!testimonialDragMoved) {
+          setTestimonialIndex(currentTestimonialIndex);
+          return;
+        }
+        const nearestIndex = clampTestimonialIndex(Math.round(Math.abs(testimonialCurrentTranslate) / testimonialStep));
+        setTestimonialIndex(nearestIndex);
+      };
+
+      testimonialViewport.addEventListener("pointerup", finishTestimonialDrag);
+      testimonialViewport.addEventListener("pointercancel", finishTestimonialDrag);
+      testimonialViewport.addEventListener("lostpointercapture", finishTestimonialDrag);
+
+      testimonialSlides.forEach((slide) => {
+        slide.addEventListener("dragstart", (event) => event.preventDefault());
+      });
+
+      let testimonialResizeFrame = null;
+      window.addEventListener("resize", () => {
+        if (testimonialResizeFrame) {
+          window.cancelAnimationFrame(testimonialResizeFrame);
+        }
+        testimonialResizeFrame = window.requestAnimationFrame(() => {
+          updateTestimonialMeasurements();
+        });
+      });
+
+      updateTestimonialMeasurements();
+    }
+  </script>
+</body>
+</html>
