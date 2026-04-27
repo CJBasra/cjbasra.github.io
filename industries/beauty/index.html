@@ -1,10 +1,10 @@
-<!-- partners.html -->
+<!-- industries/beauty/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N1 Payments | Partners</title>
+  <title>N1 Payments | Beauty</title>
   <link rel="icon" type="image/png" sizes="32x32" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=19%2C32&amp;ssl=1">
   <link rel="apple-touch-icon" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=55%2C91&amp;ssl=1">
   <script>
@@ -45,6 +45,7 @@
       --brand-lime-soft: #dff24b;
       --brand-text: #4d4d4d;
       --brand-light: #f6f6f6;
+      --brand-black: #111111;
     }
 
     body {
@@ -79,8 +80,20 @@
       transition: color 0.2s ease;
     }
 
-    .nav-link:hover {
+    .nav-link:hover,
+    .nav-link.active {
       color: #111111;
+    }
+
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 6px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--brand-lime-soft);
     }
 
     .btn-lime {
@@ -106,15 +119,15 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      border-radius: 8px;
       border: 2px solid #111111;
+      border-radius: 8px;
       background: transparent;
-      padding: 11px 28px;
+      padding: 12px 28px;
       font-size: 15px;
       font-weight: 700;
       color: #111111;
       text-decoration: none;
-      transition: transform 0.2s ease, background 0.2s ease;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
     }
 
     .btn-outline:hover {
@@ -125,6 +138,7 @@
 
     .panel {
       border-radius: 28px;
+      border: 2px solid rgba(17, 17, 17, 0.08);
       background: var(--brand-light);
     }
 
@@ -132,28 +146,92 @@
       background: var(--brand-light);
     }
 
-    .band-angle-bottom {
+    .band-angle-top,
+    .band-angle-bottom,
+    .band-angle-both {
       position: relative;
     }
 
-    .band-angle-bottom > .site-shell {
+    .band-angle-top > .site-shell,
+    .band-angle-bottom > .site-shell,
+    .band-angle-both > .site-shell {
       position: relative;
       z-index: 1;
     }
 
-    .band-angle-bottom::after {
+    .band-angle-top::before,
+    .band-angle-bottom::after,
+    .band-angle-both::before,
+    .band-angle-both::after {
       content: "";
       position: absolute;
       left: -2%;
-      bottom: -28px;
       width: 104%;
       height: 52px;
       background: #ffffff;
       pointer-events: none;
       z-index: 0;
+      transform-origin: center;
+    }
+
+    .band-angle-top::before,
+    .band-angle-both::before {
+      top: -28px;
+      transform: rotate(-1.8deg);
+    }
+
+    .band-angle-bottom::after,
+    .band-angle-both::after {
+      bottom: -28px;
       transform: rotate(-1.6deg);
     }
 
+    .badge-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 8px;
+      background: #111111;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      box-shadow: 0 10px 24px rgba(17, 17, 17, 0.18);
+    }
+
+    .check-box {
+      display: inline-flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border: 3px solid #111111;
+      border-radius: 7px;
+      background: var(--brand-lime);
+      color: #111111;
+      font-size: 11px;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 2px 0 rgba(17, 17, 17, 0.12);
+    }
+
+    .product-tab {
+      border: 1px solid rgba(17, 17, 17, 0.12);
+      border-radius: 8px;
+      background: #ffffff;
+      padding: 10px 16px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .product-tab[data-active="true"] {
+      border-color: var(--brand-lime);
+      background: var(--brand-lime);
+    }
+
+    .tab-panel[hidden],
     [data-mobile-menu].hidden {
       display: none;
     }
@@ -181,11 +259,117 @@
         border-radius: 22px;
       }
 
-      .band-angle-bottom::after {
+      .band-angle-top::before,
+      .band-angle-bottom::after,
+      .band-angle-both::before,
+      .band-angle-both::after {
         height: 34px;
+      }
+
+      .band-angle-top::before,
+      .band-angle-both::before {
+        top: -18px;
+      }
+
+      .band-angle-bottom::after,
+      .band-angle-both::after {
         bottom: -18px;
       }
+
+      .btn-lime,
+      .btn-outline {
+        min-height: 48px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .badge-dark {
+        padding: 4px 8px;
+        font-size: 10px;
+      }
+
+      .check-box {
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
+        border-radius: 6px;
+        font-size: 10px;
+      }
+
     }
+  
+    .industry-hero-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .industry-hero-grid img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid rgba(17, 17, 17, 0.08);
+      border-radius: 22px;
+      box-shadow: 0 18px 45px rgba(17, 17, 17, 0.08);
+    }
+
+    .industry-story-card {
+      border-radius: 24px;
+      border: 2px solid rgba(17, 17, 17, 0.08);
+      background: #ffffff;
+      padding: 1.75rem;
+      box-shadow: 0 18px 45px rgba(17, 17, 17, 0.06);
+    }
+
+    .industry-story-card h3 {
+      margin: 1rem 0 0;
+    }
+
+    .industry-solution-card {
+      border-radius: 26px;
+      border: 2px solid rgba(17, 17, 17, 0.08);
+      background: #ffffff;
+      padding: 2rem;
+      box-shadow: 0 18px 45px rgba(17, 17, 17, 0.06);
+    }
+
+    .industry-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 999px;
+      background: #111111;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      padding: 0.7rem 1rem;
+      text-transform: uppercase;
+    }
+
+    .industry-stat {
+      border-radius: 22px;
+      border: 2px solid rgba(17, 17, 17, 0.08);
+      background: #ffffff;
+      padding: 1.5rem;
+      text-align: left;
+      box-shadow: 0 16px 36px rgba(17, 17, 17, 0.05);
+    }
+
+    .industry-stat strong {
+      display: block;
+      margin-top: 0.75rem;
+      color: #111111;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 767px) {
+      .industry-hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 <body class="bg-white text-brand-text antialiased">
@@ -198,12 +382,12 @@
       <nav class="hidden items-center gap-4 xl:gap-5 lg:flex">
         <a href="/" class="nav-link">Home</a>
         <div class="nav-group">
-          <a href="/card-payments/" class="nav-link dropdown-trigger border-0 bg-transparent p-0">
+          <a href="/card-payments/" class="nav-link dropdown-trigger border-0 bg-transparent p-0 active">
             <span>Card Payments</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
           </a>
           <div class="dropdown-panel">
-            <a href="/industries/trade/" class="dropdown-link">Trade</a><a href="/industries/hospitality/" class="dropdown-link">Hospitality</a><a href="/industries/retail/" class="dropdown-link">Retail</a><a href="/industries/beauty/" class="dropdown-link">Beauty</a>
+            <a href="/industries/trade/" class="dropdown-link">Trade</a><a href="/industries/hospitality/" class="dropdown-link">Hospitality</a><a href="/industries/retail/" class="dropdown-link">Retail</a><a href="/industries/beauty/" class="dropdown-link active" aria-current="page">Beauty</a>
           </div>
         </div>
         <a href="/online-payments/" class="nav-link">Online Payments</a>
@@ -236,7 +420,7 @@
         <a href="/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Home</a>
         <p class="mobile-menu-label">Card Payments</p>
         <a href="/card-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Card Payments</a>
-        <a href="/industries/trade/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Trade</a><a href="/industries/hospitality/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Hospitality</a><a href="/industries/retail/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Retail</a><a href="/industries/beauty/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Beauty</a>
+        <a href="/industries/trade/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Trade</a><a href="/industries/hospitality/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Hospitality</a><a href="/industries/retail/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Retail</a><a href="/industries/beauty/" class="rounded-lg px-4 py-3 text-sm font-semibold bg-brand-light text-black">Beauty</a>
         <div class="my-2 h-px bg-black/8"></div>
         <a href="/online-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Online Payments</a>
         <p class="mobile-menu-label">Business Funding</p>
@@ -251,55 +435,56 @@
     </div>
   </header>
 
-  <main>
+    <main>
     <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16">
-      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.92fr_1.08fr]">
-        <div class="max-w-[560px]">
-          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Partners</p>
-          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]">Become an authorised N1 Payments partner and earn commission on your referrals.</h1>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Whether you are an independent salesperson or a re-selling group this is a great opportunity to work with a leading merchant services provider.</p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Become a partner</a>
-            <a href="https://portal.n1payments.com/" target="_blank" rel="noopener noreferrer" class="btn-outline">Agent portal login</a>
+      <div class="site-shell grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+        <div class="max-w-[520px]">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Beauty</p>
+          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]">Deposits, appointments, and balances handled more smoothly.</h1>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Beauty businesses need a simple way to take deposits, protect appointments, and collect the remaining balance in studio or remotely.</p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
+            <a href="/contact/" class="btn-outline">Talk to us</a>
           </div>
         </div>
-        <div class="grid gap-5 md:grid-cols-3">
-          <article class="panel p-7 shadow-soft">
-            <h2 class="display text-[28px] font-extrabold tracking-[-0.03em] text-black">Bespoke commission plans</h2>
-            <p class="mt-4 text-[16px] leading-8 text-[#565656]">Whether you are an independent salesperson or a re-selling group this is a great opportunity to work with a leading merchant services provider.</p>
-          </article>
-          <article class="rounded-[28px] bg-white p-7 shadow-soft">
-            <h2 class="display text-[28px] font-extrabold tracking-[-0.03em] text-black">Get paid on approvals</h2>
-            <p class="mt-4 text-[16px] leading-8 text-[#565656]">If you are a website or app developer, we would be delighted to discuss payment gateways and acquiring services.</p>
-          </article>
-          <article class="panel p-7 shadow-soft">
-            <h2 class="display text-[28px] font-extrabold tracking-[-0.03em] text-black">Become a senior business development manager</h2>
-            <p class="mt-4 text-[16px] leading-8 text-[#565656]">Utility industry and service brokers partnerships are also welcome.</p>
-          </article>
+        <div class="industry-hero-grid">
+          <img src="/assets/photos/online-pay-link.webp" alt="Client completing a booking deposit on a phone" class="h-[260px] sm:h-[320px]">
+          <img src="/assets/photos/online-virtual-terminal.jpg" alt="Beauty business owner collecting a remote card payment from a laptop" class="h-[260px] sm:h-[320px]">
         </div>
       </div>
     </section>
 
-    <section class="section-pad pt-6 sm:pt-10">
+    <section class="section-pad pt-8 sm:pt-10">
       <div class="site-shell">
-        <div class="grid gap-6 md:grid-cols-3">
-          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[22px] border-2 border-black bg-white px-7 py-8 shadow-soft transition hover:-translate-y-0.5">
-            <span class="display block text-[30px] font-extrabold tracking-[-0.03em] text-black">Become a partner</span>
-          </a>
-          <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="rounded-[22px] border-2 border-black bg-white px-7 py-8 shadow-soft transition hover:-translate-y-0.5">
-            <span class="display block text-[30px] font-extrabold tracking-[-0.03em] text-black">Existing partner referral</span>
-          </a>
-          <a href="https://portal.n1payments.com/" target="_blank" rel="noopener noreferrer" class="rounded-[22px] border-2 border-black bg-white px-7 py-8 shadow-soft transition hover:-translate-y-0.5">
-            <span class="display block text-[30px] font-extrabold tracking-[-0.03em] text-black">Agent portal login</span>
-          </a>
+        <div class="mx-auto max-w-[760px] text-center">
+          <span class="industry-chip">Beauty</span>
+          <h2 class="display mt-6 text-[40px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Built around bookings, deposits, and repeat clients</h2>
         </div>
+        <div class="mt-10 grid gap-5 lg:grid-cols-3"><article class="industry-story-card"><p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Deposits</p><h3 class="display text-[28px] font-extrabold tracking-[-0.04em] text-black">Protect time before the appointment starts.</h3><p class="mt-4 text-[16px] leading-8 text-[#565656]">Send links by text or email to secure deposits and reduce no-shows before a chair, room, or therapist slot is committed.</p></article><article class="industry-story-card"><p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Flexible collection</p><h3 class="display text-[28px] font-extrabold tracking-[-0.04em] text-black">Take payment in studio or remotely.</h3><p class="mt-4 text-[16px] leading-8 text-[#565656]">Use portable devices for in-person payments and virtual terminal or links for clients who want to pay later or from home.</p></article><article class="industry-story-card"><p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Less admin</p><h3 class="display text-[28px] font-extrabold tracking-[-0.04em] text-black">Spend less time chasing balances.</h3><p class="mt-4 text-[16px] leading-8 text-[#565656]">Faster settlement and cleaner reporting help owners stay focused on clients, bookings, and product sales.</p></article></div>
+      </div>
+    </section>
+
+    <section class="band-light band-angle-both section-pad py-14 sm:py-16">
+      <div class="site-shell grid items-center gap-10 lg:grid-cols-[1fr_0.95fr]">
+        <div class="industry-solution-card">
+          <p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Booking flow</p>
+          <h2 class="display mt-4 text-[38px] font-extrabold tracking-[-0.04em] text-black sm:text-[46px]">A payments mix that works before, during, and after the appointment</h2>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Beauty businesses often mix bookings, deposits, in-person checkout, and remote balance collection. N1 helps keep those payment moments in one simple setup.</p>
+          <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]"><li class="flex gap-3"><span class="check-box">&#10003;</span><span>Pay by Link for deposits and no-show protection</span></li><li class="flex gap-3"><span class="check-box">&#10003;</span><span>Portable terminals for in-studio checkout</span></li><li class="flex gap-3"><span class="check-box">&#10003;</span><span>Virtual terminal tools for remote balance collection</span></li><li class="flex gap-3"><span class="check-box">&#10003;</span><span>Reporting that helps track bookings, sales, and daily takings</span></li></ul>
+        </div>
+        <div class="grid gap-4"><article class="industry-stat"><p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Ideal for</p><strong class="display">Appointments</strong><p class="mt-3 text-[15px] leading-7 text-[#565656]">For businesses that need deposits before treatment or service time is reserved.</p></article><article class="industry-stat"><p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Ideal for</p><strong class="display">Chair and room rental</strong><p class="mt-3 text-[15px] leading-7 text-[#565656]">For teams balancing multiple practitioners and shared payment workflows.</p></article><article class="industry-stat"><p class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#767676]">Ideal for</p><strong class="display">Product sales</strong><p class="mt-3 text-[15px] leading-7 text-[#565656]">For studios and salons that also sell retail products at checkout.</p></article></div>
       </div>
     </section>
 
     <section class="pb-16 pt-6 sm:pb-20">
       <div class="site-shell">
-        <div class="panel px-6 py-14 shadow-soft sm:px-10">
-          <p class="mx-auto max-w-[820px] text-center text-[18px] leading-8 text-[#5b5b5b]">N1 Payments merchant services will provide a full transparent service for you and help your company move into the future of taking card payments, with the very latest financial payment technology.</p>
+        <div class="panel px-6 py-14 text-center shadow-soft sm:px-10">
+          <h2 class="display text-[40px] font-extrabold tracking-[-0.04em] text-black sm:text-[50px]">Want a setup for beauty businesses?</h2>
+          <p class="mx-auto mt-4 max-w-[720px] text-[18px] leading-8 text-[#5b5b5b]">Tell us how you take payments now and we’ll help map the right mix of terminals, remote payments, EPOS, or funding support for your business.</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
+            <a href="/contact/" class="btn-outline">Contact us</a>
+          </div>
         </div>
       </div>
     </section>
@@ -372,6 +557,7 @@
         menuToggle.setAttribute("aria-expanded", String(!isHidden));
       });
     }
+
   </script>
 </body>
 </html>

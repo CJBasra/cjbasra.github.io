@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card Payments | N1 Payments</title>
+  <title>N1 Payments | Card Payments</title>
   <link rel="icon" type="image/png" sizes="32x32" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=19%2C32&amp;ssl=1">
   <link rel="apple-touch-icon" href="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/favicon-2.png?fit=55%2C91&amp;ssl=1">
   <script>
@@ -29,6 +29,7 @@
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/assets/header-shared.css">
+  <link rel="stylesheet" href="/assets/alternate-shared.css">
   <style>
     @font-face {
       font-family: "Neutral Grotesk";
@@ -278,31 +279,60 @@
 </head>
 <body class="bg-white text-brand-text antialiased">
   <header class="site-header sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
-    <div class="site-shell flex items-center justify-between gap-6 py-2">
+    <div class="site-shell flex items-center justify-between gap-4 py-2 xl:gap-6">
       <a href="/" class="shrink-0" aria-label="N1 Payments home">
         <img src="https://usercontent.one/wp/www.n1payments.com/wp-content/uploads/2023/09/colored-logo.png?media=1755517040" alt="N1 Payments" class="site-logo-mark h-14 w-auto sm:h-[58px]">
       </a>
-      <nav class="hidden items-center gap-5 xl:gap-6 lg:flex">
+
+      <nav class="hidden items-center gap-4 xl:gap-5 lg:flex">
         <a href="/" class="nav-link">Home</a>
-        <a href="/card-payments/" class="nav-link active" aria-current="page">Card Payments</a>
-        <a href="/business-funding/" class="nav-link">Business Funding</a>
+        <div class="nav-group">
+          <a href="/card-payments/" class="nav-link dropdown-trigger border-0 bg-transparent p-0 active" aria-current="page">
+            <span>Card Payments</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
+          </a>
+          <div class="dropdown-panel">
+            <a href="/industries/trade/" class="dropdown-link">Trade</a><a href="/industries/hospitality/" class="dropdown-link">Hospitality</a><a href="/industries/retail/" class="dropdown-link">Retail</a><a href="/industries/beauty/" class="dropdown-link">Beauty</a>
+          </div>
+        </div>
+        <a href="/online-payments/" class="nav-link">Online Payments</a>
+        <div class="nav-group">
+          <a href="/business-funding/" class="nav-link dropdown-trigger border-0 bg-transparent p-0">
+            <span>Business Funding</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
+          </a>
+          <div class="dropdown-panel">
+            <a href="/business-funding/#cash-advance" class="dropdown-link">Cash Advance</a><a href="/business-funding/#business-loans" class="dropdown-link">Business Loans</a>
+          </div>
+        </div>
         <a href="/about/" class="nav-link">About</a>
         <a href="/contact/" class="nav-link">Contact</a>
       </nav>
+
       <div class="hidden lg:block">
         <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
       </div>
+
       <button type="button" data-menu-toggle class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-black/10 text-black lg:hidden" aria-label="Toggle menu" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path>
         </svg>
       </button>
     </div>
+
     <div data-mobile-menu class="hidden border-t border-black/10 bg-white lg:hidden">
       <div class="site-shell flex flex-col py-4">
         <a href="/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Home</a>
-        <a href="/card-payments/" class="rounded-lg bg-brand-light px-4 py-3 text-sm font-semibold text-black">Card Payments</a>
+        <p class="mobile-menu-label">Card Payments</p>
+        <a href="/card-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold bg-brand-light text-black">Card Payments</a>
+        <a href="/industries/trade/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Trade</a><a href="/industries/hospitality/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Hospitality</a><a href="/industries/retail/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Retail</a><a href="/industries/beauty/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Beauty</a>
+        <div class="my-2 h-px bg-black/8"></div>
+        <a href="/online-payments/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Online Payments</a>
+        <p class="mobile-menu-label">Business Funding</p>
         <a href="/business-funding/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Funding</a>
+        <a href="/business-funding/#cash-advance" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Cash Advance</a>
+        <a href="/business-funding/#business-loans" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Business Loans</a>
+        <div class="my-2 h-px bg-black/8"></div>
         <a href="/about/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">About</a>
         <a href="/contact/" class="rounded-lg px-4 py-3 text-sm font-semibold text-[#575757]">Contact</a>
         <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime mt-3">Get a quote</a>
@@ -314,15 +344,15 @@
     <section class="band-light band-angle-bottom section-pad pb-12 pt-14 lg:pb-16">
       <div class="site-shell grid items-center gap-12 lg:grid-cols-[1fr_0.86fr]">
         <div class="max-w-[500px]">
-          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Card payments for contractors</p>
-          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]">Take Payment on Site. Every Site. Every Time.</h1>
-          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Whether you are finishing a loft insulation job, completing a groundworks contract, or signing off a full renovation, N1 Payments gives you a card terminal that goes where you go powered by 4G, ready to take payment the moment the job is done.</p>
+          <p class="text-[13px] font-semibold uppercase tracking-[0.26em] text-[#707070]">Card payments for independent businesses</p>
+          <h1 class="display mt-4 text-[36px] font-extrabold leading-[1.04] tracking-[-0.04em] text-black sm:text-[46px] lg:text-[54px]">Card payment setups for counters, tables, treatment rooms, and on-site teams.</h1>
+          <p class="mt-5 text-[17px] leading-8 text-[#555555]">Whether you need a portable terminal for mobile work, a fast checkout device for the counter, or a cleaner way to accept payments in person across several devices, N1 Payments helps you choose a setup that fits how your business actually trades, with transparent pricing and zero hidden fees.</p>
           <div class="mt-8">
             <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
           </div>
         </div>
         <div class="mx-auto w-full max-w-[470px] overflow-hidden rounded-[24px] shadow-soft lg:ml-auto">
-          <img src="/assets/photos/tablet-on-site-optimized.jpg" alt="Trade business owner using a tablet while inspecting work at a residential property" class="aspect-[4/5] w-full object-cover object-center" decoding="async" fetchpriority="high">
+          <img src="/assets/photos/tablet-on-site-optimized.jpg" alt="Business owner using a tablet while managing customer payments" class="aspect-[4/5] w-full object-cover object-center" decoding="async" fetchpriority="high">
         </div>
       </div>
     </section>
@@ -341,13 +371,13 @@
               </div>
               <div>
                 <h3 class="display text-[38px] font-extrabold tracking-[-0.04em] text-black">N1 Assure</h3>
-                <p class="mt-4 text-[20px] font-bold leading-8 text-black">The Contractor's Workhorse</p>
+                <p class="mt-4 text-[20px] font-bold leading-8 text-black">Portable or fixed, depending on how you trade</p>
                 <ul class="mt-7 space-y-4 text-[16px] font-bold text-[#242424]">
                   <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Handheld, portable 4G terminal with built-in SIM</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Next-day settlement as standard</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>EPOS compatible for businesses that need full point-of-sale functionality</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Long battery life powers through a full working day on site</span></li>
-                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Accepts all major cards, contactless, Apple Pay &amp; Google Pay</span></li>
+                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Next-day settlements as standard</span></li>
+                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>No PCI charges</span></li>
+                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Live transactions and reporting via app and desktop portal</span></li>
+                  <li class="flex gap-3"><span class="check-box">&#10003;</span><span>Human customer support 24/7</span></li>
                 </ul>
                 <div class="mt-8">
                   <a href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer" class="btn-lime">Get a quote</a>
@@ -361,7 +391,7 @@
     <section class="bg-white py-12 sm:py-14">
       <div class="site-shell">
         <div class="mx-auto max-w-[700px] text-center">
-          <h2 class="display text-[32px] font-extrabold tracking-[-0.04em] text-black sm:text-[38px]">Why Contractors Choose N1 Payments</h2>
+          <h2 class="display text-[32px] font-extrabold tracking-[-0.04em] text-black sm:text-[38px]">Why businesses choose N1 for card payments</h2>
         </div>
         <div class="mt-8 grid gap-4 md:grid-cols-2">
           <article class="relative overflow-hidden rounded-[20px] border border-black/6 bg-white px-6 py-6 shadow-soft sm:px-7 sm:py-6">
@@ -373,8 +403,8 @@
                 <circle cx="12" cy="12" r="9"></circle>
               </svg>
             </div>
-            <h3 class="display max-w-[390px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">We Approve What Others Decline</h3>
-            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">The construction industry is often flagged as high-risk by mainstream banks and acquirers. N1 Payments works with specialist acquirers who understand trade businesses. We get contractors approved.</p>
+            <h3 class="display max-w-[390px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">Approvals with more context</h3>
+            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">If your business has been treated as awkward, unusual, or outside the standard box elsewhere, N1 works harder to match your application to the way you really take payments.</p>
           </article>
           <article class="relative overflow-hidden rounded-[20px] border border-black/6 bg-white px-6 py-6 shadow-soft sm:px-7 sm:py-6">
             <div class="absolute left-0 top-0 h-full w-[7px] bg-brand-lime"></div>
@@ -385,8 +415,8 @@
                 <path d="m9 15 2 2 4-4"></path>
               </svg>
             </div>
-            <h3 class="display max-w-[280px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">No PCI Hassle</h3>
-            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">We handle PCI compliance for you so you can focus on the job, not the admin.</p>
+            <h3 class="display max-w-[280px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">No PCI Charges</h3>
+            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">No PCI charges are added to your setup, so you can focus on customers, service, or the job instead of unexpected admin costs.</p>
           </article>
           <article class="relative overflow-hidden rounded-[20px] border border-black/6 bg-white px-6 py-6 shadow-soft sm:px-7 sm:py-6">
             <div class="absolute left-0 top-0 h-full w-[7px] bg-brand-lime"></div>
@@ -398,8 +428,8 @@
                 <path d="M19 9.5A2.5 2.5 0 1 1 19 14.5"></path>
               </svg>
             </div>
-            <h3 class="display max-w-[330px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">SIM Included in the Price</h3>
-            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">Every terminal comes with a roaming SIM card included. No extra cost, no contracts, no Wi-Fi required, just connectivity wherever you need it.</p>
+            <h3 class="display max-w-[330px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">Connectivity Included</h3>
+            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">Every terminal comes with a roaming SIM card included. No extra cost, no extra contract, and no dependence on fixed Wi-Fi if your business needs to move.</p>
           </article>
           <article class="relative overflow-hidden rounded-[20px] border border-black/6 bg-white px-6 py-6 shadow-soft sm:px-7 sm:py-6">
             <div class="absolute left-0 top-0 h-full w-[7px] bg-brand-lime"></div>
@@ -408,8 +438,8 @@
                 <path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 3.18 2 2 0 0 1 4.11 1h2a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L7.46 8.3a16 16 0 0 0 8.24 8.24l.86-.86a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92Z"></path>
               </svg>
             </div>
-            <h3 class="display max-w-[390px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">24/7 Support That Knows Your Name</h3>
-            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">We are a local, independent provider. When you call us, you speak to someone who knows your account, not a call centre script.</p>
+            <h3 class="display max-w-[390px] text-[22px] font-extrabold tracking-[-0.03em] text-black sm:text-[24px]">Human Customer Support 24/7</h3>
+            <p class="mt-2.5 max-w-[480px] text-[15px] leading-7 text-[#565656]">We are a local, independent provider. When you need help, you can reach a real person who understands payments, not a dead-end support queue.</p>
           </article>
         </div>
       </div>
@@ -430,37 +460,41 @@
 
   <footer class="bg-black pt-14 text-white">
     <div class="site-shell">
-      <div class="grid gap-12 pb-12 lg:grid-cols-[1.15fr_0.72fr_0.86fr_0.72fr_1fr]">
+      <div class="grid gap-12 pb-12 lg:grid-cols-[1.05fr_0.86fr_0.86fr_0.86fr_1fr]">
         <div>
           <a href="/" class="inline-flex" aria-label="N1 Payments home">
             <img src="https://i0.wp.com/www.n1payments.com/wp-content/uploads/2023/09/N1-Payments-Logo-coloured-white.png?fit=212%2C153&amp;ssl=1" alt="N1 Payments" class="h-16 w-auto">
           </a>
-          <p class="mt-5 max-w-[300px] text-[15px] leading-7 text-white/72">The payment partner built for the trade. Independent, local, and always on your side.</p>
+          <p class="mt-5 max-w-[320px] text-[15px] leading-7 text-white/72">Payments made simple for independent businesses across trade, hospitality, retail, and beauty.</p>
         </div>
         <div>
           <h3 class="text-[17px] font-bold text-white">Company</h3>
           <ul class="mt-5 space-y-4 text-[15px]">
             <li><a class="footer-link" href="/about/">About us</a></li>
-            <li><a class="footer-link" href="/contact/">Contact Us</a></li>
-            <li><a class="footer-link" href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer">Get A Quote</a></li>
+            <li><a class="footer-link" href="/contact/">Contact us</a></li>
+            <li><a class="footer-link" href="https://v7o72cx1jvv.typeform.com/to/AbGgZz6x" target="_blank" rel="noopener noreferrer">Get a quote</a></li>
             <li><a class="footer-link" href="/partners/">Partners</a></li>
             <li><a class="footer-link" href="/privacy-policy/">Privacy Policy</a></li>
             <li><a class="footer-link" href="/terms-and-conditions/">Terms and Conditions</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="text-[17px] font-bold text-white">Get Started</h3>
+          <h3 class="text-[17px] font-bold text-white">Industries</h3>
           <ul class="mt-5 space-y-4 text-[15px]">
-            <li><a class="footer-link" href="/business-funding/">Business Funding</a></li>
-            <li><a class="footer-link" href="/card-payments/">Card Payments</a></li>
+            <li><a class="footer-link" href="/industries/trade/">Trade</a></li>
+            <li><a class="footer-link" href="/industries/hospitality/">Hospitality</a></li>
+            <li><a class="footer-link" href="/industries/retail/">Retail</a></li>
+            <li><a class="footer-link" href="/industries/beauty/">Beauty</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="text-[17px] font-bold text-white">Support</h3>
+          <h3 class="text-[17px] font-bold text-white">Solutions</h3>
           <ul class="mt-5 space-y-4 text-[15px]">
-            <li><a class="footer-link" href="/merchant-resources/">Merchant Resources</a></li>
-            <li><a class="footer-link" href="/terms-and-conditions/">Terms and Conditions</a></li>
-            <li><a class="footer-link" href="/contact/">Contact Us</a></li>
+            <li><a class="footer-link" href="/card-payments/">Card Payments</a></li>
+            <li><a class="footer-link" href="/online-payments/">Online Payments</a></li>
+            <li><a class="footer-link" href="/business-funding/">Business Funding</a></li>
+            <li><a class="footer-link" href="/e-pos/">EPOS Systems</a></li>
+            <li><a class="footer-link" href="/business-account/">Business Account</a></li>
           </ul>
         </div>
         <div>
