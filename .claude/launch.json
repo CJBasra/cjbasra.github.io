@@ -1,1 +1,11 @@
-{"version":"0.0.1","configurations":[{"name":"n1-payments","runtimeExecutable":"C:/Users/CJBasra/AppData/Local/Programs/Python/Python312/python.exe","runtimeArgs":["-m","http.server","4173"],"port":4173}]}
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "n1-payments",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4173"],
+      "port": 4173
+    }
+  ]
+}
